@@ -32,6 +32,18 @@ Verify every published part, the reconstructed ZIP, and the final VFS:
 python3 tools/verify_multipart.py files/707/multipart/707/*
 ```
 
+Launcher v726 pins multipart downloads to an older CDN commit. Publish the
+verified update 707 outputs as `default.custom3*.zip` and `default.data` assets
+on the `data-flags-707-test` release, then route the manifest through the
+launcher's direct release fallback:
+
+```sh
+python3 tools/direct_release.py api/update/705/update_705.json
+```
+
+The five direct targets must remain at version 707 because that is the version
+the launcher maps to the release asset URLs.
+
 Move object definitions that were appended after the IDE sections back into
 the `objs` section and add minimal valid collision records for those models:
 
