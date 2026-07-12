@@ -32,6 +32,13 @@ Verify every published part, the reconstructed ZIP, and the final VFS:
 python3 tools/verify_multipart.py files/707/multipart/707/*
 ```
 
+Move object definitions that were appended after the IDE sections back into
+the `objs` section and add minimal valid collision records for those models:
+
+```sh
+python3 tools/ide_sections.py fixed/.data fixed/.data.repaired
+```
+
 If a migrated texture database has more `.txt`/`.toc` entries than `.tmb`
 records, add valid format-specific thumbnails before rebuilding its archive:
 

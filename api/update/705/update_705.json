@@ -151,9 +151,9 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 62182403,
-      "load_size": 62182403,
-      "hash": "0D38D52F"
+      "size": 62194025,
+      "load_size": 62194025,
+      "hash": "03640947"
     },
     {
       "name": ".default",
@@ -1660,7 +1660,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "4E8AED90"
+      "hash": "DDE2E645"
     },
     {
       "name": "data-part-001",
@@ -1669,9 +1669,9 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 14188413,
-      "load_size": 14188413,
-      "hash": "347FA324"
+      "size": 14190016,
+      "load_size": 14190016,
+      "hash": "65EBB354"
     },
     {
       "name": "data-manifest",
@@ -1682,7 +1682,7 @@
       "archive": "",
       "size": 372,
       "load_size": 372,
-      "hash": "F4C7F803"
+      "hash": "58D4BB53"
     }
   ]
 }
