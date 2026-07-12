@@ -74,9 +74,9 @@
       "update_type": "strong",
       "texture": "",
       "archive": ".zip",
-      "size": 163835267,
-      "load_size": 67583355,
-      "hash": "97A2636C"
+      "size": 411430331,
+      "load_size": 173361077,
+      "hash": "54B4F727"
     },
     {
       "name": ".custom3_dxt",
@@ -85,9 +85,9 @@
       "update_type": "strong",
       "texture": "dxt",
       "archive": ".zip",
-      "size": 204183514,
-      "load_size": 109156406,
-      "hash": "0B8D98B1"
+      "size": 391975194,
+      "load_size": 210435471,
+      "hash": "B96E6174"
     },
     {
       "name": ".custom3_etc",
@@ -96,9 +96,9 @@
       "update_type": "strong",
       "texture": "etc",
       "archive": ".zip",
-      "size": 233736392,
-      "load_size": 100403460,
-      "hash": "64784F06"
+      "size": 424660802,
+      "load_size": 194011190,
+      "hash": "7E854602"
     },
     {
       "name": ".custom3_pvr",
@@ -107,9 +107,9 @@
       "update_type": "strong",
       "texture": "pvr",
       "archive": ".zip",
-      "size": 180381897,
-      "load_size": 97614695,
-      "hash": "CBE9E868"
+      "size": 366759041,
+      "load_size": 201874986,
+      "hash": "724AE697"
     },
     {
       "name": ".custom_dxt",
@@ -151,9 +151,9 @@
       "update_type": "strong",
       "texture": "",
       "archive": "",
-      "size": 62194025,
-      "load_size": 62194025,
-      "hash": "03640947"
+      "size": 62251018,
+      "load_size": 62251018,
+      "hash": "C3E296B9"
     },
     {
       "name": ".default",

@@ -1,0 +1,55 @@
+{
+  "skins": 432,
+  "textures": 2046,
+  "alpha_textures": 27,
+  "first_skin_id": 17083,
+  "last_skin_id": 17515,
+  "reserved_model_ids": [
+    17496
+  ],
+  "max_texture_size": 512,
+  "archives": {
+    ".custom3": {
+      "size": 411430331,
+      "crc32": "54B4F727",
+      "sha256": "d2b590e89bb932aba51213dd517e6bb36b0fb225144e09550dde960e8874b530",
+      "download_size": 173361077,
+      "download_sha256": "37c5fbcb410f2bee50caddc95259a66d5777f26788c7bb76d7cc9d84478572dd"
+    },
+    ".custom3_dxt": {
+      "size": 391975194,
+      "crc32": "B96E6174",
+      "sha256": "9606ec8d15f48fdf0b9ae7ce356a4d81340f920901c981164a6f01025fc63188",
+      "download_size": 210435471,
+      "download_sha256": "151f603949c7effcc0bd46d6b8c6f5d0f3efb2641104210060086eac079ca927"
+    },
+    ".custom3_etc": {
+      "size": 424660802,
+      "crc32": "7E854602",
+      "sha256": "88f482b65987975bfb97b27553b2b4d1a3980bf1bb739f2e73ee4062ab6cfa9f",
+      "download_size": 194011190,
+      "download_sha256": "f1116d6ecd821a2c647a057c7ec570ab09c7b305ed68fad6a3b5d84a41d822d5"
+    },
+    ".custom3_pvr": {
+      "size": 366759041,
+      "crc32": "724AE697",
+      "sha256": "9efd1b2a1349bbf0a6b9728dc17dbc8c60c2ea485c46af85de69dd552ffa5733",
+      "download_size": 201874986,
+      "download_sha256": "fb3b6f5cf80d6b7782e6a5cb196c693afd8b9b97e81f0a9f188dabb33b51bb45"
+    },
+    ".data": {
+      "size": 62251018,
+      "crc32": "C3E296B9",
+      "sha256": "8cdecc1ada3bc7ba8a1816b0134a1d34e53008bb26f9647f3b4b0e2fe47607d2",
+      "download_size": 62251018,
+      "download_sha256": "8cdecc1ada3bc7ba8a1816b0134a1d34e53008bb26f9647f3b4b0e2fe47607d2"
+    }
+  },
+  "id_ranges": [
+    "17083-17495",
+    "17497-17515"
+  ],
+  "flags_preserved": "17000-17082",
+  "referenced_textures": 2000,
+  "missing_referenced_textures": 0
+}
