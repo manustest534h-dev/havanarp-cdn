@@ -31,3 +31,11 @@ Verify every published part, the reconstructed ZIP, and the final VFS:
 ```sh
 python3 tools/verify_multipart.py files/707/multipart/707/*
 ```
+
+If a migrated texture database has more `.txt`/`.toc` entries than `.tmb`
+records, add valid format-specific thumbnails before rebuilding its archive:
+
+```sh
+python3 tools/texture_thumbnails.py fixed/.custom3_etc \
+  --output repaired/.custom3_etc
+```

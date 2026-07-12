@@ -1,7 +1,13 @@
 import struct
 import unittest
 
-from vfs_archive import HEADER, MAGIC, parse_declared, repair_sizes
+from vfs_archive import (
+    HEADER,
+    MAGIC,
+    parse_declared,
+    repair_sizes,
+    replace_payloads,
+)
 
 
 def record(name: bytes, payload: bytes, declared_size: int | None = None) -> bytes:
@@ -37,6 +43,16 @@ class VfsArchiveTest(unittest.TestCase):
         archive = record(b"one", b"abc") + b"\xff"
 
         self.assertEqual(len(parse_declared(archive)), 1)
+
+    def test_replace_payloads(self) -> None:
+        archive = record(b"one", b"abc") + record(b"two", b"def") + b"\xff"
+
+        replaced = replace_payloads(archive, {0: b"longer", 1: b"x"})
+        records = parse_declared(replaced)
+
+        self.assertEqual(replaced[records[0].content_offset : records[0].end_offset], b"longer")
+        self.assertEqual(replaced[records[1].content_offset : records[1].end_offset], b"x")
+        self.assertEqual(replaced[-1:], b"\xff")
 
 
 if __name__ == "__main__":

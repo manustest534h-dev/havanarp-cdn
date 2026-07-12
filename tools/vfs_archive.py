@@ -112,6 +112,30 @@ def repair_sizes(base: bytes, modified: bytes) -> tuple[bytes, list[tuple[int, i
     return bytes(repaired), changes
 
 
+def replace_payloads(data: bytes, replacements: dict[int, bytes]) -> bytes:
+    records = parse_declared(data)
+    unknown = replacements.keys() - range(len(records))
+    if unknown:
+        raise ValueError(f"unknown record indexes: {sorted(unknown)}")
+
+    output = bytearray()
+    for index, record in enumerate(records):
+        header = bytearray(data[record.offset : record.content_offset])
+        payload = replacements.get(
+            index, data[record.content_offset : record.end_offset]
+        )
+        if index in replacements:
+            if record.packed_size != record.unpacked_size:
+                raise ValueError(f"cannot replace compressed record {index}")
+            struct.pack_into("<I", header, 18, len(payload))
+            struct.pack_into("<I", header, 22, len(payload))
+        output.extend(header)
+        output.extend(payload)
+
+    output.extend(data[records[-1].end_offset :])
+    return bytes(output)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Validate or repair HavanaRP VFS record sizes."
