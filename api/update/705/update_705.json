@@ -75,8 +75,8 @@
       "texture": "",
       "archive": ".zip",
       "size": 163835267,
-      "load_size": 68047195,
-      "hash": "2892531C"
+      "load_size": 67583355,
+      "hash": "97A2636C"
     },
     {
       "name": ".custom3_dxt",
@@ -85,9 +85,9 @@
       "update_type": "exists",
       "texture": "dxt",
       "archive": ".zip",
-      "size": 204179530,
-      "load_size": 108954994,
-      "hash": "4D54F0BE"
+      "size": 204183514,
+      "load_size": 109156406,
+      "hash": "0B8D98B1"
     },
     {
       "name": ".custom3_etc",
@@ -96,9 +96,9 @@
       "update_type": "exists",
       "texture": "etc",
       "archive": ".zip",
-      "size": 233732408,
-      "load_size": 99939614,
-      "hash": "9C9F655E"
+      "size": 233736392,
+      "load_size": 100403460,
+      "hash": "64784F06"
     },
     {
       "name": ".custom3_pvr",
@@ -107,9 +107,9 @@
       "update_type": "exists",
       "texture": "pvr",
       "archive": ".zip",
-      "size": 180377913,
-      "load_size": 97416104,
-      "hash": "6634C5F8"
+      "size": 180381897,
+      "load_size": 97614695,
+      "hash": "CBE9E868"
     },
     {
       "name": ".custom_dxt",
@@ -151,9 +151,9 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 62182403,
-      "load_size": 62182403,
-      "hash": "2816B178"
+      "size": 62194025,
+      "load_size": 62194025,
+      "hash": "03640947"
     },
     {
       "name": ".default",
@@ -1363,7 +1363,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "CADC19B6"
+      "hash": "BE73748A"
     },
     {
       "name": "custom3-part-001",
@@ -1374,7 +1374,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "8EB3207D"
+      "hash": "27A750BA"
     },
     {
       "name": "custom3-part-002",
@@ -1385,7 +1385,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "8ABC9708"
+      "hash": "1BE08D9A"
     },
     {
       "name": "custom3-part-003",
@@ -1394,9 +1394,9 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 14047195,
-      "load_size": 14047195,
-      "hash": "90922903"
+      "size": 13583355,
+      "load_size": 13583355,
+      "hash": "6CD1B45A"
     },
     {
       "name": "custom3-manifest",
@@ -1407,7 +1407,7 @@
       "archive": "",
       "size": 584,
       "load_size": 584,
-      "hash": "D7001C19"
+      "hash": "FD5E01D4"
     },
     {
       "name": "custom3_dxt-part-000",
@@ -1418,7 +1418,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "3B546724"
+      "hash": "CEC851F9"
     },
     {
       "name": "custom3_dxt-part-001",
@@ -1429,7 +1429,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "88924AA2"
+      "hash": "073E49DF"
     },
     {
       "name": "custom3_dxt-part-002",
@@ -1440,7 +1440,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "DAB8C6EF"
+      "hash": "4E3F4E96"
     },
     {
       "name": "custom3_dxt-part-003",
@@ -1451,7 +1451,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "EB9FE814"
+      "hash": "EAA79E59"
     },
     {
       "name": "custom3_dxt-part-004",
@@ -1462,7 +1462,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "76E70BE5"
+      "hash": "CDF10F3F"
     },
     {
       "name": "custom3_dxt-part-005",
@@ -1473,7 +1473,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "62F5C113"
+      "hash": "1BA2DDE8"
     },
     {
       "name": "custom3_dxt-part-006",
@@ -1482,9 +1482,9 @@
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
-      "size": 954994,
-      "load_size": 954994,
-      "hash": "69175033"
+      "size": 1156406,
+      "load_size": 1156406,
+      "hash": "75953123"
     },
     {
       "name": "custom3_dxt-manifest",
@@ -1493,9 +1493,9 @@
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
-      "size": 899,
-      "load_size": 899,
-      "hash": "802296AD"
+      "size": 900,
+      "load_size": 900,
+      "hash": "887A6C60"
     },
     {
       "name": "custom3_etc-part-000",
@@ -1506,7 +1506,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "DFC76A5F"
+      "hash": "67BA0207"
     },
     {
       "name": "custom3_etc-part-001",
@@ -1517,7 +1517,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "91F765F0"
+      "hash": "2E9BFF43"
     },
     {
       "name": "custom3_etc-part-002",
@@ -1528,7 +1528,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "54C7C465"
+      "hash": "FFB43B48"
     },
     {
       "name": "custom3_etc-part-003",
@@ -1539,7 +1539,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "D700813D"
+      "hash": "C21B60CD"
     },
     {
       "name": "custom3_etc-part-004",
@@ -1550,7 +1550,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "65616368"
+      "hash": "D986DFE3"
     },
     {
       "name": "custom3_etc-part-005",
@@ -1559,9 +1559,9 @@
       "update_type": "exists",
       "texture": "etc",
       "archive": "",
-      "size": 9939614,
-      "load_size": 9939614,
-      "hash": "831C8BE2"
+      "size": 10403460,
+      "load_size": 10403460,
+      "hash": "C9CFB26A"
     },
     {
       "name": "custom3_etc-manifest",
@@ -1570,9 +1570,9 @@
       "update_type": "exists",
       "texture": "etc",
       "archive": "",
-      "size": 795,
-      "load_size": 795,
-      "hash": "C2BF45E3"
+      "size": 797,
+      "load_size": 797,
+      "hash": "5DB3709C"
     },
     {
       "name": "custom3_pvr-part-000",
@@ -1583,7 +1583,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "A6970A8A"
+      "hash": "0D2672D2"
     },
     {
       "name": "custom3_pvr-part-001",
@@ -1594,7 +1594,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "6131816F"
+      "hash": "0788D3C2"
     },
     {
       "name": "custom3_pvr-part-002",
@@ -1605,7 +1605,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "B552B410"
+      "hash": "6D8B62B0"
     },
     {
       "name": "custom3_pvr-part-003",
@@ -1616,7 +1616,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "19DD3354"
+      "hash": "445D4200"
     },
     {
       "name": "custom3_pvr-part-004",
@@ -1627,7 +1627,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "71E3757C"
+      "hash": "7E11F9F4"
     },
     {
       "name": "custom3_pvr-part-005",
@@ -1636,9 +1636,9 @@
       "update_type": "exists",
       "texture": "pvr",
       "archive": "",
-      "size": 7416104,
-      "load_size": 7416104,
-      "hash": "EE7EC65E"
+      "size": 7614695,
+      "load_size": 7614695,
+      "hash": "E41367B3"
     },
     {
       "name": "custom3_pvr-manifest",
@@ -1649,7 +1649,7 @@
       "archive": "",
       "size": 795,
       "load_size": 795,
-      "hash": "FC19C311"
+      "hash": "4A38CD66"
     },
     {
       "name": "data-part-000",
@@ -1660,7 +1660,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "C139CC86"
+      "hash": "DDE2E645"
     },
     {
       "name": "data-part-001",
@@ -1669,9 +1669,9 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 14073743,
-      "load_size": 14073743,
-      "hash": "2D2D489F"
+      "size": 14190016,
+      "load_size": 14190016,
+      "hash": "65EBB354"
     },
     {
       "name": "data-manifest",
@@ -1682,7 +1682,7 @@
       "archive": "",
       "size": 372,
       "load_size": 372,
-      "hash": "7A0E5C47"
+      "hash": "58D4BB53"
     }
   ]
 }
