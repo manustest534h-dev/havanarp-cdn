@@ -4,7 +4,7 @@
     "version": 727,
     "str": "4.17.9",
     "path": "https://gofile.io/d/HEbNT6",
-    "auto_update": true,
+    "auto_update": false,
     "manual_update": true,
     "manual_update_url": "https://gofile.io/d/HEbNT6"
   },
