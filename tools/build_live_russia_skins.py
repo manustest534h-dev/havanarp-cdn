@@ -624,6 +624,30 @@ def validate_data_registrations(archive_path: Path) -> None:
             raise ValueError(f"registration missing from {name}")
 
 
+def set_ped_model_limit(archive_path: Path, limit: int = 2000) -> None:
+    archive = archive_path.read_bytes()
+    replacements = {}
+    for index, record in enumerate(parse_declared(archive)):
+        if decode_name(record.name) != "!client/limit_adjuster.ini":
+            continue
+        payload = archive[record.content_offset : record.end_offset]
+        lines = payload.splitlines(keepends=True)
+        matches = [
+            line for line in lines if line.strip().startswith(b"Ped Models =")
+        ]
+        if len(matches) != 1:
+            raise ValueError("Ped Models limit must appear exactly once")
+        replacement = f"Ped Models = {limit}".encode("ascii")
+        old_line = matches[0]
+        line_ending = old_line[len(old_line.rstrip(b"\r\n")) :]
+        new_line = replacement + line_ending
+        replacements[index] = payload.replace(old_line, new_line, 1)
+        break
+    if not replacements:
+        raise ValueError("limit_adjuster.ini missing from data archive")
+    archive_path.write_bytes(replace_payloads(archive, replacements))
+
+
 def collect_ide_ids(archive_path: Path) -> dict[int, list[str]]:
     ids: dict[int, list[str]] = {}
     archive = archive_path.read_bytes()
@@ -690,6 +714,7 @@ def build_archives(
         [("!client/data/maps/orp/lr_skins.ide", ide_path.read_bytes())],
     )
     add_data_registrations(output_dir / ".data")
+    set_ped_model_limit(output_dir / ".data")
     validate_data_registrations(output_dir / ".data")
     ids = collect_ide_ids(output_dir / ".data")
     if not skin_ids.issubset(ids):

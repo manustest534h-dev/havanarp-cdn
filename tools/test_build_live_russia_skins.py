@@ -8,6 +8,7 @@ from build_live_russia_skins import (
     add_data_registrations,
     add_vfs_records,
     model_mapping,
+    set_ped_model_limit,
     validate_data_registrations,
 )
 from texture_thumbnails import decode_name
@@ -153,6 +154,24 @@ class LiveRussiaSkinBuilderTest(unittest.TestCase):
                     payloads[name],
                     anchor + b"\r\n" + registration + b"\r\n",
                 )
+
+    def test_set_ped_model_limit_updates_limit_adjuster(self) -> None:
+        archive = record(
+            b"!client/limit_adjuster.ini",
+            b"[IDE LIMITS]\r\nPed Models = 1000\r\n",
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            archive_path = Path(directory) / ".data"
+            archive_path.write_bytes(archive)
+
+            set_ped_model_limit(archive_path)
+
+            data = archive_path.read_bytes()
+            item = parse_declared(data)[0]
+            payload = data[item.content_offset : item.end_offset]
+            self.assertIn(b"Ped Models = 2000\r\n", payload)
+            self.assertNotIn(b"Ped Models = 1000", payload)
 
 
 if __name__ == "__main__":
