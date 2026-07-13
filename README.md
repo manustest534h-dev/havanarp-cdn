@@ -23,8 +23,7 @@ Rebuild the deterministic multipart payload:
 ```sh
 python3 tools/build_multipart.py fixed/.custom3 \
   files/707/multipart/707/custom3 \
-  --target .custom3 \
-  --marker .live_russia_skins_17515
+  --target .custom3
 ```
 
 Verify every published part, the reconstructed ZIP, and the final VFS:
