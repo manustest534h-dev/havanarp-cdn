@@ -13,14 +13,25 @@ def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def build_zip(source: Path, archive_name: str, destination: Path) -> None:
-    info = zipfile.ZipInfo(archive_name, date_time=(1980, 1, 1, 0, 0, 0))
+def zip_info(name: str) -> zipfile.ZipInfo:
+    info = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
     info.compress_type = zipfile.ZIP_DEFLATED
     info.external_attr = 0o100644 << 16
+    return info
+
+
+def build_zip(
+    source: Path,
+    archive_name: str,
+    destination: Path,
+    marker: str | None = None,
+) -> None:
     with zipfile.ZipFile(
         destination, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9
     ) as archive:
-        archive.writestr(info, source.read_bytes())
+        archive.writestr(zip_info(archive_name), source.read_bytes())
+        if marker is not None:
+            archive.writestr(zip_info(marker), b"installed\n")
 
 
 def main() -> None:
@@ -32,6 +43,7 @@ def main() -> None:
     parser.add_argument("--target", required=True)
     parser.add_argument("--part-size", type=int, default=18_000_000)
     parser.add_argument("--zip-output", type=Path)
+    parser.add_argument("--marker")
     args = parser.parse_args()
 
     args.bundle_dir.mkdir(parents=True, exist_ok=True)
@@ -40,7 +52,7 @@ def main() -> None:
     ) as temporary:
         zip_path = Path(temporary.name)
     try:
-        build_zip(args.source, args.target, zip_path)
+        build_zip(args.source, args.target, zip_path, args.marker)
         joined = zip_path.read_bytes()
         parts = [
             joined[offset : offset + args.part_size]
