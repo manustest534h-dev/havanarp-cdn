@@ -1,12 +1,4 @@
 {
   "news_version": 1,
-  "items": [
-    {
-      "image": "",
-      "title": "Admin panel test",
-      "text": "Temporary news publication and deletion",
-      "button": "",
-      "url": ""
-    }
-  ]
+  "items": []
 }
