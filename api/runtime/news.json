@@ -1,4 +1,12 @@
 {
   "news_version": 1,
-  "items": []
+  "items": [
+    {
+      "image": "",
+      "title": "HavanaRP Test News",
+      "text": "This test confirms news reached the launcher",
+      "button": "",
+      "url": ""
+    }
+  ]
 }
