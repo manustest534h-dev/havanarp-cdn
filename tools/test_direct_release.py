@@ -48,22 +48,32 @@ class DirectReleaseTest(unittest.TestCase):
         )
         self.assertEqual(document["files"][0]["update_type"], "exists")
 
-    def test_published_manifest_uses_direct_release_fallback(self) -> None:
+    def test_published_manifest_uses_multipart_delivery(self) -> None:
         manifest = (
             Path(__file__).parents[1] / "api/update/705/update_705.json"
         )
         document = json.loads(manifest.read_text(encoding="utf-8"))
-        rewritten, removed = rewrite_manifest(document)
         entries = {entry["path"]: entry for entry in document["files"]}
 
-        self.assertEqual(rewritten, document)
-        self.assertEqual(removed, 0)
-        self.assertTrue(TARGETS.issubset(entries))
+        self.assertTrue(TARGETS.isdisjoint(entries))
         self.assertTrue(
-            all(entries[target]["update_type"] == "strong" for target in TARGETS)
+            {
+                f"{MULTIPART_PREFIX}{bundle}/manifest.properties"
+                for bundle in (
+                    "custom3",
+                    "custom3_dxt",
+                    "custom3_etc",
+                    "custom3_pvr",
+                    "data",
+                )
+            }.issubset(entries)
         )
-        self.assertFalse(
-            any(path.startswith(MULTIPART_PREFIX) for path in entries)
+        self.assertTrue(
+            all(
+                entry["update_type"] == "exists"
+                for path, entry in entries.items()
+                if path.startswith(MULTIPART_PREFIX)
+            )
         )
 
 

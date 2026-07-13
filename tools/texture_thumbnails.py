@@ -15,7 +15,7 @@ class ThumbnailRecord:
 
 
 def decode_name(name: bytes) -> str:
-    key = name[0] ^ 0x21
+    key = len(name) & 0xFF
     return bytes(value ^ key for value in name).decode()
 
 

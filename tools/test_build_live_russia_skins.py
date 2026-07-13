@@ -15,6 +15,7 @@ from vfs_archive import HEADER, MAGIC, parse_declared
 
 
 def record(name: bytes, payload: bytes) -> bytes:
+    encoded = bytes(value ^ len(name) for value in name)
     return (
         HEADER.pack(
             MAGIC,
@@ -23,9 +24,9 @@ def record(name: bytes, payload: bytes) -> bytes:
             2,
             len(payload),
             len(payload),
-            len(name),
+            len(encoded),
         )
-        + name
+        + encoded
         + payload
     )
 
@@ -83,6 +84,25 @@ class LiveRussiaSkinBuilderTest(unittest.TestCase):
                 ],
             )
             self.assertEqual(result[-1:], b"\xff")
+
+    def test_added_record_name_uses_its_own_length_as_key(self) -> None:
+        archive = (
+            record(b"!client/texdb/base/", b"")
+            + record(b"!client/texdb/base/base.dat", b"base")
+            + b"\xff"
+        )
+        added_name = "!client/texdb/lr_skins/lr_skins.txt"
+
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "source"
+            destination = Path(directory) / "destination"
+            source.write_bytes(archive)
+
+            add_vfs_records(source, destination, [(added_name, b"descriptor")])
+
+            added = parse_declared(destination.read_bytes())[-1]
+            self.assertEqual(added.name[0] ^ ord("!"), len(added_name))
+            self.assertEqual(decode_name(added.name), added_name)
 
     def test_add_vfs_records_inserts_before_declared_sentinel(self) -> None:
         archive = (

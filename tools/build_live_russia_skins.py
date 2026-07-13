@@ -516,11 +516,12 @@ def build_ide_and_ids(
     return {model_id for model_id, _ in mapping}
 
 
-def encoded_name(name: str, template: bytes) -> bytes:
+def encoded_name(name: str) -> bytes:
     if not name.startswith("!"):
         raise ValueError(f"VFS name must start with !: {name}")
-    key = template[0] ^ ord("!")
-    return bytes(byte ^ key for byte in name.encode("ascii"))
+    raw_name = name.encode("ascii")
+    key = len(raw_name) & 0xFF
+    return bytes(byte ^ key for byte in raw_name)
 
 
 def build_vfs_record(
@@ -532,7 +533,7 @@ def build_vfs_record(
     records = parse_declared(archive)
     template = records[template_index]
     header = bytearray(archive[template.offset : template.content_offset])
-    encoded = encoded_name(name, template.name)
+    encoded = encoded_name(name)
     header = header[: HEADER.size]
     struct.pack_into("<I", header, 18, len(payload))
     struct.pack_into("<I", header, 22, len(payload))
@@ -571,7 +572,12 @@ def add_vfs_records(
         template = directory_template if not payload else file_template
         inserted.extend(build_vfs_record(archive, template, name, payload))
     result = archive[:insertion_offset] + inserted + archive[insertion_offset:]
-    parse_declared(result)
+    result_names = {
+        decode_name(record.name) for record in parse_declared(result)
+    }
+    missing = {name for name, _ in additions} - result_names
+    if missing:
+        raise ValueError(f"VFS entries failed name encoding: {sorted(missing)}")
     destination.write_bytes(result)
 
 
