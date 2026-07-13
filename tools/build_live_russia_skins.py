@@ -624,20 +624,25 @@ def validate_data_registrations(archive_path: Path) -> None:
             raise ValueError(f"registration missing from {name}")
 
 
-def set_ped_model_limit(archive_path: Path, limit: int = 2000) -> None:
+def set_limit_adjuster_value(
+    archive_path: Path,
+    setting: str,
+    limit: int,
+) -> None:
     archive = archive_path.read_bytes()
     replacements = {}
+    prefix = f"{setting} =".encode("ascii")
     for index, record in enumerate(parse_declared(archive)):
         if decode_name(record.name) != "!client/limit_adjuster.ini":
             continue
         payload = archive[record.content_offset : record.end_offset]
         lines = payload.splitlines(keepends=True)
         matches = [
-            line for line in lines if line.strip().startswith(b"Ped Models =")
+            line for line in lines if line.strip().startswith(prefix)
         ]
         if len(matches) != 1:
-            raise ValueError("Ped Models limit must appear exactly once")
-        replacement = f"Ped Models = {limit}".encode("ascii")
+            raise ValueError(f"{setting} limit must appear exactly once")
+        replacement = f"{setting} = {limit}".encode("ascii")
         old_line = matches[0]
         line_ending = old_line[len(old_line.rstrip(b"\r\n")) :]
         new_line = replacement + line_ending
@@ -646,6 +651,18 @@ def set_ped_model_limit(archive_path: Path, limit: int = 2000) -> None:
     if not replacements:
         raise ValueError("limit_adjuster.ini missing from data archive")
     archive_path.write_bytes(replace_payloads(archive, replacements))
+
+
+def set_ped_model_limit(archive_path: Path, limit: int = 2000) -> None:
+    set_limit_adjuster_value(archive_path, "Ped Models", limit)
+
+
+def set_img_archive_limit(archive_path: Path, limit: int = 32) -> None:
+    set_limit_adjuster_value(
+        archive_path,
+        "Max number of IMG archives",
+        limit,
+    )
 
 
 def collect_ide_ids(archive_path: Path) -> dict[int, list[str]]:
@@ -715,6 +732,7 @@ def build_archives(
     )
     add_data_registrations(output_dir / ".data")
     set_ped_model_limit(output_dir / ".data")
+    set_img_archive_limit(output_dir / ".data")
     validate_data_registrations(output_dir / ".data")
     ids = collect_ide_ids(output_dir / ".data")
     if not skin_ids.issubset(ids):

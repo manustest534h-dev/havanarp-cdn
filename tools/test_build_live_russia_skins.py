@@ -8,6 +8,7 @@ from build_live_russia_skins import (
     add_data_registrations,
     add_vfs_records,
     model_mapping,
+    set_img_archive_limit,
     set_ped_model_limit,
     validate_data_registrations,
 )
@@ -158,7 +159,10 @@ class LiveRussiaSkinBuilderTest(unittest.TestCase):
     def test_set_ped_model_limit_updates_limit_adjuster(self) -> None:
         archive = record(
             b"!client/limit_adjuster.ini",
-            b"[IDE LIMITS]\r\nPed Models = 1000\r\n",
+            b"[IDE LIMITS]\r\n"
+            b"Ped Models = 1000\r\n"
+            b"[IMG LIMITS]\r\n"
+            b"Max number of IMG archives = 15\r\n",
         )
 
         with tempfile.TemporaryDirectory() as directory:
@@ -166,12 +170,15 @@ class LiveRussiaSkinBuilderTest(unittest.TestCase):
             archive_path.write_bytes(archive)
 
             set_ped_model_limit(archive_path)
+            set_img_archive_limit(archive_path)
 
             data = archive_path.read_bytes()
             item = parse_declared(data)[0]
             payload = data[item.content_offset : item.end_offset]
             self.assertIn(b"Ped Models = 2000\r\n", payload)
+            self.assertIn(b"Max number of IMG archives = 32\r\n", payload)
             self.assertNotIn(b"Ped Models = 1000", payload)
+            self.assertNotIn(b"Max number of IMG archives = 15", payload)
 
 
 if __name__ == "__main__":
