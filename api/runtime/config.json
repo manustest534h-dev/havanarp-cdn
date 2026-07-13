@@ -1,0 +1,35 @@
+{
+  "config_version": 1,
+  "apk": {
+    "version": 727,
+    "str": "4.17.9",
+    "path": "https://gofile.io/d/HEbNT6",
+    "auto_update": false,
+    "manual_update": true,
+    "manual_update_url": "https://gofile.io/d/HEbNT6"
+  },
+  "urls": {
+    "URL_HOST": "https://igta-online.my-fastdl.com/ONLINERP/prod/files",
+    "URL_UPDATE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/fbaacee4de3442c441f3edc44d2a6b2d504aebcd/api/update/${version}/update_${version}.json",
+    "URL_NEWS": "news.json",
+    "URL_HELP": "help.json",
+    "URL_ONLINE_API": "https://api.onlinerp.com/v1/servers",
+    "URL_DONATE_API": "https://api.gta-mobile.ru/oldAPI/donate_api.php",
+    "URL_SITE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/runtime",
+    "URL_VK": "https://vk.com/online_samp",
+    "URL_YOUTUBE": "https://www.youtube.com/channel/UCCzB4ySWiZfRvApMU2CTfEA",
+    "URL_INSTAGRAM": "https://www.instagram.com/online_samp",
+    "URL_SUPPORT": "https://vk.me/android_client",
+    "URL_TELEGRAM": "https://t.me/onlinerp_channel",
+    "URL_SHOP": "https://gta-mobile.ru/donate"
+  },
+  "msgs": [],
+  "_admin": {
+    "maintenance": {
+      "enabled": false,
+      "title": "السيرفر تحت الصيانة",
+      "text": "نعتذر، صيانة حالياً",
+      "button": "تم"
+    }
+  }
+}
