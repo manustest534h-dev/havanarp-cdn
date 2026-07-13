@@ -15,7 +15,7 @@ import texture2ddecoder
 from PIL import Image
 
 from texture_thumbnails import decode_name
-from vfs_archive import HEADER, parse_declared
+from vfs_archive import HEADER, parse_declared, replace_payloads
 
 
 ASTC_RECORD = struct.Struct("<32sIIHHBBBBI")
@@ -34,6 +34,20 @@ ENCODING_ETC_ALPHA = 0x8033
 ENCODING_PVRTC4 = 0x8C02
 SKIN_FIRST_ID = 17083
 RESERVED_MODEL_ID = 17496
+DATA_REGISTRATIONS = {
+    "!client/data/gta.dat": (
+        b"IDE data\\maps\\orp\\orp_skins_02.ide",
+        b"IDE data\\maps\\orp\\lr_skins.ide",
+    ),
+    "!client/mod_imgs.cfg": (
+        b"texdb\\orp_skins_02.img          0",
+        b"texdb\\lr_skins.img                 0",
+    ),
+    "!client/mod_texdbs.cfg": (
+        b"orp_skins_02        none                1",
+        b"lr_skins            none                1",
+    ),
+}
 
 
 @dataclass(frozen=True)
@@ -561,6 +575,49 @@ def add_vfs_records(
     destination.write_bytes(result)
 
 
+def add_data_registrations(archive_path: Path) -> None:
+    archive = archive_path.read_bytes()
+    replacements = {}
+    found = set()
+    for index, record in enumerate(parse_declared(archive)):
+        name = decode_name(record.name)
+        if name not in DATA_REGISTRATIONS:
+            continue
+        anchor, registration = DATA_REGISTRATIONS[name]
+        payload = archive[record.content_offset : record.end_offset]
+        if registration in payload.splitlines():
+            found.add(name)
+            continue
+        line_ending = b"\r\n" if b"\r\n" in payload else b"\n"
+        anchor_with_ending = anchor + line_ending
+        if payload.count(anchor_with_ending) != 1:
+            raise ValueError(f"registration anchor missing in {name}")
+        replacements[index] = payload.replace(
+            anchor_with_ending,
+            anchor_with_ending + registration + line_ending,
+            1,
+        )
+        found.add(name)
+    missing = DATA_REGISTRATIONS.keys() - found
+    if missing:
+        raise ValueError(f"registration files missing: {sorted(missing)}")
+    archive_path.write_bytes(replace_payloads(archive, replacements))
+
+
+def validate_data_registrations(archive_path: Path) -> None:
+    archive = archive_path.read_bytes()
+    registrations = {}
+    for record in parse_declared(archive):
+        name = decode_name(record.name)
+        if name in DATA_REGISTRATIONS:
+            registrations[name] = set(
+                archive[record.content_offset : record.end_offset].splitlines()
+            )
+    for name, (_, registration) in DATA_REGISTRATIONS.items():
+        if registration not in registrations.get(name, set()):
+            raise ValueError(f"registration missing from {name}")
+
+
 def collect_ide_ids(archive_path: Path) -> dict[int, list[str]]:
     ids: dict[int, list[str]] = {}
     archive = archive_path.read_bytes()
@@ -626,6 +683,8 @@ def build_archives(
         output_dir / ".data",
         [("!client/data/maps/orp/lr_skins.ide", ide_path.read_bytes())],
     )
+    add_data_registrations(output_dir / ".data")
+    validate_data_registrations(output_dir / ".data")
     ids = collect_ide_ids(output_dir / ".data")
     if not skin_ids.issubset(ids):
         raise ValueError("not all new skin IDs are present in the data archive")

@@ -3,9 +3,12 @@ import unittest
 from pathlib import Path
 
 from build_live_russia_skins import (
+    DATA_REGISTRATIONS,
     RESERVED_MODEL_ID,
+    add_data_registrations,
     add_vfs_records,
     model_mapping,
+    validate_data_registrations,
 )
 from texture_thumbnails import decode_name
 from vfs_archive import HEADER, MAGIC, parse_declared
@@ -106,6 +109,30 @@ class LiveRussiaSkinBuilderTest(unittest.TestCase):
             ]
             self.assertEqual(names[2], "!client/texdb/new.dat")
             self.assertNotEqual(names[-1], "!client/texdb/new.dat")
+
+    def test_add_data_registrations_updates_loader_files(self) -> None:
+        archive = b"".join(
+            record(name.encode("ascii"), anchor + b"\r\n")
+            for name, (anchor, _) in DATA_REGISTRATIONS.items()
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            archive_path = Path(directory) / ".data"
+            archive_path.write_bytes(archive)
+
+            add_data_registrations(archive_path)
+            validate_data_registrations(archive_path)
+
+            data = archive_path.read_bytes()
+            payloads = {
+                decode_name(item.name): data[item.content_offset : item.end_offset]
+                for item in parse_declared(data)
+            }
+            for name, (anchor, registration) in DATA_REGISTRATIONS.items():
+                self.assertEqual(
+                    payloads[name],
+                    anchor + b"\r\n" + registration + b"\r\n",
+                )
 
 
 if __name__ == "__main__":
