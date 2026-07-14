@@ -1,4 +1,12 @@
 {
   "news_version": 1,
-  "items": []
+  "items": [
+    {
+      "image": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/runtime/assets/coming-update.png",
+      "title": "Coming Update",
+      "text": "تحديث قادم",
+      "button": "",
+      "url": ""
+    }
+  ]
 }
