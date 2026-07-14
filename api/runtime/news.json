@@ -1,4 +1,12 @@
 {
   "news_version": 1,
-  "items": []
+  "items": [
+    {
+      "image": "",
+      "title": "Coming Update",
+      "text": "تحديث قادم",
+      "button": "",
+      "url": ""
+    }
+  ]
 }
