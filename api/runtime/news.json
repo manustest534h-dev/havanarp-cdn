@@ -7,6 +7,13 @@
       "text": "This test confirms news reached the launcher",
       "button": "",
       "url": ""
+    },
+    {
+      "image": "",
+      "title": "HavanaRP Sync Test 729",
+      "text": "Admin mirror reached launcher v729",
+      "button": "",
+      "url": ""
     }
   ]
 }
