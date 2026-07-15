@@ -3,6 +3,13 @@
   "items": [
     {
       "image": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/runtime/assets/coming-update.png",
+      "title": "تحديث جديد 4.17.16",
+      "text": "تحديث إجباري: إصلاح المباني والسكنات والاكسسوارات. حدث اللانشر الآن.",
+      "button": "تحديث",
+      "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v737/HavanaRp.apk"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/runtime/assets/coming-update.png",
       "title": "Coming Update",
       "text": "تحديث قادم",
       "button": "",
