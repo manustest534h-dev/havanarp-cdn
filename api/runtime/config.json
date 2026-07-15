@@ -10,7 +10,7 @@
   },
   "urls": {
     "URL_HOST": "https://igta-online.my-fastdl.com/ONLINERP/prod/files",
-    "URL_UPDATE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/92428c7679603ebbd28747b8328902ee13af27c8/api/update/${version}/update_${version}.json",
+    "URL_UPDATE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/74d266735f451313ea9da398c4c3639aa4b92ed6/api/update/${version}/update_${version}.json",
     "URL_NEWS": "news.json",
     "URL_HELP": "help.json",
     "URL_ONLINE_API": "https://api.onlinerp.com/v1/servers",
