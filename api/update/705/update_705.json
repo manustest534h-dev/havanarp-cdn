@@ -1903,39 +1903,6 @@
       "size": 372,
       "load_size": 372,
       "hash": "32F27BB3"
-    },
-    {
-      "name": "data-part-000",
-      "path": "multipart/708/data/part-000",
-      "version": 707,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "41140CCC"
-    },
-    {
-      "name": "data-part-001",
-      "path": "multipart/708/data/part-001",
-      "version": 707,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 14194996,
-      "load_size": 14194996,
-      "hash": "868431ED"
-    },
-    {
-      "name": "data-manifest",
-      "path": "multipart/708/data/manifest.properties",
-      "version": 707,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 372,
-      "load_size": 372,
-      "hash": "C82A7139"
     }
   ]
 }
