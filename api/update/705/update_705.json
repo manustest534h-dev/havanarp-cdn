@@ -168,7 +168,7 @@
     },
     {
       "name": ".samp",
-      "path": "764/.samp",
+      "path": ".samp",
       "version": 764,
       "update_type": "strong",
       "texture": "",
