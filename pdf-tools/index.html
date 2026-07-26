@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>أدوات PDF — مجموعة أدوات تعديل وإنشاء ملفات PDF</title>
+  <meta name="description" content="تطبيق عربي متكامل لأدوات PDF: دمج، تقسيم، إضافة صور، تدوير، حذف صفحات، تحويل الصور إلى PDF، وأكثر. كل شيء يعمل داخل متصفحك." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطّي إلى المحتوى</a>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">📄</span>
+      <div class="brand-text">
+        <h1>أدوات PDF</h1>
+        <p>مجموعتك الكاملة لتعديل وإنشاء ملفات الـ PDF</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <span class="privacy-badge" title="كل المعالجة تتم داخل متصفحك">🔒 يعمل داخل جهازك</span>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي">
+        <span class="theme-icon">🌙</span>
+        <span class="theme-label">الوضع الليلي</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <h2>شو بدك تسوي بالـ PDF اليوم؟</h2>
+      <p>اختَر الأداة، ارفع ملفاتك، وحمّل النتيجة. كل شي بصير عندك ع الجهاز، ولا ملف بطلع من متصفحك.</p>
+    </section>
+
+    <nav class="tool-grid" aria-label="أدوات PDF">
+      <button class="tool-card" data-tool="merge"><span class="tc-icon">🧩</span><span class="tc-name">دمج ملفات</span><span class="tc-desc">اجمع كذا PDF بملف واحد</span></button>
+      <button class="tool-card" data-tool="split"><span class="tc-icon">✂️</span><span class="tc-name">تقسيم / استخراج</span><span class="tc-desc">استخرج صفحات محددة</span></button>
+      <button class="tool-card" data-tool="images2pdf"><span class="tc-icon">🖼️</span><span class="tc-name">صور إلى PDF</span><span class="tc-desc">حوّل صورك لملف PDF</span></button>
+      <button class="tool-card" data-tool="addimage"><span class="tc-icon">➕</span><span class="tc-name">إضافة صورة</span><span class="tc-desc">الصق صورة على صفحة</span></button>
+      <button class="tool-card" data-tool="addtext"><span class="tc-icon">✍️</span><span class="tc-name">إضافة نص</span><span class="tc-desc">اكتب نص أو توقيع</span></button>
+      <button class="tool-card" data-tool="rotate"><span class="tc-icon">🔄</span><span class="tc-name">تدوير صفحات</span><span class="tc-desc">دوّر الصفحات 90/180</span></button>
+      <button class="tool-card" data-tool="delete"><span class="tc-icon">🗑️</span><span class="tc-name">حذف صفحات</span><span class="tc-desc">احذف صفحات مو لازمة</span></button>
+      <button class="tool-card" data-tool="reorder"><span class="tc-icon">🔀</span><span class="tc-name">ترتيب صفحات</span><span class="tc-desc">رتّب الصفحات بالسحب</span></button>
+      <button class="tool-card" data-tool="create"><span class="tc-icon">📝</span><span class="tc-name">إنشاء PDF</span><span class="tc-desc">اكتب مستند جديد من الصفر</span></button>
+    </nav>
+
+    <section id="workspace" class="workspace" hidden aria-live="polite"></section>
+  </main>
+
+  <footer class="footer">
+    <p>أدوات PDF — كل الملفات تُعالَج محليًا داخل متصفحك. ولا شي بينرفع لأي سيرفر. 🇯🇴</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@pdf-lib/fontkit@1.1.1/dist/fontkit.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
