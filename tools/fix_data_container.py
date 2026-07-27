@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Patch and validate HavanaRP multipart .data containers.
+"""Patch and validate HavanaRP multipart game containers.
 
 This fixes the v763 corruption where bytes inserted into record 77 were left
 outside the record payload size fields, causing the native sequential parser to
-stop before AMERICAN.GXT.
+stop before AMERICAN.GXT. It also repairs the same class of corruption across
+the v763 ``.custom3`` archives, where truncated ``orp_objects_03`` records hide
+the texture database index and produce launcher loading error 002.
 """
 
 from __future__ import annotations
@@ -13,10 +15,11 @@ import binascii
 import hashlib
 import io
 import json
-import os
+import mmap
+import shutil
 import struct
 import subprocess
-import sys
+import tempfile
 import urllib.parse
 import zipfile
 from dataclasses import dataclass
@@ -36,6 +39,84 @@ EXPECTED_GXT_PATH = "!client/text/american.gxt"
 EXPECTED_GXT_SIZE = 1_339_116
 SPLIT_SIZE = 18_000_000
 ZIP_TIMESTAMP = (2026, 7, 27, 18, 30, 0)
+
+CUSTOM3_REPAIRS = {
+    ".custom3": (
+        (8_579_213, "!client/texdb/orp_objects_03.img", 71_159_808, 73_551_872),
+    ),
+    ".custom3_etc": (
+        (
+            42_479_427,
+            "!client/texdb/orp_objects_03/orp_objects_03.etc.dat",
+            131_405_606,
+            134_160_766,
+        ),
+        (
+            176_719_651,
+            "!client/texdb/orp_objects_03/orp_objects_03.etc.toc",
+            5_316,
+            5_648,
+        ),
+        (
+            176_725_380,
+            "!client/texdb/orp_objects_03/orp_objects_03.txt",
+            70_461,
+            74_736,
+        ),
+    ),
+    ".custom3_dxt": (
+        (
+            37_577_091,
+            "!client/texdb/orp_objects_03/orp_objects_03.dxt.dat",
+            112_787_784,
+            115_542_944,
+        ),
+        (
+            153_188_293,
+            "!client/texdb/orp_objects_03/orp_objects_03.dxt.toc",
+            5_316,
+            5_648,
+        ),
+        (
+            153_194_022,
+            "!client/texdb/orp_objects_03/orp_objects_03.txt",
+            70_461,
+            74_740,
+        ),
+    ),
+    ".custom3_pvr": (
+        (
+            31_614_675,
+            "!client/texdb/orp_objects_03/orp_objects_03.pvr.dat",
+            98_755_296,
+            101_517_072,
+        ),
+        (
+            133_194_405,
+            "!client/texdb/orp_objects_03/orp_objects_03.pvr.toc",
+            5_316,
+            5_648,
+        ),
+        (
+            133_200_134,
+            "!client/texdb/orp_objects_03/orp_objects_03.txt",
+            70_461,
+            74_731,
+        ),
+    ),
+}
+CUSTOM3_EXPECTED_RECORD_COUNTS = {
+    ".custom3": 7,
+    ".custom3_etc": 22,
+    ".custom3_dxt": 22,
+    ".custom3_pvr": 22,
+}
+CUSTOM3_EXPECTED_PARTS = {
+    ".custom3": 4,
+    ".custom3_etc": 6,
+    ".custom3_dxt": 7,
+    ".custom3_pvr": 6,
+}
 
 
 @dataclass(frozen=True)
@@ -140,12 +221,16 @@ def read_joined_zip(parts_dir: Path) -> bytes:
     return b"".join(chunks)
 
 
-def extract_data(zip_bytes: bytes) -> bytes:
+def extract_member(zip_bytes: bytes, target: str) -> bytes:
     with zipfile.ZipFile(io.BytesIO(zip_bytes)) as zf:
         names = zf.namelist()
-        if names != [".data"]:
-            raise AssertionError(f"expected ZIP to contain only .data, got {names}")
-        return zf.read(".data")
+        if names != [target]:
+            raise AssertionError(f"expected ZIP to contain only {target}, got {names}")
+        return zf.read(target)
+
+
+def extract_data(zip_bytes: bytes) -> bytes:
+    return extract_member(zip_bytes, ".data")
 
 
 def assert_known_v763_corruption(data: bytes) -> None:
@@ -178,9 +263,74 @@ def patch_data(data: bytes) -> bytes:
     return bytes(patched)
 
 
-def make_zip(data: bytes) -> bytes:
+def encoded_record_path(data: bytes | bytearray | mmap.mmap, offset: int) -> str:
+    name_len = struct.unpack_from("<I", data, offset + 26)[0]
+    return decode_path(data[offset + 30 : offset + 30 + name_len]).lower()
+
+
+def apply_custom3_repairs(data: bytearray | mmap.mmap, target: str) -> None:
+    for offset, expected_path, bad_size, good_size in CUSTOM3_REPAIRS[target]:
+        size_a, size_b = struct.unpack_from("<II", data, offset + 18)
+        if (size_a, size_b) != (bad_size, bad_size):
+            raise AssertionError(
+                f"{target} record at {offset} has sizes {size_a}/{size_b}, "
+                f"expected {bad_size}/{bad_size}"
+            )
+        actual_path = encoded_record_path(data, offset)
+        if actual_path != expected_path:
+            raise AssertionError(
+                f"{target} record at {offset} is {actual_path}, expected {expected_path}"
+            )
+        struct.pack_into("<II", data, offset + 18, good_size, good_size)
+
+
+def validate_custom3_records(
+    data: bytes | bytearray | mmap.mmap, target: str
+) -> tuple[list[Record], bytes]:
+    records, trailer = parse_records(data, strict=False)
+    expected_count = CUSTOM3_EXPECTED_RECORD_COUNTS[target]
+    if len(records) != expected_count:
+        raise AssertionError(
+            f"{target} expected {expected_count} records, got {len(records)}"
+        )
+    if len(trailer) != EXPECTED_FINAL_TRAILER:
+        raise AssertionError(
+            f"expected one-byte {target} final trailer, got {len(trailer)} bytes"
+        )
+    by_offset = {record.offset: record for record in records}
+    for offset, expected_path, _bad_size, good_size in CUSTOM3_REPAIRS[target]:
+        record = by_offset.get(offset)
+        if record is None:
+            raise AssertionError(f"{target} has no record at repaired offset {offset}")
+        if record.path != expected_path or record.payload_size != good_size:
+            raise AssertionError(
+                f"{target} repaired record is {record.path} size {record.payload_size}, "
+                f"expected {expected_path} size {good_size}"
+            )
+    if target == ".custom3":
+        required = {
+            4: "!client/texdb/orp_skins_02.img",
+            5: "!client/texdb/orp_vehicles_02.img",
+        }
+    else:
+        required = {
+            11: "!client/texdb/orp_objects_03/orp_objects_03.txt",
+            12: "!client/texdb/orp_skins_02/",
+            17: "!client/texdb/orp_vehicles_02/",
+            21: "!client/texdb/orp_vehicles_02/orp_vehicles_02.txt",
+        }
+    for index, expected_path in required.items():
+        if records[index].path != expected_path:
+            raise AssertionError(
+                f"{target} record {index} is {records[index].path}, "
+                f"expected {expected_path}"
+            )
+    return records, trailer
+
+
+def make_zip(data: bytes | bytearray, target: str) -> bytes:
     buf = io.BytesIO()
-    info = zipfile.ZipInfo(".data", ZIP_TIMESTAMP)
+    info = zipfile.ZipInfo(target, ZIP_TIMESTAMP)
     info.compress_type = zipfile.ZIP_DEFLATED
     info.external_attr = 0o100644 << 16
     with zipfile.ZipFile(buf, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as zf:
@@ -211,6 +361,88 @@ def write_v764(zip_bytes: bytes, data: bytes) -> dict[str, str | int]:
     return meta
 
 
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as src:
+        while chunk := src.read(1024 * 1024):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def crc32_file(path: Path) -> str:
+    checksum = 0
+    with path.open("rb") as src:
+        while chunk := src.read(1024 * 1024):
+            checksum = binascii.crc32(chunk, checksum)
+    return f"{checksum & 0xFFFFFFFF:08X}"
+
+
+def join_parts_to_path(parts_dir: Path, output: Path) -> None:
+    parts = sorted(parts_dir.glob("part-*"))
+    if not parts:
+        raise FileNotFoundError(f"no part-* files found in {parts_dir}")
+    with output.open("wb") as dst:
+        for part in parts:
+            with part.open("rb") as src:
+                shutil.copyfileobj(src, dst, 1024 * 1024)
+
+
+def extract_member_to_path(zip_path: Path, target: str, output: Path) -> None:
+    with zipfile.ZipFile(zip_path) as zf:
+        names = zf.namelist()
+        if names != [target]:
+            raise AssertionError(f"expected ZIP to contain only {target}, got {names}")
+        with zf.open(target) as src, output.open("wb") as dst:
+            shutil.copyfileobj(src, dst, 1024 * 1024)
+
+
+def make_zip_from_path(data_path: Path, target: str, output: Path) -> None:
+    info = zipfile.ZipInfo(target, ZIP_TIMESTAMP)
+    info.compress_type = zipfile.ZIP_DEFLATED
+    info.external_attr = 0o100644 << 16
+    with zipfile.ZipFile(
+        output, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9
+    ) as zf:
+        with data_path.open("rb") as src, zf.open(info, "w") as dst:
+            shutil.copyfileobj(src, dst, 1024 * 1024)
+
+
+def write_v765_custom3(
+    zip_path: Path, data_path: Path, target: str
+) -> dict[str, str | int]:
+    kind = target.removeprefix(".")
+    out_dir = ROOT / f"files/765/multipart/765/{kind}"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for old_part in out_dir.glob("part-*"):
+        old_part.unlink()
+    parts: list[Path] = []
+    with zip_path.open("rb") as src:
+        index = 0
+        while chunk := src.read(SPLIT_SIZE):
+            part = out_dir / f"part-{index:03d}"
+            part.write_bytes(chunk)
+            parts.append(part)
+            index += 1
+    if len(parts) != CUSTOM3_EXPECTED_PARTS[target]:
+        raise AssertionError(
+            f"expected {CUSTOM3_EXPECTED_PARTS[target]} {kind} parts, got {len(parts)}"
+        )
+    meta: dict[str, str | int] = {
+        "target": target,
+        "parts": len(parts),
+        "joined_size": zip_path.stat().st_size,
+        "joined_sha256": sha256_file(zip_path),
+        "output_size": data_path.stat().st_size,
+        "output_crc32": crc32_file(data_path),
+    }
+    for i, part in enumerate(parts):
+        meta[f"part_{i:03d}_size"] = part.stat().st_size
+        meta[f"part_{i:03d}_sha256"] = sha256_file(part)
+    lines = [f"{key}={value}" for key, value in meta.items()]
+    (out_dir / "manifest.properties").write_text("\n".join(lines) + "\n")
+    return meta
+
+
 def update_manifest(meta: dict[str, str | int]) -> None:
     path = ROOT / "api/update/705/update_705.json"
     doc = json.loads(path.read_text())
@@ -236,6 +468,46 @@ def update_manifest(meta: dict[str, str | int]) -> None:
         entry["size"] = size
         entry["load_size"] = size
         entry["hash"] = crc32(data)
+    path.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
+
+
+def update_custom3_manifest(
+    metas: dict[str, dict[str, str | int]]
+) -> None:
+    path = ROOT / "api/update/705/update_705.json"
+    doc = json.loads(path.read_text())
+    replacements: dict[str, tuple[str, int | None]] = {}
+    for target, meta in metas.items():
+        kind = target.removeprefix(".")
+        for i in range(int(meta["parts"])):
+            replacements[f"{kind}-part-{i:03d}"] = (
+                f"multipart/765/{kind}/part-{i:03d}",
+                int(meta[f"part_{i:03d}_size"]),
+            )
+        replacements[f"{kind}-manifest"] = (
+            f"multipart/765/{kind}/manifest.properties",
+            None,
+        )
+    updated = set()
+    for entry in doc["files"]:
+        if entry["name"] not in replacements:
+            continue
+        rel, explicit_size = replacements[entry["name"]]
+        full = ROOT / "files/765" / rel
+        if not full.exists():
+            raise FileNotFoundError(full)
+        size = explicit_size if explicit_size is not None else full.stat().st_size
+        entry["path"] = rel
+        entry["version"] = 765
+        entry["size"] = size
+        entry["load_size"] = size
+        entry["hash"] = crc32_file(full)
+        updated.add(entry["name"])
+    if updated != set(replacements):
+        raise AssertionError(
+            f"custom3 update entries mismatch: updated {sorted(updated)}, "
+            f"expected {sorted(replacements)}"
+        )
     path.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
 
 
@@ -275,6 +547,83 @@ def validate_v764() -> None:
     for i, part in enumerate(sorted(parts_dir.glob("part-*"))):
         b = part.read_bytes()
         print(f"{part.name} size {len(b)} SHA256 {sha256(b)} CRC32 {crc32(b)}")
+
+
+def validate_v765_custom3() -> None:
+    for target in CUSTOM3_REPAIRS:
+        kind = target.removeprefix(".")
+        parts_dir = ROOT / f"files/765/multipart/765/{kind}"
+        parts = sorted(parts_dir.glob("part-*"))
+        with tempfile.TemporaryDirectory(prefix=f"validate-{kind}-") as temp:
+            joined = Path(temp) / "joined.zip"
+            output = Path(temp) / "output"
+            join_parts_to_path(parts_dir, joined)
+            extract_member_to_path(joined, target, output)
+            with output.open("rb") as src, mmap.mmap(
+                src.fileno(), 0, access=mmap.ACCESS_READ
+            ) as data:
+                records, trailer = validate_custom3_records(data, target)
+            manifest = dict(
+                line.split("=", 1)
+                for line in (parts_dir / "manifest.properties").read_text().splitlines()
+                if line and not line.startswith("#")
+            )
+            checks = {
+                "target": target,
+                "parts": str(len(parts)),
+                "joined_size": str(joined.stat().st_size),
+                "joined_sha256": sha256_file(joined),
+                "output_size": str(output.stat().st_size),
+                "output_crc32": crc32_file(output),
+            }
+            for i, part in enumerate(parts):
+                checks[f"part_{i:03d}_size"] = str(part.stat().st_size)
+                checks[f"part_{i:03d}_sha256"] = sha256_file(part)
+            for key, value in checks.items():
+                if manifest.get(key) != value:
+                    raise AssertionError(
+                        f"{kind} manifest {key}={manifest.get(key)!r}, "
+                        f"expected {value!r}"
+                    )
+            if len(trailer) != EXPECTED_FINAL_TRAILER:
+                raise AssertionError(f"unexpected {kind} final trailer: {trailer!r}")
+            repaired = CUSTOM3_REPAIRS[target][0]
+            print(
+                f"validated {len(records)} {kind} records; "
+                f"{repaired[1]} size {repaired[3]}"
+            )
+            print(
+                f"{kind} output size {output.stat().st_size} "
+                f"CRC32 {crc32_file(output)} SHA256 {sha256_file(output)}"
+            )
+            print(
+                f"{kind} joined ZIP size {joined.stat().st_size} "
+                f"SHA256 {sha256_file(joined)}"
+            )
+            for part in parts:
+                print(
+                    f"{part.name} size {part.stat().st_size} "
+                    f"SHA256 {sha256_file(part)} CRC32 {crc32_file(part)}"
+                )
+
+    update = json.loads((ROOT / "api/update/705/update_705.json").read_text())
+    entries = {entry["name"]: entry for entry in update["files"]}
+    for target in CUSTOM3_REPAIRS:
+        kind = target.removeprefix(".")
+        parts_dir = ROOT / f"files/765/multipart/765/{kind}"
+        files = sorted(parts_dir.glob("part-*")) + [parts_dir / "manifest.properties"]
+        for file in files:
+            suffix = file.name if file.name.startswith("part-") else "manifest"
+            entry = entries[f"{kind}-{suffix}"]
+            expected_path = f"multipart/765/{kind}/{file.name}"
+            if (
+                entry["version"] != 765
+                or entry["path"] != expected_path
+                or entry["size"] != file.stat().st_size
+                or entry["load_size"] != file.stat().st_size
+                or entry["hash"] != crc32_file(file)
+            ):
+                raise AssertionError(f"update entry {entry['name']} does not match {file}")
 
 
 def validate_update_manifest_urls(*, head: bool) -> None:
@@ -345,21 +694,51 @@ def build() -> None:
     assert_known_v763_corruption(data)
     patched = patch_data(data)
     parse_records(patched, strict=True)
-    out_zip = make_zip(patched)
+    out_zip = make_zip(patched, ".data")
     meta = write_v764(out_zip, patched)
     update_manifest(meta)
     validate_v764()
 
 
+def build_custom3() -> None:
+    metas: dict[str, dict[str, str | int]] = {}
+    for target in CUSTOM3_REPAIRS:
+        kind = target.removeprefix(".")
+        source_dir = ROOT / f"files/763/multipart/763/{kind}"
+        with tempfile.TemporaryDirectory(prefix=f"repair-{kind}-") as temp:
+            joined = Path(temp) / "source.zip"
+            output = Path(temp) / target
+            repaired_zip = Path(temp) / "repaired.zip"
+            join_parts_to_path(source_dir, joined)
+            extract_member_to_path(joined, target, output)
+            with output.open("r+b") as dst, mmap.mmap(
+                dst.fileno(), 0, access=mmap.ACCESS_WRITE
+            ) as data:
+                apply_custom3_repairs(data, target)
+                validate_custom3_records(data, target)
+                data.flush()
+            make_zip_from_path(output, target, repaired_zip)
+            metas[target] = write_v765_custom3(
+                repaired_zip, output, target
+            )
+    update_custom3_manifest(metas)
+    validate_v765_custom3()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("command", choices=["build", "validate", "urls"])
+    parser.add_argument(
+        "command", choices=["build", "build-custom3", "validate", "urls"]
+    )
     parser.add_argument("--head", action="store_true", help="HEAD every constructed URL")
     args = parser.parse_args()
     if args.command == "build":
         build()
+    elif args.command == "build-custom3":
+        build_custom3()
     elif args.command == "validate":
         validate_v764()
+        validate_v765_custom3()
     elif args.command == "urls":
         validate_update_manifest_urls(head=args.head)
 
