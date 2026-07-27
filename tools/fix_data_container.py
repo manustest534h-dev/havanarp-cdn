@@ -292,6 +292,13 @@ def validate_update_manifest_urls(*, head: bool) -> None:
                 "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/"
                 f"files/{version}/{quote_path(rel)}"
             )
+        elif version == 707:
+            # Launcher 4.17.17 routes v707 through its dedicated GitHub
+            # release instead of URL_HOST (FileData.j in the APK).
+            url = (
+                "https://github.com/manustest534h-dev/havanarp-cdn/releases/"
+                f"download/data-flags-707-test/default{quote_path(rel)}{archive}"
+            )
         else:
             url = f"{url_host}/files/{version}/{quote_path(rel)}{archive}"
         if head:
