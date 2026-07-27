@@ -9,7 +9,7 @@
     "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v741/HavanaRp.apk"
   },
   "urls": {
-    "URL_HOST": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/files",
+    "URL_HOST": "https://igta-online.my-fastdl.com/ONLINERP/prod/files",
     "URL_UPDATE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/update/${version}/update_${version}.json",
     "URL_NEWS": "news.json",
     "URL_HELP": "help.json",
