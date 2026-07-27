@@ -1301,300 +1301,300 @@
     },
     {
       "name": "custom3-part-000",
-      "path": "multipart/763/custom3/part-000",
-      "version": 763,
+      "path": "multipart/765/custom3/part-000",
+      "version": 765,
       "update_type": "exists",
       "texture": "",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "CADC19B6"
+      "hash": "79453DE2"
     },
     {
       "name": "custom3-part-001",
-      "path": "multipart/763/custom3/part-001",
-      "version": 763,
+      "path": "multipart/765/custom3/part-001",
+      "version": 765,
       "update_type": "exists",
       "texture": "",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "8EB3207D"
+      "hash": "27A750BA"
     },
     {
       "name": "custom3-part-002",
-      "path": "multipart/763/custom3/part-002",
-      "version": 763,
+      "path": "multipart/765/custom3/part-002",
+      "version": 765,
       "update_type": "exists",
       "texture": "",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "8ABC9708"
+      "hash": "1BE08D9A"
     },
     {
       "name": "custom3-part-003",
-      "path": "multipart/763/custom3/part-003",
-      "version": 763,
+      "path": "multipart/765/custom3/part-003",
+      "version": 765,
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 14047195,
-      "load_size": 14047195,
-      "hash": "90922903"
+      "size": 13583355,
+      "load_size": 13583355,
+      "hash": "77F7D291"
     },
     {
       "name": "custom3-manifest",
-      "path": "multipart/763/custom3/manifest.properties",
-      "version": 763,
+      "path": "multipart/765/custom3/manifest.properties",
+      "version": 765,
       "update_type": "exists",
       "texture": "",
       "archive": "",
       "size": 584,
       "load_size": 584,
-      "hash": "D7001C19"
+      "hash": "364A3326"
     },
     {
       "name": "custom3_dxt-part-000",
-      "path": "multipart/763/custom3_dxt/part-000",
-      "version": 763,
+      "path": "multipart/765/custom3_dxt/part-000",
+      "version": 765,
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "3B546724"
+      "hash": "2AEC2444"
     },
     {
       "name": "custom3_dxt-part-001",
-      "path": "multipart/763/custom3_dxt/part-001",
-      "version": 763,
+      "path": "multipart/765/custom3_dxt/part-001",
+      "version": 765,
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "88924AA2"
+      "hash": "073E49DF"
     },
     {
       "name": "custom3_dxt-part-002",
-      "path": "multipart/763/custom3_dxt/part-002",
-      "version": 763,
+      "path": "multipart/765/custom3_dxt/part-002",
+      "version": 765,
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "DAB8C6EF"
+      "hash": "4E3F4E96"
     },
     {
       "name": "custom3_dxt-part-003",
-      "path": "multipart/763/custom3_dxt/part-003",
-      "version": 763,
+      "path": "multipart/765/custom3_dxt/part-003",
+      "version": 765,
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "EB9FE814"
+      "hash": "EAA79E59"
     },
     {
       "name": "custom3_dxt-part-004",
-      "path": "multipart/763/custom3_dxt/part-004",
-      "version": 763,
+      "path": "multipart/765/custom3_dxt/part-004",
+      "version": 765,
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "76E70BE5"
+      "hash": "1349581F"
     },
     {
       "name": "custom3_dxt-part-005",
-      "path": "multipart/763/custom3_dxt/part-005",
-      "version": 763,
+      "path": "multipart/765/custom3_dxt/part-005",
+      "version": 765,
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "62F5C113"
+      "hash": "7CA8E3DE"
     },
     {
       "name": "custom3_dxt-part-006",
-      "path": "multipart/763/custom3_dxt/part-006",
-      "version": 763,
+      "path": "multipart/765/custom3_dxt/part-006",
+      "version": 765,
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
-      "size": 954994,
-      "load_size": 954994,
-      "hash": "69175033"
+      "size": 1155838,
+      "load_size": 1155838,
+      "hash": "3A98DEF2"
     },
     {
       "name": "custom3_dxt-manifest",
-      "path": "multipart/763/custom3_dxt/manifest.properties",
-      "version": 763,
+      "path": "multipart/765/custom3_dxt/manifest.properties",
+      "version": 765,
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
-      "size": 899,
-      "load_size": 899,
-      "hash": "802296AD"
+      "size": 900,
+      "load_size": 900,
+      "hash": "60B88315"
     },
     {
       "name": "custom3_etc-part-000",
-      "path": "multipart/763/custom3_etc/part-000",
-      "version": 763,
+      "path": "multipart/765/custom3_etc/part-000",
+      "version": 765,
       "update_type": "exists",
       "texture": "etc",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "DFC76A5F"
+      "hash": "FFF8A74C"
     },
     {
       "name": "custom3_etc-part-001",
-      "path": "multipart/763/custom3_etc/part-001",
-      "version": 763,
+      "path": "multipart/765/custom3_etc/part-001",
+      "version": 765,
       "update_type": "exists",
       "texture": "etc",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "91F765F0"
+      "hash": "2E9BFF43"
     },
     {
       "name": "custom3_etc-part-002",
-      "path": "multipart/763/custom3_etc/part-002",
-      "version": 763,
+      "path": "multipart/765/custom3_etc/part-002",
+      "version": 765,
       "update_type": "exists",
       "texture": "etc",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "54C7C465"
+      "hash": "FFB43B48"
     },
     {
       "name": "custom3_etc-part-003",
-      "path": "multipart/763/custom3_etc/part-003",
-      "version": 763,
+      "path": "multipart/765/custom3_etc/part-003",
+      "version": 765,
       "update_type": "exists",
       "texture": "etc",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "D700813D"
+      "hash": "C21B60CD"
     },
     {
       "name": "custom3_etc-part-004",
-      "path": "multipart/763/custom3_etc/part-004",
-      "version": 763,
+      "path": "multipart/765/custom3_etc/part-004",
+      "version": 765,
       "update_type": "exists",
       "texture": "etc",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "65616368"
+      "hash": "AA7AC758"
     },
     {
       "name": "custom3_etc-part-005",
-      "path": "multipart/763/custom3_etc/part-005",
-      "version": 763,
+      "path": "multipart/765/custom3_etc/part-005",
+      "version": 765,
       "update_type": "exists",
       "texture": "etc",
       "archive": "",
-      "size": 9939614,
-      "load_size": 9939614,
-      "hash": "831C8BE2"
+      "size": 10403075,
+      "load_size": 10403075,
+      "hash": "3ED1BCED"
     },
     {
       "name": "custom3_etc-manifest",
-      "path": "multipart/763/custom3_etc/manifest.properties",
-      "version": 763,
+      "path": "multipart/765/custom3_etc/manifest.properties",
+      "version": 765,
       "update_type": "exists",
       "texture": "etc",
       "archive": "",
-      "size": 795,
-      "load_size": 795,
-      "hash": "C2BF45E3"
+      "size": 797,
+      "load_size": 797,
+      "hash": "49123E2C"
     },
     {
       "name": "custom3_pvr-part-000",
-      "path": "multipart/763/custom3_pvr/part-000",
-      "version": 763,
+      "path": "multipart/765/custom3_pvr/part-000",
+      "version": 765,
       "update_type": "exists",
       "texture": "pvr",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "A6970A8A"
+      "hash": "D002CBB9"
     },
     {
       "name": "custom3_pvr-part-001",
-      "path": "multipart/763/custom3_pvr/part-001",
-      "version": 763,
+      "path": "multipart/765/custom3_pvr/part-001",
+      "version": 765,
       "update_type": "exists",
       "texture": "pvr",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "6131816F"
+      "hash": "0788D3C2"
     },
     {
       "name": "custom3_pvr-part-002",
-      "path": "multipart/763/custom3_pvr/part-002",
-      "version": 763,
+      "path": "multipart/765/custom3_pvr/part-002",
+      "version": 765,
       "update_type": "exists",
       "texture": "pvr",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "B552B410"
+      "hash": "6D8B62B0"
     },
     {
       "name": "custom3_pvr-part-003",
-      "path": "multipart/763/custom3_pvr/part-003",
-      "version": 763,
+      "path": "multipart/765/custom3_pvr/part-003",
+      "version": 765,
       "update_type": "exists",
       "texture": "pvr",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "19DD3354"
+      "hash": "445D4200"
     },
     {
       "name": "custom3_pvr-part-004",
-      "path": "multipart/763/custom3_pvr/part-004",
-      "version": 763,
+      "path": "multipart/765/custom3_pvr/part-004",
+      "version": 765,
       "update_type": "exists",
       "texture": "pvr",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "71E3757C"
+      "hash": "64F81585"
     },
     {
       "name": "custom3_pvr-part-005",
-      "path": "multipart/763/custom3_pvr/part-005",
-      "version": 763,
+      "path": "multipart/765/custom3_pvr/part-005",
+      "version": 765,
       "update_type": "exists",
       "texture": "pvr",
       "archive": "",
-      "size": 7416104,
-      "load_size": 7416104,
-      "hash": "EE7EC65E"
+      "size": 7613827,
+      "load_size": 7613827,
+      "hash": "E78A63D2"
     },
     {
       "name": "custom3_pvr-manifest",
-      "path": "multipart/763/custom3_pvr/manifest.properties",
-      "version": 763,
+      "path": "multipart/765/custom3_pvr/manifest.properties",
+      "version": 765,
       "update_type": "exists",
       "texture": "pvr",
       "archive": "",
       "size": 795,
       "load_size": 795,
-      "hash": "FC19C311"
+      "hash": "1252B719"
     },
     {
       "name": "data-part-000",
