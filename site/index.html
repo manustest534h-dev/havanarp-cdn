@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>منتدى سوالف — HavanaRP</title>
+<meta name="description" content="منتدى سوالف احترافي: نقاشات، تقديم شكاوى، وأخبار رسمية أنيقة." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="الصفحة الرئيسية">
+        <span class="brand-mark">HR</span>
+        <span class="brand-text">
+          <strong>سوالف <span class="accent">HavanaRP</span></strong>
+          <small>مجتمع النقاش والأخبار</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <button class="nav-btn active" data-view="forum">السوالف</button>
+        <button class="nav-btn" data-view="complaints">الشكاوى</button>
+        <button class="nav-btn" data-view="news">الأخبار</button>
+      </nav>
+      <div class="header-actions">
+        <span id="userChip" class="user-chip" title="اسمك في المنتدى"></span>
+        <button id="adminToggle" class="ghost-btn" title="لوحة الأخبار">لوحة المسؤول</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ================= FORUM ================= -->
+    <section id="view-forum" class="view active">
+      <div class="hero">
+        <div>
+          <h1>أهلاً بك في <span class="accent">منتدى السوالف</span></h1>
+          <p>شارك سوالفك، افتح نقاشاً، وتفاعل مع المجتمع بأناقة.</p>
+        </div>
+        <div class="hero-stats">
+          <div><b id="statTopics">0</b><span>موضوع</span></div>
+          <div><b id="statReplies">0</b><span>رد</span></div>
+          <div><b id="statNews">0</b><span>خبر</span></div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="main-col">
+          <div class="toolbar">
+            <div class="chips" id="catFilters"></div>
+            <button class="primary-btn" id="newTopicBtn">+ سالفة جديدة</button>
+          </div>
+          <div id="topicsList" class="cards"></div>
+        </div>
+        <aside class="side-col">
+          <div class="panel">
+            <h3>الأقسام</h3>
+            <ul id="catList" class="cat-list"></ul>
+          </div>
+          <div class="panel">
+            <h3>آخر الأخبار</h3>
+            <div id="newsMini"></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= COMPLAINTS ================= -->
+    <section id="view-complaints" class="view">
+      <div class="section-head">
+        <h1>تقديم <span class="accent">شكوى</span></h1>
+        <p>قدّم شكواك بسرية واحترافية، وتابع حالتها برقم مرجعي.</p>
+      </div>
+      <div class="grid">
+        <div class="main-col">
+          <form id="complaintForm" class="panel form">
+            <div class="row">
+              <label>الاسم <input name="name" required placeholder="اسمك" /></label>
+              <label>التصنيف
+                <select name="category">
+                  <option>خدمة</option><option>لاعب</option><option>سيرفر</option>
+                  <option>إداري</option><option>اقتراح</option><option>أخرى</option>
+                </select>
+              </label>
+            </div>
+            <label>عنوان الشكوى <input name="title" required placeholder="عنوان مختصر" /></label>
+            <label>التفاصيل <textarea name="body" rows="5" required placeholder="اشرح المشكلة بالتفصيل"></textarea></label>
+            <div class="row">
+              <label>الأولوية
+                <select name="priority"><option>عادية</option><option>مهمة</option><option>عاجلة</option></select>
+              </label>
+              <div class="grow"></div>
+              <button class="primary-btn" type="submit">إرسال الشكوى</button>
+            </div>
+          </form>
+          <div id="complaintList" class="cards"></div>
+        </div>
+        <aside class="side-col">
+          <div class="panel">
+            <h3>حالة الشكاوى</h3>
+            <div id="complaintStats" class="stat-rows"></div>
+          </div>
+          <div class="panel note">
+            <h3>ملاحظة</h3>
+            <p>يتم حفظ شكواك محلياً في متصفحك مع رقم مرجعي فريد لمتابعتها.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= NEWS ================= -->
+    <section id="view-news" class="view">
+      <div class="section-head">
+        <h1>الأخبار <span class="accent">الرسمية</span></h1>
+        <p>آخر الإعلانات والتحديثات من إدارة المنتدى.</p>
+      </div>
+      <div class="grid">
+        <div class="main-col">
+          <form id="newsForm" class="panel form admin-only" hidden>
+            <h3>نشر خبر جديد <span class="tag">مسؤول الأخبار</span></h3>
+            <label>العنوان <input name="title" required placeholder="عنوان الخبر" /></label>
+            <div class="row">
+              <label>الوسم
+                <select name="tag"><option>إعلان</option><option>تحديث</option><option>حدث</option><option>صيانة</option></select>
+              </label>
+              <label>صورة (رابط اختياري) <input name="image" placeholder="https://..." /></label>
+            </div>
+            <label>المحتوى <textarea name="body" rows="4" required placeholder="نص الخبر"></textarea></label>
+            <div class="row"><div class="grow"></div><button class="primary-btn" type="submit">نشر الخبر</button></div>
+          </form>
+          <div id="newsList" class="news-grid"></div>
+        </div>
+        <aside class="side-col">
+          <div class="panel">
+            <h3>مسؤول الأخبار</h3>
+            <p class="muted" id="adminState">وضع القراءة فقط. فعّل لوحة المسؤول للنشر.</p>
+            <button class="ghost-btn" id="adminToggle2">تفعيل لوحة المسؤول</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> سوالف HavanaRP — منتدى مجتمعي احترافي.</div>
+  </footer>
+
+  <!-- Topic modal -->
+  <div id="modal" class="modal" hidden>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
