@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">دفترنا</string>
+    <string name="app_tagline">كل اللي ببالك، بمكان واحد</string>
+    <string name="search_hint">دوّر بملاحظاتك…</string>
+    <string name="empty_title">لسّه ما كتبت إشي هون</string>
+    <string name="empty_body">اكبس على زر + ودوّنها قبل ما تطير من بالك.</string>
+    <string name="editor_new">ملاحظة جديدة</string>
+    <string name="delete">حذف</string>
+    <string name="title_label">العنوان</string>
+    <string name="title_hint">مثلاً: شغلات لازم أعملها</string>
+    <string name="details_label">التفاصيل</string>
+    <string name="details_hint">اكتب اللي بدّك ياه…</string>
+    <string name="category_label">التصنيف</string>
+    <string name="color_label">لون الملاحظة</string>
+    <string name="color_sun">شمسي</string>
+    <string name="color_mint">نعناعي</string>
+    <string name="color_sky">سماوي</string>
+    <string name="color_rose">وردي</string>
+    <string name="pin_note">ثبّت الملاحظة فوق</string>
+    <string name="save_note">احفظ الملاحظة</string>
+    <string name="symbol_back" translatable="false">←</string>
+    <string name="symbol_more" translatable="false">⋮</string>
+    <string name="symbol_edit" translatable="false">✎</string>
+    <string name="symbol_add" translatable="false">+</string>
+    <string name="symbol_pin" translatable="false">◆</string>
+    <string name="content_description_more">خيارات أكثر</string>
+    <string name="content_description_add">أضف ملاحظة جديدة</string>
+    <string name="content_description_back">رجوع</string>
+</resources>
