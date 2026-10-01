@@ -1598,36 +1598,91 @@
     },
     {
       "name": "data-part-000",
-      "path": "multipart/768/data/part-000",
-      "version": 768,
+      "path": "multipart/769/data/part-000",
+      "version": 769,
       "update_type": "exists",
       "texture": "",
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "0ADF6BA8"
+      "hash": "D876BEC5"
     },
     {
       "name": "data-part-001",
-      "path": "multipart/768/data/part-001",
-      "version": 768,
+      "path": "multipart/769/data/part-001",
+      "version": 769,
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 14075991,
-      "load_size": 14075991,
-      "hash": "A1820183"
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "99E04C96"
+    },
+    {
+      "name": "data-part-002",
+      "path": "multipart/769/data/part-002",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "A4DDD771"
+    },
+    {
+      "name": "data-part-003",
+      "path": "multipart/769/data/part-003",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "4B2CA7EB"
+    },
+    {
+      "name": "data-part-004",
+      "path": "multipart/769/data/part-004",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "86A3DA87"
+    },
+    {
+      "name": "data-part-005",
+      "path": "multipart/769/data/part-005",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "36B0E6F2"
+    },
+    {
+      "name": "data-part-006",
+      "path": "multipart/769/data/part-006",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "",
+      "archive": "",
+      "size": 3922511,
+      "load_size": 3922511,
+      "hash": "69A5B98C"
     },
     {
       "name": "data-manifest",
-      "path": "multipart/768/data/manifest.properties",
-      "version": 768,
+      "path": "multipart/769/data/manifest.properties",
+      "version": 769,
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 372,
-      "load_size": 372,
-      "hash": "79A6A7DA"
+      "size": 893,
+      "load_size": 893,
+      "hash": "42BEAEC6"
     }
   ]
 }
