@@ -1597,114 +1597,15 @@
       "hash": "C25AE623"
     },
     {
-      "name": "reduto_dxt-part-000",
-      "path": "multipart/769/reduto_dxt/part-000",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "dxt",
-      "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "B669129A"
-    },
-    {
-      "name": "reduto_dxt-part-001",
-      "path": "multipart/769/reduto_dxt/part-001",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "dxt",
-      "archive": "",
-      "size": 766315,
-      "load_size": 766315,
-      "hash": "F10C53A5"
-    },
-    {
-      "name": "reduto_dxt-manifest",
-      "path": "multipart/769/reduto_dxt/manifest.properties",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "dxt",
-      "archive": "",
-      "size": 376,
-      "load_size": 376,
-      "hash": "1489A09B"
-    },
-    {
-      "name": "reduto_etc-part-000",
-      "path": "multipart/769/reduto_etc/part-000",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "etc",
-      "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "2DE44086"
-    },
-    {
-      "name": "reduto_etc-part-001",
-      "path": "multipart/769/reduto_etc/part-001",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "etc",
-      "archive": "",
-      "size": 766312,
-      "load_size": 766312,
-      "hash": "6ADAEE62"
-    },
-    {
-      "name": "reduto_etc-manifest",
-      "path": "multipart/769/reduto_etc/manifest.properties",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "etc",
-      "archive": "",
-      "size": 376,
-      "load_size": 376,
-      "hash": "2774FF52"
-    },
-    {
-      "name": "reduto_pvr-part-000",
-      "path": "multipart/769/reduto_pvr/part-000",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "pvr",
-      "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "845C588D"
-    },
-    {
-      "name": "reduto_pvr-part-001",
-      "path": "multipart/769/reduto_pvr/part-001",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "pvr",
-      "archive": "",
-      "size": 766317,
-      "load_size": 766317,
-      "hash": "56FC1389"
-    },
-    {
-      "name": "reduto_pvr-manifest",
-      "path": "multipart/769/reduto_pvr/manifest.properties",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "pvr",
-      "archive": "",
-      "size": 376,
-      "load_size": 376,
-      "hash": "D7523185"
-    },
-    {
       "name": "data-part-000",
       "path": "multipart/769/data/part-000",
       "version": 769,
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "3CBFB994"
+      "size": 17999999,
+      "load_size": 17999999,
+      "hash": "C2BEB35A"
     },
     {
       "name": "data-part-001",
@@ -1713,9 +1614,9 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "B5090E5F"
+      "size": 17999999,
+      "load_size": 17999999,
+      "hash": "9D36816A"
     },
     {
       "name": "data-part-002",
@@ -1724,9 +1625,9 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "A977D263"
+      "size": 17999999,
+      "load_size": 17999999,
+      "hash": "C4CA694C"
     },
     {
       "name": "data-part-003",
@@ -1735,9 +1636,9 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 1731483,
-      "load_size": 1731483,
-      "hash": "7CD30E02"
+      "size": 1731486,
+      "load_size": 1731486,
+      "hash": "32EEB4BD"
     },
     {
       "name": "data-manifest",
@@ -1748,7 +1649,106 @@
       "archive": "",
       "size": 580,
       "load_size": 580,
-      "hash": "E2F07A69"
+      "hash": "2FF03271"
+    },
+    {
+      "name": "reduto_dxt-part-000",
+      "path": "multipart/769/reduto_dxt/part-000",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 17999999,
+      "load_size": 17999999,
+      "hash": "CB0F3119"
+    },
+    {
+      "name": "reduto_dxt-part-001",
+      "path": "multipart/769/reduto_dxt/part-001",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 766316,
+      "load_size": 766316,
+      "hash": "348EF567"
+    },
+    {
+      "name": "reduto_dxt-manifest",
+      "path": "multipart/769/reduto_dxt/manifest.properties",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 376,
+      "load_size": 376,
+      "hash": "11F56318"
+    },
+    {
+      "name": "reduto_etc-part-000",
+      "path": "multipart/769/reduto_etc/part-000",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "etc",
+      "archive": "",
+      "size": 17999999,
+      "load_size": 17999999,
+      "hash": "58A98B57"
+    },
+    {
+      "name": "reduto_etc-part-001",
+      "path": "multipart/769/reduto_etc/part-001",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "etc",
+      "archive": "",
+      "size": 766313,
+      "load_size": 766313,
+      "hash": "C1F6C019"
+    },
+    {
+      "name": "reduto_etc-manifest",
+      "path": "multipart/769/reduto_etc/manifest.properties",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "etc",
+      "archive": "",
+      "size": 376,
+      "load_size": 376,
+      "hash": "D0EB858E"
+    },
+    {
+      "name": "reduto_pvr-part-000",
+      "path": "multipart/769/reduto_pvr/part-000",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "pvr",
+      "archive": "",
+      "size": 17999999,
+      "load_size": 17999999,
+      "hash": "48E92AF3"
+    },
+    {
+      "name": "reduto_pvr-part-001",
+      "path": "multipart/769/reduto_pvr/part-001",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "pvr",
+      "archive": "",
+      "size": 766318,
+      "load_size": 766318,
+      "hash": "9FF50402"
+    },
+    {
+      "name": "reduto_pvr-manifest",
+      "path": "multipart/769/reduto_pvr/manifest.properties",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "pvr",
+      "archive": "",
+      "size": 376,
+      "load_size": 376,
+      "hash": "E4F0958C"
     }
   ]
 }
