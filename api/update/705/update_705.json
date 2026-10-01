@@ -1660,7 +1660,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "DC36EDDC"
+      "hash": "208D5781"
     },
     {
       "name": "reduto_dxt-part-001",
@@ -1669,9 +1669,9 @@
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
-      "size": 764958,
-      "load_size": 764958,
-      "hash": "657FE80B"
+      "size": 766312,
+      "load_size": 766312,
+      "hash": "45E668A2"
     },
     {
       "name": "reduto_dxt-manifest",
@@ -1682,7 +1682,7 @@
       "archive": "",
       "size": 376,
       "load_size": 376,
-      "hash": "1C44B9CA"
+      "hash": "E7334289"
     },
     {
       "name": "reduto_etc-part-000",
@@ -1693,7 +1693,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "71FC00E2"
+      "hash": "211D22D3"
     },
     {
       "name": "reduto_etc-part-001",
@@ -1702,9 +1702,9 @@
       "update_type": "exists",
       "texture": "etc",
       "archive": "",
-      "size": 764955,
-      "load_size": 764955,
-      "hash": "3758908E"
+      "size": 766311,
+      "load_size": 766311,
+      "hash": "20F3129F"
     },
     {
       "name": "reduto_etc-manifest",
@@ -1715,7 +1715,7 @@
       "archive": "",
       "size": 376,
       "load_size": 376,
-      "hash": "06386933"
+      "hash": "BA31C7D1"
     },
     {
       "name": "reduto_pvr-part-000",
@@ -1726,7 +1726,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "6B165FAC"
+      "hash": "6EE6B0E5"
     },
     {
       "name": "reduto_pvr-part-001",
@@ -1735,9 +1735,9 @@
       "update_type": "exists",
       "texture": "pvr",
       "archive": "",
-      "size": 764959,
-      "load_size": 764959,
-      "hash": "DC35AAD7"
+      "size": 766312,
+      "load_size": 766312,
+      "hash": "44ECF05B"
     },
     {
       "name": "reduto_pvr-manifest",
@@ -1748,7 +1748,7 @@
       "archive": "",
       "size": 376,
       "load_size": 376,
-      "hash": "B20A30CB"
+      "hash": "C4FD6369"
     }
   ]
 }
