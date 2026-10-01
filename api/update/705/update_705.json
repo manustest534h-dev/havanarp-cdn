@@ -1597,17 +1597,6 @@
       "hash": "C25AE623"
     },
     {
-      "name": "data/manifest.properties",
-      "path": "data/manifest.properties",
-      "version": 772,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 0,
-      "load_size": 0,
-      "hash": ""
-    },
-    {
       "name": "data-manifest",
       "path": "multipart/772/data/manifest.properties",
       "version": 772,
