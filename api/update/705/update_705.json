@@ -1605,7 +1605,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "D109C327"
+      "hash": "BD753AC2"
     },
     {
       "name": "data-part-001",
@@ -1614,9 +1614,31 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 14076293,
-      "load_size": 14076293,
-      "hash": "997542DF"
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "B5090E5F"
+    },
+    {
+      "name": "data-part-002",
+      "path": "multipart/769/data/part-002",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "A977D263"
+    },
+    {
+      "name": "data-part-003",
+      "path": "multipart/769/data/part-003",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "",
+      "archive": "",
+      "size": 1729488,
+      "load_size": 1729488,
+      "hash": "2CE87598"
     },
     {
       "name": "data-manifest",
@@ -1625,9 +1647,9 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 372,
-      "load_size": 372,
-      "hash": "AFEF68AF"
+      "size": 580,
+      "load_size": 580,
+      "hash": "6B7FB70E"
     },
     {
       "name": "reduto_dxt-part-000",
@@ -1638,7 +1660,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "5125C611"
+      "hash": "DC36EDDC"
     },
     {
       "name": "reduto_dxt-part-001",
@@ -1647,20 +1669,9 @@
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "54AED8C3"
-    },
-    {
-      "name": "reduto_dxt-part-002",
-      "path": "multipart/769/reduto_dxt/part-002",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "dxt",
-      "archive": "",
-      "size": 6415064,
-      "load_size": 6415064,
-      "hash": "E354B911"
+      "size": 764958,
+      "load_size": 764958,
+      "hash": "657FE80B"
     },
     {
       "name": "reduto_dxt-manifest",
@@ -1669,9 +1680,9 @@
       "update_type": "exists",
       "texture": "dxt",
       "archive": "",
-      "size": 481,
-      "load_size": 481,
-      "hash": "116BE69B"
+      "size": 376,
+      "load_size": 376,
+      "hash": "1C44B9CA"
     },
     {
       "name": "reduto_etc-part-000",
@@ -1682,7 +1693,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "0503AD58"
+      "hash": "71FC00E2"
     },
     {
       "name": "reduto_etc-part-001",
@@ -1691,20 +1702,9 @@
       "update_type": "exists",
       "texture": "etc",
       "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "58A13E90"
-    },
-    {
-      "name": "reduto_etc-part-002",
-      "path": "multipart/769/reduto_etc/part-002",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "etc",
-      "archive": "",
-      "size": 6415064,
-      "load_size": 6415064,
-      "hash": "4C56415D"
+      "size": 764955,
+      "load_size": 764955,
+      "hash": "3758908E"
     },
     {
       "name": "reduto_etc-manifest",
@@ -1713,9 +1713,9 @@
       "update_type": "exists",
       "texture": "etc",
       "archive": "",
-      "size": 481,
-      "load_size": 481,
-      "hash": "0839F954"
+      "size": 376,
+      "load_size": 376,
+      "hash": "06386933"
     },
     {
       "name": "reduto_pvr-part-000",
@@ -1726,7 +1726,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "C590B6F5"
+      "hash": "6B165FAC"
     },
     {
       "name": "reduto_pvr-part-001",
@@ -1735,20 +1735,9 @@
       "update_type": "exists",
       "texture": "pvr",
       "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "70829A9E"
-    },
-    {
-      "name": "reduto_pvr-part-002",
-      "path": "multipart/769/reduto_pvr/part-002",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "pvr",
-      "archive": "",
-      "size": 6415064,
-      "load_size": 6415064,
-      "hash": "56BB0493"
+      "size": 764959,
+      "load_size": 764959,
+      "hash": "DC35AAD7"
     },
     {
       "name": "reduto_pvr-manifest",
@@ -1757,9 +1746,9 @@
       "update_type": "exists",
       "texture": "pvr",
       "archive": "",
-      "size": 481,
-      "load_size": 481,
-      "hash": "4CF78CE5"
+      "size": 376,
+      "load_size": 376,
+      "hash": "B20A30CB"
     }
   ]
 }
