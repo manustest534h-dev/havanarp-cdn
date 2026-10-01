@@ -1605,7 +1605,7 @@
       "archive": "",
       "size": 18000000,
       "load_size": 18000000,
-      "hash": "D876BEC5"
+      "hash": "D109C327"
     },
     {
       "name": "data-part-001",
@@ -1614,64 +1614,9 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "99E04C96"
-    },
-    {
-      "name": "data-part-002",
-      "path": "multipart/769/data/part-002",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "A4DDD771"
-    },
-    {
-      "name": "data-part-003",
-      "path": "multipart/769/data/part-003",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "4B2CA7EB"
-    },
-    {
-      "name": "data-part-004",
-      "path": "multipart/769/data/part-004",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "86A3DA87"
-    },
-    {
-      "name": "data-part-005",
-      "path": "multipart/769/data/part-005",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "36B0E6F2"
-    },
-    {
-      "name": "data-part-006",
-      "path": "multipart/769/data/part-006",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 3922511,
-      "load_size": 3922511,
-      "hash": "69A5B98C"
+      "size": 14076293,
+      "load_size": 14076293,
+      "hash": "997542DF"
     },
     {
       "name": "data-manifest",
@@ -1680,9 +1625,141 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 893,
-      "load_size": 893,
-      "hash": "42BEAEC6"
+      "size": 372,
+      "load_size": 372,
+      "hash": "AFEF68AF"
+    },
+    {
+      "name": "reduto_dxt-part-000",
+      "path": "multipart/769/reduto_dxt/part-000",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "5125C611"
+    },
+    {
+      "name": "reduto_dxt-part-001",
+      "path": "multipart/769/reduto_dxt/part-001",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "54AED8C3"
+    },
+    {
+      "name": "reduto_dxt-part-002",
+      "path": "multipart/769/reduto_dxt/part-002",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 6415064,
+      "load_size": 6415064,
+      "hash": "E354B911"
+    },
+    {
+      "name": "reduto_dxt-manifest",
+      "path": "multipart/769/reduto_dxt/manifest.properties",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 481,
+      "load_size": 481,
+      "hash": "116BE69B"
+    },
+    {
+      "name": "reduto_etc-part-000",
+      "path": "multipart/769/reduto_etc/part-000",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "etc",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "0503AD58"
+    },
+    {
+      "name": "reduto_etc-part-001",
+      "path": "multipart/769/reduto_etc/part-001",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "etc",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "58A13E90"
+    },
+    {
+      "name": "reduto_etc-part-002",
+      "path": "multipart/769/reduto_etc/part-002",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "etc",
+      "archive": "",
+      "size": 6415064,
+      "load_size": 6415064,
+      "hash": "4C56415D"
+    },
+    {
+      "name": "reduto_etc-manifest",
+      "path": "multipart/769/reduto_etc/manifest.properties",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "etc",
+      "archive": "",
+      "size": 481,
+      "load_size": 481,
+      "hash": "0839F954"
+    },
+    {
+      "name": "reduto_pvr-part-000",
+      "path": "multipart/769/reduto_pvr/part-000",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "pvr",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "C590B6F5"
+    },
+    {
+      "name": "reduto_pvr-part-001",
+      "path": "multipart/769/reduto_pvr/part-001",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "pvr",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "70829A9E"
+    },
+    {
+      "name": "reduto_pvr-part-002",
+      "path": "multipart/769/reduto_pvr/part-002",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "pvr",
+      "archive": "",
+      "size": 6415064,
+      "load_size": 6415064,
+      "hash": "56BB0493"
+    },
+    {
+      "name": "reduto_pvr-manifest",
+      "path": "multipart/769/reduto_pvr/manifest.properties",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "pvr",
+      "archive": "",
+      "size": 481,
+      "load_size": 481,
+      "hash": "4CF78CE5"
     }
   ]
 }
