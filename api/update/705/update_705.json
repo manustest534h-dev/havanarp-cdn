@@ -1603,9 +1603,9 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 1518,
-      "load_size": 1518,
-      "hash": "FE3DA9A0"
+      "size": 893,
+      "load_size": 893,
+      "hash": "D8C0C63C"
     },
     {
       "name": "data-part-000",
@@ -1616,7 +1616,7 @@
       "archive": "",
       "size": 17999999,
       "load_size": 17999999,
-      "hash": "60253B22"
+      "hash": "A4FC6986"
     },
     {
       "name": "data-part-001",
@@ -1627,7 +1627,7 @@
       "archive": "",
       "size": 17999999,
       "load_size": 17999999,
-      "hash": "DF83B023"
+      "hash": "212867E5"
     },
     {
       "name": "data-part-002",
@@ -1638,7 +1638,7 @@
       "archive": "",
       "size": 17999999,
       "load_size": 17999999,
-      "hash": "E4338F9E"
+      "hash": "36BD42EA"
     },
     {
       "name": "data-part-003",
@@ -1649,7 +1649,7 @@
       "archive": "",
       "size": 17999999,
       "load_size": 17999999,
-      "hash": "0350AFD4"
+      "hash": "49B1DC55"
     },
     {
       "name": "data-part-004",
@@ -1660,7 +1660,7 @@
       "archive": "",
       "size": 17999999,
       "load_size": 17999999,
-      "hash": "DF6E645D"
+      "hash": "72E8DEB3"
     },
     {
       "name": "data-part-005",
@@ -1671,7 +1671,7 @@
       "archive": "",
       "size": 17999999,
       "load_size": 17999999,
-      "hash": "5EACD45E"
+      "hash": "3960E38E"
     },
     {
       "name": "data-part-006",
@@ -1680,75 +1680,9 @@
       "update_type": "exists",
       "texture": "",
       "archive": "",
-      "size": 17999999,
-      "load_size": 17999999,
-      "hash": "BC407E92"
-    },
-    {
-      "name": "data-part-007",
-      "path": "multipart/773/data/part-007",
-      "version": 773,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 17999999,
-      "load_size": 17999999,
-      "hash": "A1F3F2A5"
-    },
-    {
-      "name": "data-part-008",
-      "path": "multipart/773/data/part-008",
-      "version": 773,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 17999999,
-      "load_size": 17999999,
-      "hash": "A6F334B6"
-    },
-    {
-      "name": "data-part-009",
-      "path": "multipart/773/data/part-009",
-      "version": 773,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 17999999,
-      "load_size": 17999999,
-      "hash": "2C68984C"
-    },
-    {
-      "name": "data-part-010",
-      "path": "multipart/773/data/part-010",
-      "version": 773,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 17999999,
-      "load_size": 17999999,
-      "hash": "55E175AF"
-    },
-    {
-      "name": "data-part-011",
-      "path": "multipart/773/data/part-011",
-      "version": 773,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 17999999,
-      "load_size": 17999999,
-      "hash": "E7BD34AC"
-    },
-    {
-      "name": "data-part-012",
-      "path": "multipart/773/data/part-012",
-      "version": 773,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 7319338,
-      "load_size": 7319338,
-      "hash": "63485DD9"
+      "size": 4438376,
+      "load_size": 4438376,
+      "hash": "2DEEC6C0"
     }
   ]
 }
