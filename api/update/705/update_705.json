@@ -1597,61 +1597,6 @@
       "hash": "C25AE623"
     },
     {
-      "name": "data-part-000",
-      "path": "multipart/769/data/part-000",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "BD753AC2"
-    },
-    {
-      "name": "data-part-001",
-      "path": "multipart/769/data/part-001",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "B5090E5F"
-    },
-    {
-      "name": "data-part-002",
-      "path": "multipart/769/data/part-002",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 18000000,
-      "load_size": 18000000,
-      "hash": "A977D263"
-    },
-    {
-      "name": "data-part-003",
-      "path": "multipart/769/data/part-003",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 1729488,
-      "load_size": 1729488,
-      "hash": "2CE87598"
-    },
-    {
-      "name": "data-manifest",
-      "path": "multipart/769/data/manifest.properties",
-      "version": 769,
-      "update_type": "exists",
-      "texture": "",
-      "archive": "",
-      "size": 580,
-      "load_size": 580,
-      "hash": "6B7FB70E"
-    },
-    {
       "name": "reduto_dxt-part-000",
       "path": "multipart/769/reduto_dxt/part-000",
       "version": 769,
@@ -1749,6 +1694,61 @@
       "size": 376,
       "load_size": 376,
       "hash": "D7523185"
+    },
+    {
+      "name": "data-part-000",
+      "path": "multipart/769/data/part-000",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "3CBFB994"
+    },
+    {
+      "name": "data-part-001",
+      "path": "multipart/769/data/part-001",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "B5090E5F"
+    },
+    {
+      "name": "data-part-002",
+      "path": "multipart/769/data/part-002",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "A977D263"
+    },
+    {
+      "name": "data-part-003",
+      "path": "multipart/769/data/part-003",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "",
+      "archive": "",
+      "size": 1731483,
+      "load_size": 1731483,
+      "hash": "7CD30E02"
+    },
+    {
+      "name": "data-manifest",
+      "path": "multipart/769/data/manifest.properties",
+      "version": 769,
+      "update_type": "exists",
+      "texture": "",
+      "archive": "",
+      "size": 580,
+      "load_size": 580,
+      "hash": "E2F07A69"
     }
   ]
 }
