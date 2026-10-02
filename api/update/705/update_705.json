@@ -1,5 +1,5 @@
 {
-  "update_version": 830,
+  "update_version": 831,
   "files": [
     {
       "name": ".audio",
@@ -1809,7 +1809,7 @@
       "name": ".custom2_etc",
       "path": ".custom2_etc",
       "version": 707,
-      "update_type": "strong",
+      "update_type": "exists",
       "texture": "etc",
       "archive": ".zip",
       "size": 363555899,
@@ -1820,7 +1820,7 @@
       "name": ".custom2_dxt",
       "path": ".custom2_dxt",
       "version": 707,
-      "update_type": "strong",
+      "update_type": "exists",
       "texture": "dxt",
       "archive": ".zip",
       "size": 327381491,
