@@ -1,13 +1,13 @@
 {
   "config_version": 1,
   "apk": {
-    "version": 752,
+    "version": 753,
     "str": "4.17.17",
-    "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v752/HavanaRp.apk",
+    "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v753/HavanaRp.apk",
     "auto_update": true,
     "manual_update": true,
-    "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v752/HavanaRp.apk",
-    "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v752/HavanaRp.apk"
+    "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v753/HavanaRp.apk",
+    "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v753/HavanaRp.apk"
   },
   "urls": {
     "URL_HOST": "https://igta-online.my-fastdl.com/ONLINERP/prod/files",
