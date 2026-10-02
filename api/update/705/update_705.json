@@ -1,6 +1,39 @@
 {
-  "update_version": 831,
+  "update_version": 832,
   "files": [
+    {
+      "name": ".data",
+      "path": ".data",
+      "version": 707,
+      "update_type": "strong",
+      "texture": "",
+      "archive": ".zip",
+      "size": 709172229,
+      "load_size": 252161893,
+      "hash": "F9F5233E"
+    },
+    {
+      "name": ".custom2_etc",
+      "path": ".custom2_etc",
+      "version": 707,
+      "update_type": "strong",
+      "texture": "etc",
+      "archive": ".zip",
+      "size": 363555899,
+      "load_size": 125343343,
+      "hash": "8F55EBE9"
+    },
+    {
+      "name": ".custom2_dxt",
+      "path": ".custom2_dxt",
+      "version": 707,
+      "update_type": "strong",
+      "texture": "dxt",
+      "archive": ".zip",
+      "size": 327381491,
+      "load_size": 132690665,
+      "hash": "D564D6FF"
+    },
     {
       "name": ".audio",
       "path": ".audio",
@@ -1793,39 +1826,6 @@
       "size": 2039,
       "load_size": 2039,
       "hash": "EAB17B2F"
-    },
-    {
-      "name": ".data",
-      "path": ".data",
-      "version": 707,
-      "update_type": "strong",
-      "texture": "",
-      "archive": ".zip",
-      "size": 709172229,
-      "load_size": 252161893,
-      "hash": "F9F5233E"
-    },
-    {
-      "name": ".custom2_etc",
-      "path": ".custom2_etc",
-      "version": 707,
-      "update_type": "exists",
-      "texture": "etc",
-      "archive": ".zip",
-      "size": 363555899,
-      "load_size": 125343343,
-      "hash": "8F55EBE9"
-    },
-    {
-      "name": ".custom2_dxt",
-      "path": ".custom2_dxt",
-      "version": 707,
-      "update_type": "exists",
-      "texture": "dxt",
-      "archive": ".zip",
-      "size": 327381491,
-      "load_size": 132690665,
-      "hash": "D564D6FF"
     }
   ]
 }
