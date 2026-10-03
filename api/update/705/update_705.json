@@ -1,5 +1,5 @@
 {
- "update_version": 836,
+ "update_version": 837,
  "files": [
   {
    "name": ".custom2_dxt",
@@ -41,9 +41,9 @@
    "update_type": "strong",
    "texture": "",
    "archive": ".zip",
-   "size": 363629040,
-   "load_size": 91556995,
-   "hash": "71B039E0"
+   "size": 363640956,
+   "load_size": 91570077,
+   "hash": "E43856AC"
   },
   {
    "name": ".audio",
