@@ -1,5 +1,5 @@
 {
- "update_version": 839,
+ "update_version": 840,
  "files": [
   {
    "name": ".custom2_dxt",
@@ -251,8 +251,8 @@
    "texture": "",
    "archive": ".zip",
    "size": 98709194,
-   "load_size": 51445668,
-   "hash": "30526B22"
+   "load_size": 51443995,
+   "hash": "DF21F2F4"
   },
   {
    "name": ".vehs",
