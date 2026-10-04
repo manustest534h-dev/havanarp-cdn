@@ -1572,7 +1572,7 @@
    "archive": "",
    "size": 14013377,
    "load_size": 14013377,
-   "hash": "E6CABA70"
+   "hash": "F07271DC"
   },
   {
    "name": "data-part-001",
@@ -1757,9 +1757,9 @@
    "update_type": "exists",
    "texture": "",
    "archive": "",
-   "size": 13994808,
-   "load_size": 13994808,
-   "hash": "7605D5F3"
+   "size": 13994815,
+   "load_size": 13994815,
+   "hash": "5312E0A9"
   },
   {
    "name": "data-manifest",
@@ -1770,7 +1770,7 @@
    "archive": "",
    "size": 2039,
    "load_size": 2039,
-   "hash": "9F71C830"
+   "hash": "C3FF5C7C"
   },
   {
    "name": "reduto-part-000",
