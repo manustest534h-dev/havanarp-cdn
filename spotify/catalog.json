@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "tracks": [
+    {
+      "id": "medley-funk-2",
+      "title": "MEDLEY FUNK 2",
+      "artist": "MC BRINQUEDO, MC TUTO, MC LARANJINHA, MC CEBEZINHO, DJ OREIA THE BOX",
+      "dur": 270,
+      "url": "https://admin.sampandroid.com/MC%20BRINQUEDO,%20MC%20TUTO,%20MC%20LARANJINHA,%20MC%20CEBEZINHO,%20%20DJ%20OREIA%20THE%20BOX%20MEDLEY%20FUNK%202.mp3",
+      "cover": "energy_booster.jpg"
+    },
+    {
+      "id": "quebradas",
+      "title": "QUEBRADAS",
+      "artist": "MC Paulin da Capital, MC Lipi, MC Cabelinho, DJ GM",
+      "dur": 264,
+      "url": "https://admin.sampandroid.com/QUEBRADAS%20-%20MC%20Paulin%20da%20Capital,%20MC%20Lipi,%20MC%20Cabelinho%20e%20DJ%20GM%20(Love%20Funk).mp3",
+      "cover": "sabotage.jpg"
+    },
+    {
+      "id": "ritmista-1",
+      "title": "RITMISTA 1.0",
+      "artist": "DJ WN, Hariel, Ryan SP, Nog, Kadu, Vinny, Paulin da Capital, Lipi, Daniel, Gabb, GH do 7",
+      "dur": 634,
+      "url": "https://admin.sampandroid.com/RITMISTA%201.0%20-%20DJ%20WN,%20Hariel,%20Ryan%20SP,%20Nog,%20Kadu,%20Vinny,%20Paulin%20da%20Capital,%20Lipi,Daniel,Gabb,GH%20do%207.mp3",
+      "cover": "billions_club.jpg"
+    },
+    {
+      "id": "pagodin",
+      "title": "VAMO DE PAGODIN (SAMBA DE MALANDRO)",
+      "artist": "DJ WN, DJ GM, MC Paulin da Capital, Ryan SP, Piedro, Daniel",
+      "dur": 310,
+      "url": "https://admin.sampandroid.com/VAMO%20DE%20PAGODIN%20_%20SAMBA%20DE%20MALANDRO%20-%20DJ%20WN,%20DJ%20GM,%20MC%20Paulin%20da%20Capital,%20Ryan%20SP,%20Piedro%20e%20Daniel.mp3",
+      "cover": "upbeat_mix.jpg"
+    }
+  ],
+  "playlists": [
+    {
+      "id": "funk-braba",
+      "title": "S\u00f3 as braba",
+      "subtitle": "Funk pesado \u2014 direto do Reduto",
+      "cover": "billions_club.jpg",
+      "color": 11675723,
+      "tracks": ["medley-funk-2", "quebradas", "ritmista-1"]
+    },
+    {
+      "id": "pagode",
+      "title": "Vamo de Pagodin",
+      "subtitle": "Samba de malandro",
+      "cover": "upbeat_mix.jpg",
+      "color": 9208236,
+      "tracks": ["pagodin"]
+    },
+    {
+      "id": "quebradas-mix",
+      "title": "Quebradas",
+      "subtitle": "MC Paulin da Capital e convidados",
+      "cover": "sabotage.jpg",
+      "color": 14427562,
+      "tracks": ["quebradas", "ritmista-1"]
+    },
+    {
+      "id": "dj-wn",
+      "title": "DJ WN & convidados",
+      "subtitle": "Sets completos",
+      "cover": "diljit_mix.jpg",
+      "color": 4922196,
+      "tracks": ["ritmista-1", "pagodin"]
+    }
+  ],
+  "home_cards": [
+    { "title": "M\u00fasicas curtidas", "cover": "", "pid": "liked", "color": 5259946 },
+    { "title": "S\u00f3 as braba", "cover": "billions_club.jpg", "pid": "funk-braba", "color": 0 },
+    { "title": "Vamo de Pagodin", "cover": "upbeat_mix.jpg", "pid": "pagode", "color": 0 },
+    { "title": "Quebradas", "cover": "sabotage.jpg", "pid": "quebradas-mix", "color": 0 },
+    { "title": "DJ WN & convidados", "cover": "diljit_mix.jpg", "pid": "dj-wn", "color": 0 },
+    { "title": "Ritmista 1.0", "cover": "all_out_00s.jpg", "pid": "dj-wn", "color": 0 },
+    { "title": "Funk na veia", "cover": "energy_booster.jpg", "pid": "funk-braba", "color": 0 },
+    { "title": "Pagode & samba", "cover": "pop_mix.jpg", "pid": "pagode", "color": 0 }
+  ],
+  "browse": [
+    { "title": "M\u00fasica", "cover": "browse_music.jpg", "pid": "", "color": 14959749 },
+    { "title": "Podcasts", "cover": "browse_podcast.jpg", "pid": "", "color": 1016909 },
+    { "title": "Eventos ao vivo", "cover": "browse_live_events.jpg", "pid": "", "color": 8277956 },
+    { "title": "Funk", "cover": "energy_booster.jpg", "pid": "funk-braba", "color": 11536459 },
+    { "title": "Pagode", "cover": "upbeat_mix.jpg", "pid": "pagode", "color": 14421132 },
+    { "title": "Mixes da comunidade", "cover": "diljit_mix.jpg", "pid": "dj-wn", "color": 4922196 },
+    { "title": "Descobrir", "cover": "browse_ipop.png", "pid": "", "color": 13522592 },
+    { "title": "Rock", "cover": "rock_mix.jpg", "pid": "", "color": 7296810 }
+  ]
+}
