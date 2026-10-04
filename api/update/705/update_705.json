@@ -41,9 +41,9 @@
    "update_type": "strong",
    "texture": "",
    "archive": ".zip",
-   "size": 709507620,
-   "load_size": 252222224,
-   "hash": "56433969"
+   "size": 709507621,
+   "load_size": 252222225,
+   "hash": "ACE5D009"
   },
   {
    "name": ".audio",
@@ -1570,9 +1570,9 @@
    "update_type": "strong",
    "texture": "",
    "archive": ".zip",
-   "size": 2826697,
-   "load_size": 736437,
-   "hash": "38E82C72"
+   "size": 2826698,
+   "load_size": 736438,
+   "hash": "26EEB2F0"
   }
  ]
 }
