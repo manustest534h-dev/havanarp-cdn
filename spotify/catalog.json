@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "tracks": [
     {
       "id": "medley-funk-2",
@@ -37,55 +37,55 @@
   "playlists": [
     {
       "id": "funk-braba",
-      "title": "S\u00f3 as braba",
-      "subtitle": "Funk pesado \u2014 direto do Reduto",
+      "title": "أقوى الفانك",
+      "subtitle": "فانك تقيل من البرازيل",
       "cover": "billions_club.jpg",
       "color": 11675723,
       "tracks": ["medley-funk-2", "quebradas", "ritmista-1"]
     },
     {
       "id": "pagode",
-      "title": "Vamo de Pagodin",
-      "subtitle": "Samba de malandro",
+      "title": "على الباغودي",
+      "subtitle": "سامبا الشوارع",
       "cover": "upbeat_mix.jpg",
       "color": 9208236,
       "tracks": ["pagodin"]
     },
     {
       "id": "quebradas-mix",
-      "title": "Quebradas",
-      "subtitle": "MC Paulin da Capital e convidados",
+      "title": "الحارات",
+      "subtitle": "MC Paulin da Capital والضيوف",
       "cover": "sabotage.jpg",
       "color": 14427562,
       "tracks": ["quebradas", "ritmista-1"]
     },
     {
       "id": "dj-wn",
-      "title": "DJ WN & convidados",
-      "subtitle": "Sets completos",
+      "title": "DJ WN والضيوف",
+      "subtitle": "سيتات كاملة",
       "cover": "diljit_mix.jpg",
       "color": 4922196,
       "tracks": ["ritmista-1", "pagodin"]
     }
   ],
   "home_cards": [
-    { "title": "M\u00fasicas curtidas", "cover": "", "pid": "liked", "color": 5259946 },
-    { "title": "S\u00f3 as braba", "cover": "billions_club.jpg", "pid": "funk-braba", "color": 0 },
-    { "title": "Vamo de Pagodin", "cover": "upbeat_mix.jpg", "pid": "pagode", "color": 0 },
-    { "title": "Quebradas", "cover": "sabotage.jpg", "pid": "quebradas-mix", "color": 0 },
-    { "title": "DJ WN & convidados", "cover": "diljit_mix.jpg", "pid": "dj-wn", "color": 0 },
-    { "title": "Ritmista 1.0", "cover": "all_out_00s.jpg", "pid": "dj-wn", "color": 0 },
-    { "title": "Funk na veia", "cover": "energy_booster.jpg", "pid": "funk-braba", "color": 0 },
-    { "title": "Pagode & samba", "cover": "pop_mix.jpg", "pid": "pagode", "color": 0 }
+    { "title": "المفضلة", "cover": "", "pid": "liked", "color": 5259946 },
+    { "title": "أقوى الفانك", "cover": "billions_club.jpg", "pid": "funk-braba", "color": 0 },
+    { "title": "على الباغودي", "cover": "upbeat_mix.jpg", "pid": "pagode", "color": 0 },
+    { "title": "الحارات", "cover": "sabotage.jpg", "pid": "quebradas-mix", "color": 0 },
+    { "title": "DJ WN والضيوف", "cover": "diljit_mix.jpg", "pid": "dj-wn", "color": 0 },
+    { "title": "إيقاع 1.0", "cover": "all_out_00s.jpg", "pid": "dj-wn", "color": 0 },
+    { "title": "فانك برازيلي", "cover": "energy_booster.jpg", "pid": "funk-braba", "color": 0 },
+    { "title": "باغودي وسامبا", "cover": "pop_mix.jpg", "pid": "pagode", "color": 0 }
   ],
   "browse": [
-    { "title": "M\u00fasica", "cover": "browse_music.jpg", "pid": "", "color": 14959749 },
-    { "title": "Podcasts", "cover": "browse_podcast.jpg", "pid": "", "color": 1016909 },
-    { "title": "Eventos ao vivo", "cover": "browse_live_events.jpg", "pid": "", "color": 8277956 },
-    { "title": "Funk", "cover": "energy_booster.jpg", "pid": "funk-braba", "color": 11536459 },
-    { "title": "Pagode", "cover": "upbeat_mix.jpg", "pid": "pagode", "color": 14421132 },
-    { "title": "Mixes da comunidade", "cover": "diljit_mix.jpg", "pid": "dj-wn", "color": 4922196 },
-    { "title": "Descobrir", "cover": "browse_ipop.png", "pid": "", "color": 13522592 },
-    { "title": "Rock", "cover": "rock_mix.jpg", "pid": "", "color": 7296810 }
+    { "title": "موسيقى", "cover": "browse_music.jpg", "pid": "", "color": 14959749 },
+    { "title": "بودكاست", "cover": "browse_podcast.jpg", "pid": "", "color": 1016909 },
+    { "title": "حفلات مباشرة", "cover": "browse_live_events.jpg", "pid": "", "color": 8277956 },
+    { "title": "فانك", "cover": "energy_booster.jpg", "pid": "funk-braba", "color": 11536459 },
+    { "title": "باغودي", "cover": "upbeat_mix.jpg", "pid": "pagode", "color": 14421132 },
+    { "title": "ميكسات المجتمع", "cover": "diljit_mix.jpg", "pid": "dj-wn", "color": 4922196 },
+    { "title": "اكتشف", "cover": "browse_ipop.png", "pid": "", "color": 13522592 },
+    { "title": "روك", "cover": "rock_mix.jpg", "pid": "", "color": 7296810 }
   ]
 }
