@@ -41,9 +41,9 @@
    "update_type": "strong",
    "texture": "",
    "archive": ".zip",
-   "size": 709201022,
-   "load_size": 252178935,
-   "hash": "591EFD69"
+   "size": 712033863,
+   "load_size": 252915949,
+   "hash": "721A6A70"
   },
   {
    "name": ".audio",
@@ -1562,17 +1562,6 @@
    "size": 795,
    "load_size": 795,
    "hash": "C25AE623"
-  },
-  {
-   "name": ".reduto",
-   "path": ".reduto",
-   "version": 707,
-   "update_type": "strong",
-   "texture": "",
-   "archive": ".zip",
-   "size": 2832842,
-   "load_size": 736522,
-   "hash": "9C833201"
   }
  ]
 }
