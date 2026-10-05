@@ -41,9 +41,9 @@
    "update_type": "strong",
    "texture": "",
    "archive": ".zip",
-   "size": 711665744,
-   "load_size": 252665007,
-   "hash": "ED846032"
+   "size": 711305678,
+   "load_size": 250357296,
+   "hash": "C46E1E90"
   },
   {
    "name": ".audio",
@@ -1782,39 +1782,6 @@
    "size": 2141,
    "load_size": 2141,
    "hash": "BC89F058"
-  },
-  {
-   "name": "reduto-part-000",
-   "path": "multipart/851/reduto/part-000",
-   "version": 851,
-   "update_type": "exists",
-   "texture": "",
-   "archive": "",
-   "size": 491213,
-   "load_size": 491213,
-   "hash": "43788C31"
-  },
-  {
-   "name": "reduto-manifest",
-   "path": "multipart/851/reduto/manifest.properties",
-   "version": 851,
-   "update_type": "exists",
-   "texture": "",
-   "archive": "",
-   "size": 265,
-   "load_size": 265,
-   "hash": "6135149C"
-  },
-  {
-   "name": ".reduto",
-   "path": ".reduto",
-   "version": 851,
-   "update_type": "strong",
-   "texture": "",
-   "archive": ".zip",
-   "size": 2496544,
-   "load_size": 491213,
-   "hash": "AE0393CB"
   }
  ]
 }
