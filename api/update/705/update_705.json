@@ -1,17 +1,6 @@
 {
-  "update_version": 854,
+  "update_version": 855,
   "files": [
-    {
-      "name": ".custom2_dxt",
-      "path": ".custom2_dxt",
-      "version": 707,
-      "update_type": "strong",
-      "texture": "dxt",
-      "archive": ".zip",
-      "size": 327381491,
-      "load_size": 132690665,
-      "hash": "D564D6FF"
-    },
     {
       "name": ".custom2_etc",
       "path": ".custom2_etc",
@@ -1782,6 +1771,105 @@
       "size": 2141,
       "load_size": 2141,
       "hash": "564B557E"
+    },
+    {
+      "name": "custom2_dxt-manifest",
+      "path": "multipart/855/custom2_dxt/manifest.properties",
+      "version": 855,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 1004,
+      "load_size": 1004,
+      "hash": "19661B0B"
+    },
+    {
+      "name": "custom2_dxt-part-000",
+      "path": "multipart/855/custom2_dxt/part-000",
+      "version": 855,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "218E504E"
+    },
+    {
+      "name": "custom2_dxt-part-001",
+      "path": "multipart/855/custom2_dxt/part-001",
+      "version": 855,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "A1417791"
+    },
+    {
+      "name": "custom2_dxt-part-002",
+      "path": "multipart/855/custom2_dxt/part-002",
+      "version": 855,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "84319D67"
+    },
+    {
+      "name": "custom2_dxt-part-003",
+      "path": "multipart/855/custom2_dxt/part-003",
+      "version": 855,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "6B137643"
+    },
+    {
+      "name": "custom2_dxt-part-004",
+      "path": "multipart/855/custom2_dxt/part-004",
+      "version": 855,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "36FF1087"
+    },
+    {
+      "name": "custom2_dxt-part-005",
+      "path": "multipart/855/custom2_dxt/part-005",
+      "version": 855,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "98F1821D"
+    },
+    {
+      "name": "custom2_dxt-part-006",
+      "path": "multipart/855/custom2_dxt/part-006",
+      "version": 855,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 18000000,
+      "load_size": 18000000,
+      "hash": "E318785F"
+    },
+    {
+      "name": "custom2_dxt-part-007",
+      "path": "multipart/855/custom2_dxt/part-007",
+      "version": 855,
+      "update_type": "exists",
+      "texture": "dxt",
+      "archive": "",
+      "size": 6690665,
+      "load_size": 6690665,
+      "hash": "11DADBB7"
     }
   ]
 }
