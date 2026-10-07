@@ -1,5 +1,5 @@
 {
- "update_version": 859,
+ "update_version": 860,
  "files": [
   {
    "name": ".custom3",
@@ -19,9 +19,9 @@
    "update_type": "strong",
    "texture": "",
    "archive": ".zip",
-   "size": 711149045,
-   "load_size": 252470598,
-   "hash": "34A58FB3"
+   "size": 711140722,
+   "load_size": 252471206,
+   "hash": "92F68FD9"
   },
   {
    "name": ".event",
@@ -2114,61 +2114,6 @@
    "hash": "F0DAD38C"
   },
   {
-   "name": "texs-manifest",
-   "path": "multipart/857/texs/manifest.properties",
-   "version": 857,
-   "update_type": "exists",
-   "texture": "",
-   "archive": "",
-   "size": 581,
-   "load_size": 581,
-   "hash": "23097492"
-  },
-  {
-   "name": "texs-part-000",
-   "path": "multipart/857/texs/part-000",
-   "version": 857,
-   "update_type": "exists",
-   "texture": "",
-   "archive": "",
-   "size": 18000000,
-   "load_size": 18000000,
-   "hash": "C7EC9B5B"
-  },
-  {
-   "name": "texs-part-001",
-   "path": "multipart/857/texs/part-001",
-   "version": 857,
-   "update_type": "exists",
-   "texture": "",
-   "archive": "",
-   "size": 18000000,
-   "load_size": 18000000,
-   "hash": "32C068D1"
-  },
-  {
-   "name": "texs-part-002",
-   "path": "multipart/857/texs/part-002",
-   "version": 857,
-   "update_type": "exists",
-   "texture": "",
-   "archive": "",
-   "size": 18000000,
-   "load_size": 18000000,
-   "hash": "B47D0741"
-  },
-  {
-   "name": "texs-part-003",
-   "path": "multipart/857/texs/part-003",
-   "version": 857,
-   "update_type": "exists",
-   "texture": "",
-   "archive": "",
-   "size": 15340361,
-   "load_size": 15340361,
-   "hash": "BAD4C6E4"
-  },
-  {
    "name": "texs2-manifest",
    "path": "multipart/855/texs2/manifest.properties",
    "version": 855,
@@ -2543,105 +2488,147 @@
    "hash": "7F779348"
   },
   {
-   "path": "multipart/859/data/part-000",
+   "path": "multipart/860/data/part-000",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-001",
+   "path": "multipart/860/data/part-001",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-002",
+   "path": "multipart/860/data/part-002",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-003",
+   "path": "multipart/860/data/part-003",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-004",
+   "path": "multipart/860/data/part-004",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-005",
+   "path": "multipart/860/data/part-005",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-006",
+   "path": "multipart/860/data/part-006",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-007",
+   "path": "multipart/860/data/part-007",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-008",
+   "path": "multipart/860/data/part-008",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-009",
+   "path": "multipart/860/data/part-009",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-010",
+   "path": "multipart/860/data/part-010",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-011",
+   "path": "multipart/860/data/part-011",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-012",
+   "path": "multipart/860/data/part-012",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-013",
+   "path": "multipart/860/data/part-013",
    "type": "exists",
    "size": 0,
    "load_size": 0,
    "hash": ""
   },
   {
-   "path": "multipart/859/data/part-014",
+   "path": "multipart/860/data/part-014",
+   "type": "exists",
+   "size": 0,
+   "load_size": 0,
+   "hash": ""
+  },
+  {
+   "path": "multipart/860/data/manifest.properties",
+   "type": "exists",
+   "size": 0,
+   "load_size": 0,
+   "hash": ""
+  },
+  {
+   "path": "multipart/860/texs/part-000",
+   "type": "exists",
+   "size": 0,
+   "load_size": 0,
+   "hash": ""
+  },
+  {
+   "path": "multipart/860/texs/part-001",
+   "type": "exists",
+   "size": 0,
+   "load_size": 0,
+   "hash": ""
+  },
+  {
+   "path": "multipart/860/texs/part-002",
+   "type": "exists",
+   "size": 0,
+   "load_size": 0,
+   "hash": ""
+  },
+  {
+   "path": "multipart/860/texs/part-003",
+   "type": "exists",
+   "size": 0,
+   "load_size": 0,
+   "hash": ""
+  },
+  {
+   "path": "multipart/860/texs/manifest.properties",
    "type": "exists",
    "size": 0,
    "load_size": 0,
