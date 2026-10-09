@@ -19,9 +19,9 @@
    "update_type": "strong",
    "texture": "",
    "archive": ".zip",
-   "size": 711154975,
-   "load_size": 252460448,
-   "hash": "35CD3D2A"
+   "size": 711173740,
+   "load_size": 252477334,
+   "hash": "87EE99A7"
   },
   {
    "name": ".event",
@@ -2496,7 +2496,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "6ABCE305"
+   "hash": "394837C6"
   },
   {
    "name": "data-part-001",
@@ -2507,7 +2507,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "88C45664"
+   "hash": "0CF0896B"
   },
   {
    "name": "data-part-002",
@@ -2518,7 +2518,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "53E6C2CA"
+   "hash": "D5049F49"
   },
   {
    "name": "data-part-003",
@@ -2529,7 +2529,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "1558B969"
+   "hash": "18379EDF"
   },
   {
    "name": "data-part-004",
@@ -2540,7 +2540,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "8AEE2697"
+   "hash": "C6AA8CB8"
   },
   {
    "name": "data-part-005",
@@ -2551,7 +2551,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "3690AEF3"
+   "hash": "13CBE3F3"
   },
   {
    "name": "data-part-006",
@@ -2562,7 +2562,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "BFB80112"
+   "hash": "22BE5C29"
   },
   {
    "name": "data-part-007",
@@ -2573,7 +2573,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "84DA2322"
+   "hash": "223E5C40"
   },
   {
    "name": "data-part-008",
@@ -2584,7 +2584,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "BEE75153"
+   "hash": "39725B64"
   },
   {
    "name": "data-part-009",
@@ -2595,7 +2595,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "FBECDA84"
+   "hash": "0BE40A35"
   },
   {
    "name": "data-part-010",
@@ -2606,7 +2606,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "3BA304C3"
+   "hash": "7FCA3E85"
   },
   {
    "name": "data-part-011",
@@ -2617,7 +2617,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "13E0B427"
+   "hash": "2053E8C8"
   },
   {
    "name": "data-part-012",
@@ -2628,7 +2628,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "F4A5AA75"
+   "hash": "F0F86261"
   },
   {
    "name": "data-part-013",
@@ -2639,7 +2639,7 @@
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "FD540D74"
+   "hash": "B04D267C"
   },
   {
    "name": "data-part-014",
@@ -2648,9 +2648,9 @@
    "update_type": "exists",
    "texture": "",
    "archive": "",
-   "size": 460448,
-   "load_size": 460448,
-   "hash": "D176171F"
+   "size": 477334,
+   "load_size": 477334,
+   "hash": "FA82733C"
   },
   {
    "name": "data-manifest",
@@ -2661,7 +2661,7 @@
    "archive": "",
    "size": 1725,
    "load_size": 1725,
-   "hash": "C0F0075C"
+   "hash": "A0774E31"
   },
   {
    "name": "texs-part-000",
