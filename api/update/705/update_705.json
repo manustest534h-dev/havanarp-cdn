@@ -1,5 +1,5 @@
 {
- "update_version": 880,
+ "update_version": 890,
  "files": [
   {
    "name": ".custom3",
@@ -2236,47 +2236,47 @@
   },
   {
    "name": "texs2-manifest",
-   "path": "multipart/855/texs2/manifest.properties",
-   "version": 855,
+   "path": "multipart/890/texs2/manifest.properties",
+   "version": 890,
    "update_type": "exists",
    "texture": "",
    "archive": "",
    "size": 477,
    "load_size": 477,
-   "hash": "719594CD"
+   "hash": "C69AF7D2"
   },
   {
    "name": "texs2-part-000",
-   "path": "multipart/855/texs2/part-000",
-   "version": 855,
+   "path": "multipart/890/texs2/part-000",
+   "version": 890,
    "update_type": "exists",
    "texture": "",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "2AEB59B0"
+   "hash": "09174802"
   },
   {
    "name": "texs2-part-001",
-   "path": "multipart/855/texs2/part-001",
-   "version": 855,
+   "path": "multipart/890/texs2/part-001",
+   "version": 890,
    "update_type": "exists",
    "texture": "",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "EFD9DAD0"
+   "hash": "78BF3B28"
   },
   {
    "name": "texs2-part-002",
-   "path": "multipart/855/texs2/part-002",
-   "version": 855,
+   "path": "multipart/890/texs2/part-002",
+   "version": 890,
    "update_type": "exists",
    "texture": "",
    "archive": "",
-   "size": 15643756,
-   "load_size": 15643756,
-   "hash": "9897BAB1"
+   "size": 15652813,
+   "load_size": 15652813,
+   "hash": "1EB1C854"
   },
   {
    "name": "samp-manifest",
