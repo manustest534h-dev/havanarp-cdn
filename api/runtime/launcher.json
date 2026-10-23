@@ -1,12 +1,12 @@
 {
-  "version": "4.17.18",
-  "versionCode": 913,
-  "tag": "v913",
-  "name": "HavanaRP 4.17.18 (v137)",
-  "published_at": "2026-10-23T14:41:22Z",
-  "size": 162611914,
-  "sha256": "94b694f8c5cb2e74e0a5b66027c2ef075fcdc2db64c3b851390b1bf34a1e11f1",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v913/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v913",
-  "notes": "## لانشر هافانا RP - الإصدار 4.17.18 (v137)\n\nالإصدار الرسمي من لانشر هافانا RP.\n\n**الجديد:**\n- نقل قيادة العائلة من لوحة العائلة (الأعضاء - نقل القيادة).\n- حركة الهاتف: الهاتف على الأذن أثناء المكالمة فقط، وبيد اللاعب عند التصفح.\n- التحديثات القادمة للانشر بتوصلك تلقائياً من داخل اللانشر.\n\n**التثبيت:** حمّل الملف `HavanaRp.apk` وثبته فوق النسخة القديمة (ما بتنحذف بياناتك).\n\n---\n- الحجم: 162,611,914 بايت (155.1 MB)\n- SHA-256: `94b694f8c5cb2e74e0a5b66027c2ef075fcdc2db64c3b851390b1bf34a1e11f1`\n- versionCode: 913\n"
+  "version": "4.17.19",
+  "versionCode": 914,
+  "tag": "v914",
+  "name": "HavanaRP 4.17.19",
+  "published_at": "2026-10-23T15:37:30Z",
+  "size": 162604280,
+  "sha256": "cc7ef5af25d02f99a2cc6f0cca96a7c80362d62cc8055ebe5756bc71feb5e6d4",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v914/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v914",
+  "notes": "بداية سيزون ثلاث"
 }
