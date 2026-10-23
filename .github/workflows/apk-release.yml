@@ -1,0 +1,57 @@
+# HavanaRP: attach an APK that was staged as split parts on a branch to a (draft) release,
+# verify it, publish the release and sync config.json. Used because the API host for uploads
+# is not reachable from the build machine. Inputs: release_id, src_branch, sha256, size.
+name: apk-release
+on:
+  workflow_dispatch:
+    inputs:
+      release_id: {description: 'release id', required: true}
+      src_branch: {description: 'branch with apk/part_*', required: true}
+      sha256: {description: 'sha256 of the apk', required: true}
+      size: {description: 'size in bytes', required: true}
+permissions:
+  contents: write
+concurrency:
+  group: launcher-sync
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RID: ${{ inputs.release_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: '${{ inputs.src_branch }}', path: src}
+      - name: join + verify
+        run: |
+          cat src/apk/part_* > HavanaRp.apk
+          ls -l HavanaRp.apk
+          test "$(stat -c %s HavanaRp.apk)" = "${{ inputs.size }}"
+          echo "${{ inputs.sha256 }}  HavanaRp.apk" | sha256sum -c
+      - name: upload asset
+        run: |
+          A="https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$RID"
+          for id in $(curl -sf -H "Authorization: Bearer $GH_TOKEN" "$A/assets" | python3 -c "import json,sys;[print(a['id']) for a in json.load(sys.stdin) if a['name']=='HavanaRp.apk']"); do
+            curl -sf -X DELETE -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/assets/$id"; done
+          curl -sf -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/vnd.android.package-archive" \
+            --data-binary @HavanaRp.apk "https://uploads.github.com/repos/$GITHUB_REPOSITORY/releases/$RID/assets?name=HavanaRp.apk" -o up.json
+          python3 -c "import json;d=json.load(open('up.json'));print(d['name'],d['size'],d['state']);assert d['size']==${{ inputs.size }}"
+      - name: publish release
+        run: |
+          curl -sf -X PATCH -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$RID" \
+            -d '{"draft":false,"make_latest":"true"}' | python3 -c "import json,sys;d=json.load(sys.stdin);print(d['tag_name'],d['draft'],d['html_url'])"
+      - uses: actions/checkout@v4
+        with: {ref: main, path: main}
+      - name: sync config.json
+        working-directory: main
+        run: |
+          python3 .github/scripts/sync_config.py
+          git config user.name "havanarp-bot"; git config user.email "havanarp-bot@users.noreply.github.com"
+          git add api/runtime/config.json api/runtime/launcher.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -m "launcher update: config.json apk -> $(python3 -c "import json;print(json.load(open('api/runtime/config.json'))['apk']['version'])")"
+          for i in 1 2 3 4 5; do git push origin HEAD:main && exit 0; git pull --rebase origin main; done; exit 1
+      - name: drop staging branch
+        if: success()
+        run: git -C src push origin --delete "${{ inputs.src_branch }}" || true
