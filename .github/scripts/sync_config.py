@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""HavanaRP launcher update channel (v137).
+"""HavanaRP launcher update channel (v137, v138: launcher.json notes follow release edits).
 
 The launcher (every build, also v136 and older) reads api/runtime/config.json -> "apk".
 When apk.version > the installed versionCode it opens the update screen and the install
@@ -91,6 +91,15 @@ def main():
     vc, vn, pk = axml_version(zipfile.ZipFile(tmp).read('AndroidManifest.xml')); os.remove(tmp)
     print('apk versionCode', vc, 'versionName', vn, 'package', pk, 'sha256', sha)
     if pk != PKG: print('REFUSED: package', pk); return 1
+    if vc and vc == cur:
+        # v138: same build already in config.json -> only keep launcher.json (forum page + the launcher update screen line)
+        # in step with the release text, so editing the release notes on GitHub is enough.
+        try: lj = json.load(open(LJ, encoding='utf-8'))
+        except Exception: lj = {}
+        if lj.get('versionCode') == vc and (lj.get('notes') != (rel.get('body') or '') or lj.get('name') != (rel.get('name') or rel['tag_name'])):
+            lj['notes'] = rel.get('body') or ''; lj['name'] = rel.get('name') or rel['tag_name']
+            json.dump(lj, open(LJ, 'w', encoding='utf-8'), ensure_ascii=False, indent=2); open(LJ, 'a').write('\n')
+            print('launcher.json notes/name refreshed for', vc); return 0
     if not vc or vc <= cur: print('nothing to do: apk versionCode', vc, '<= config', cur); return 0
     url = asset['browser_download_url']
     apk = cfg.setdefault('apk', {})
