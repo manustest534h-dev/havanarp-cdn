@@ -1,6 +1,8 @@
 # HavanaRP: attach an APK that was staged as split parts on a branch to a (draft) release,
 # verify it, publish the release and sync config.json. Used because the API host for uploads
 # is not reachable from the build machine. Inputs: release_id, src_branch, sha256, size.
+# v140: delta patches staged on the same branch as patch/HavanaRp-<from>-<to>.patch + patch/SHA256SUMS are verified
+# and uploaded as release assets (same names) before publishing; sync_config.py turns them into config.json apk.patches.
 name: apk-release
 on:
   workflow_dispatch:
@@ -37,6 +39,22 @@ jobs:
           curl -sf -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/vnd.android.package-archive" \
             --data-binary @HavanaRp.apk "https://uploads.github.com/repos/$GITHUB_REPOSITORY/releases/$RID/assets?name=HavanaRp.apk" -o up.json
           python3 -c "import json;d=json.load(open('up.json'));print(d['name'],d['size'],d['state']);assert d['size']==${{ inputs.size }}"
+      - name: upload delta patches (v140)
+        run: |
+          shopt -s nullglob
+          P=(src/patch/HavanaRp-*-*.patch)
+          if [ ${#P[@]} = 0 ]; then echo "no patches staged"; exit 0; fi
+          (cd src/patch && sha256sum -c SHA256SUMS)
+          A="https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$RID"
+          curl -sf -H "Authorization: Bearer $GH_TOKEN" "$A/assets?per_page=100" > assets.json
+          for f in "${P[@]}"; do
+            n=$(basename "$f")
+            for id in $(python3 -c "import json,sys;[print(a['id']) for a in json.load(open('assets.json')) if a['name']==sys.argv[1]]" "$n"); do
+              curl -sf -X DELETE -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/assets/$id"; done
+            curl -sf -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/octet-stream" \
+              --data-binary @"$f" "https://uploads.github.com/repos/$GITHUB_REPOSITORY/releases/$RID/assets?name=$n" -o pu.json
+            python3 -c "import json,sys;d=json.load(open('pu.json'));print(d['name'],d['size'],d['state']);assert d['size']==int(sys.argv[1])" "$(stat -c %s "$f")"
+          done
       - name: publish release
         run: |
           curl -sf -X PATCH -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$RID" \

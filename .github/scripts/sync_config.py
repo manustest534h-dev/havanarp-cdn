@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""HavanaRP launcher update channel (v137, v138: launcher.json notes follow release edits).
+"""HavanaRP launcher update channel (v137, v138: launcher.json notes follow release edits, v140: delta patches).
 
 The launcher (every build, also v136 and older) reads api/runtime/config.json -> "apk".
 When apk.version > the installed versionCode it opens the update screen and the install
@@ -10,7 +10,12 @@ This script makes the newest GitHub release the single source of truth:
   * downloads the asset, reads versionCode / versionName from its AndroidManifest.xml (never trusts the tag),
   * only if versionCode > current config apk.version: rewrites config.json apk{...} and writes
     api/runtime/launcher.json (used by the forum download page as a fallback).
-Never lowers the version, never touches anything else in config.json.
+  * v140: release assets named HavanaRp-<from>-<to>.patch (format HVP1, to == the APK versionCode) become
+    config.json apk.patches {"<from>": {url, size, sha256, sha256_base, size_base, sha256_out, size_out, to}}
+    (read by the v140+ launcher HvDelta; older launchers ignore the key). Every entry is verified before it is
+    written: patch header out sha256/size == this APK, base size/sha256 == the HavanaRp.apk of release v<from>.
+    Patches for an older target are dropped. No patch assets -> no "patches" key.
+Never lowers the version, never touches anything else in config.json (existing apk fields are kept).
 Exit 0 = nothing to do or done, 1 = refused (prints why).
 """
 import json, os, re, sys, struct, zipfile, hashlib, urllib.request, tempfile
@@ -62,6 +67,64 @@ def axml_version(man):
         q += sz
     raise ValueError('no manifest element')
 
+PATCH_RE = re.compile(r'HavanaRp-(\d+)-(\d+)\.patch')
+
+def fetch(url, tmp=None):
+    """download url -> (sha256 hex, size, bytes or None); big files stream to tmp"""
+    rq = urllib.request.Request(url, headers={'User-Agent': 'havanarp-sync'})
+    h = hashlib.sha256(); n = 0; buf = bytearray() if tmp is None else None
+    with urllib.request.urlopen(rq, timeout=600) as u:
+        f = open(tmp, 'wb') if tmp else None
+        while True:
+            d = u.read(1 << 20)
+            if not d: break
+            h.update(d); n += len(d)
+            if f: f.write(d)
+            else: buf += d
+        if f: f.close()
+    return h.hexdigest(), n, (bytes(buf) if buf is not None else None)
+
+def patch_head(p):
+    if p[:4] != b'HVP1' or struct.unpack('>I', p[4:8])[0] != 1: return None
+    return {'sha256_base': p[8:40].hex(), 'size_base': struct.unpack('>Q', p[40:48])[0],
+            'sha256_out': p[48:80].hex(), 'size_out': struct.unpack('>Q', p[80:88])[0]}
+
+def build_patches(rel, vc, sha, size, releases=None, get=fetch):
+    """verified apk.patches dict for release rel (APK versionCode vc, sha256 sha, size size)"""
+    out = {}
+    if releases is None: releases = api('https://api.github.com/repos/%s/releases?per_page=30' % REPO)
+    for a in rel.get('assets', []):
+        m = PATCH_RE.fullmatch(a.get('name', ''))
+        if not m or a.get('state') != 'uploaded': continue
+        frm, to = int(m.group(1)), int(m.group(2))
+        if to != vc or frm >= vc: print('patch', a['name'], 'skipped: not for', vc); continue
+        psha, pn, pb = get(a['browser_download_url'])
+        h = patch_head(pb or b'')
+        if pn != a['size'] or not h: print('patch', a['name'], 'REFUSED: size/header'); continue
+        if h['sha256_out'] != sha or h['size_out'] != size: print('patch', a['name'], 'REFUSED: output is not this APK'); continue
+        base = None
+        for r in releases:
+            if r.get('draft') or r.get('tag_name') != 'v%d' % frm: continue
+            base = next((x for x in r.get('assets', []) if x['name'] == ASSET and x.get('state') == 'uploaded'), None)
+        if not base or base['size'] != h['size_base']: print('patch', a['name'], 'REFUSED: no release v%d / base size' % frm); continue
+        fd, tmp = tempfile.mkstemp(suffix='.apk'); os.close(fd)
+        try: bsha, bn, _ = get(base['browser_download_url'], tmp)
+        finally:
+            try: os.remove(tmp)
+            except OSError: pass
+        if bsha != h['sha256_base'] or bn != h['size_base']: print('patch', a['name'], 'REFUSED: base sha256 != release v%d' % frm); continue
+        out[str(frm)] = {'url': a['browser_download_url'], 'size': pn, 'sha256': psha, 'sha256_base': h['sha256_base'],
+                         'size_base': h['size_base'], 'sha256_out': h['sha256_out'], 'size_out': h['size_out'], 'to': vc}
+        print('patch', a['name'], 'OK', pn, 'bytes', psha)
+    return dict(sorted(out.items(), key=lambda kv: -int(kv[0])))
+
+def set_patches(apk, patches):
+    """True when apk.patches changed"""
+    old = apk.get('patches')
+    if patches: apk['patches'] = patches
+    else: apk.pop('patches', None)
+    return old != apk.get('patches')
+
 def pick():
     for r in api('https://api.github.com/repos/%s/releases?per_page=30' % REPO):
         if r.get('draft') or r.get('prerelease'): continue
@@ -92,6 +155,11 @@ def main():
     print('apk versionCode', vc, 'versionName', vn, 'package', pk, 'sha256', sha)
     if pk != PKG: print('REFUSED: package', pk); return 1
     if vc and vc == cur:
+        # v140: same build -> make apk.patches match the release's verified patch assets (patches may be added later)
+        apk = cfg.setdefault('apk', {})
+        if set_patches(apk, build_patches(rel, vc, sha, n)):
+            json.dump(cfg, open(CFG, 'w', encoding='utf-8'), ensure_ascii=False, indent=2); open(CFG, 'a').write('\n')
+            print('config.json apk.patches ->', sorted(apk.get('patches', {})))
         # v138: same build already in config.json -> only keep launcher.json (forum page + the launcher update screen line)
         # in step with the release text, so editing the release notes on GitHub is enough.
         try: lj = json.load(open(LJ, encoding='utf-8'))
@@ -105,12 +173,13 @@ def main():
     apk = cfg.setdefault('apk', {})
     apk.update({'version': vc, 'str': vn or apk.get('str', ''), 'path': url, 'auto_update': True,
                 'manual_update': True, 'manual_update_url': url, 'url': url})
+    set_patches(apk, build_patches(rel, vc, sha, n))
     json.dump(cfg, open(CFG, 'w', encoding='utf-8'), ensure_ascii=False, indent=2); open(CFG, 'a').write('\n')
     lj = {'version': vn, 'versionCode': vc, 'tag': rel['tag_name'], 'name': rel.get('name') or rel['tag_name'],
           'published_at': rel.get('published_at'), 'size': n, 'sha256': sha, 'url': url,
           'release_url': rel.get('html_url'), 'notes': rel.get('body') or ''}
     json.dump(lj, open(LJ, 'w', encoding='utf-8'), ensure_ascii=False, indent=2); open(LJ, 'a').write('\n')
-    print('config.json apk ->', vc, vn, url)
+    print('config.json apk ->', vc, vn, url, 'patches', sorted(apk.get('patches', {})))
     return 0
 
 if __name__ == '__main__':
