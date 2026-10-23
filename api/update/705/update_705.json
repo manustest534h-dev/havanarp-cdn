@@ -1,5 +1,5 @@
 {
- "update_version": 890,
+ "update_version": 900,
  "files": [
   {
    "name": ".custom3",
@@ -20,8 +20,8 @@
    "texture": "",
    "archive": ".zip",
    "size": 711140722,
-   "load_size": 252456722,
-   "hash": "88D069E4"
+   "load_size": 252443665,
+   "hash": "5881C2CD"
   },
   {
    "name": ".event",
@@ -1136,19 +1136,19 @@
   },
   {
    "name": "custom3_dxt-part-000",
-   "path": "multipart/880/custom3_dxt/part-000",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/part-000",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "BCAEE179"
+   "hash": "0DEF34CB"
   },
   {
    "name": "custom3_dxt-part-001",
-   "path": "multipart/880/custom3_dxt/part-001",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/part-001",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
@@ -1158,8 +1158,8 @@
   },
   {
    "name": "custom3_dxt-part-002",
-   "path": "multipart/880/custom3_dxt/part-002",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/part-002",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
@@ -1169,8 +1169,8 @@
   },
   {
    "name": "custom3_dxt-part-003",
-   "path": "multipart/880/custom3_dxt/part-003",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/part-003",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
@@ -1180,8 +1180,8 @@
   },
   {
    "name": "custom3_dxt-part-004",
-   "path": "multipart/880/custom3_dxt/part-004",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/part-004",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
@@ -1191,8 +1191,8 @@
   },
   {
    "name": "custom3_dxt-part-005",
-   "path": "multipart/880/custom3_dxt/part-005",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/part-005",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
@@ -1202,80 +1202,80 @@
   },
   {
    "name": "custom3_dxt-part-006",
-   "path": "multipart/880/custom3_dxt/part-006",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/part-006",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "B4F1B710"
+   "hash": "39069FA7"
   },
   {
    "name": "custom3_dxt-part-007",
-   "path": "multipart/880/custom3_dxt/part-007",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/part-007",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "325FD097"
+   "hash": "DC15A21C"
   },
   {
    "name": "custom3_dxt-part-008",
-   "path": "multipart/880/custom3_dxt/part-008",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/part-008",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "5717288F"
+   "hash": "4513E10A"
   },
   {
    "name": "custom3_dxt-part-009",
-   "path": "multipart/880/custom3_dxt/part-009",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/part-009",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "84696C6B"
+   "hash": "AC65AA56"
   },
   {
    "name": "custom3_dxt-part-010",
-   "path": "multipart/880/custom3_dxt/part-010",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/part-010",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "883A4995"
+   "hash": "AD8F7D42"
   },
   {
    "name": "custom3_dxt-part-011",
-   "path": "multipart/880/custom3_dxt/part-011",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/part-011",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
-   "size": 14381042,
-   "load_size": 14381042,
-   "hash": "5AB67566"
+   "size": 14381642,
+   "load_size": 14381642,
+   "hash": "5A27DF74"
   },
   {
    "name": "custom3_dxt-manifest",
-   "path": "multipart/880/custom3_dxt/manifest.properties",
-   "version": 880,
+   "path": "multipart/900/custom3_dxt/manifest.properties",
+   "version": 900,
    "update_type": "exists",
    "texture": "dxt",
    "archive": "",
    "size": 1422,
    "load_size": 1422,
-   "hash": "6650B78F"
+   "hash": "F3AF227A"
   },
   {
    "name": "custom3_etc-part-000",
@@ -1356,19 +1356,19 @@
   },
   {
    "name": "custom3_pvr-part-000",
-   "path": "multipart/880/custom3_pvr/part-000",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/part-000",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "8FF157B7"
+   "hash": "6DCBFA1F"
   },
   {
    "name": "custom3_pvr-part-001",
-   "path": "multipart/880/custom3_pvr/part-001",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/part-001",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
@@ -1378,8 +1378,8 @@
   },
   {
    "name": "custom3_pvr-part-002",
-   "path": "multipart/880/custom3_pvr/part-002",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/part-002",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
@@ -1389,8 +1389,8 @@
   },
   {
    "name": "custom3_pvr-part-003",
-   "path": "multipart/880/custom3_pvr/part-003",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/part-003",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
@@ -1400,8 +1400,8 @@
   },
   {
    "name": "custom3_pvr-part-004",
-   "path": "multipart/880/custom3_pvr/part-004",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/part-004",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
@@ -1411,91 +1411,91 @@
   },
   {
    "name": "custom3_pvr-part-005",
-   "path": "multipart/880/custom3_pvr/part-005",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/part-005",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "820EFB09"
+   "hash": "F3F29F20"
   },
   {
    "name": "custom3_pvr-part-006",
-   "path": "multipart/880/custom3_pvr/part-006",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/part-006",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "532D64FE"
+   "hash": "19037F79"
   },
   {
    "name": "custom3_pvr-part-007",
-   "path": "multipart/880/custom3_pvr/part-007",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/part-007",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "387F6281"
+   "hash": "A3463BED"
   },
   {
    "name": "custom3_pvr-part-008",
-   "path": "multipart/880/custom3_pvr/part-008",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/part-008",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "A8E54306"
+   "hash": "1D63C408"
   },
   {
    "name": "custom3_pvr-part-009",
-   "path": "multipart/880/custom3_pvr/part-009",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/part-009",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "B7327D06"
+   "hash": "6637D99D"
   },
   {
    "name": "custom3_pvr-part-010",
-   "path": "multipart/880/custom3_pvr/part-010",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/part-010",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "BFF5A9FF"
+   "hash": "FDBEAEA0"
   },
   {
    "name": "custom3_pvr-part-011",
-   "path": "multipart/880/custom3_pvr/part-011",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/part-011",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
-   "size": 7825632,
-   "load_size": 7825632,
-   "hash": "9CE3315A"
+   "size": 7826604,
+   "load_size": 7826604,
+   "hash": "3FEFE16A"
   },
   {
    "name": "custom3_pvr-manifest",
-   "path": "multipart/880/custom3_pvr/manifest.properties",
-   "version": 880,
+   "path": "multipart/900/custom3_pvr/manifest.properties",
+   "version": 900,
    "update_type": "exists",
    "texture": "pvr",
    "archive": "",
    "size": 1421,
    "load_size": 1421,
-   "hash": "EC422944"
+   "hash": "2D6C7838"
   },
   {
    "name": "custom2_dxt-manifest",
@@ -2610,19 +2610,19 @@
   },
   {
    "name": "data-part-000",
-   "path": "multipart/880/data/part-000",
-   "version": 880,
+   "path": "multipart/900/data/part-000",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "13E61F4B"
+   "hash": "3312F818"
   },
   {
    "name": "data-part-001",
-   "path": "multipart/880/data/part-001",
-   "version": 880,
+   "path": "multipart/900/data/part-001",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
@@ -2632,8 +2632,8 @@
   },
   {
    "name": "data-part-002",
-   "path": "multipart/880/data/part-002",
-   "version": 880,
+   "path": "multipart/900/data/part-002",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
@@ -2643,8 +2643,8 @@
   },
   {
    "name": "data-part-003",
-   "path": "multipart/880/data/part-003",
-   "version": 880,
+   "path": "multipart/900/data/part-003",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
@@ -2654,8 +2654,8 @@
   },
   {
    "name": "data-part-004",
-   "path": "multipart/880/data/part-004",
-   "version": 880,
+   "path": "multipart/900/data/part-004",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
@@ -2665,8 +2665,8 @@
   },
   {
    "name": "data-part-005",
-   "path": "multipart/880/data/part-005",
-   "version": 880,
+   "path": "multipart/900/data/part-005",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
@@ -2676,8 +2676,8 @@
   },
   {
    "name": "data-part-006",
-   "path": "multipart/880/data/part-006",
-   "version": 880,
+   "path": "multipart/900/data/part-006",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
@@ -2687,8 +2687,8 @@
   },
   {
    "name": "data-part-007",
-   "path": "multipart/880/data/part-007",
-   "version": 880,
+   "path": "multipart/900/data/part-007",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
@@ -2698,8 +2698,8 @@
   },
   {
    "name": "data-part-008",
-   "path": "multipart/880/data/part-008",
-   "version": 880,
+   "path": "multipart/900/data/part-008",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
@@ -2709,8 +2709,8 @@
   },
   {
    "name": "data-part-009",
-   "path": "multipart/880/data/part-009",
-   "version": 880,
+   "path": "multipart/900/data/part-009",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
@@ -2720,8 +2720,8 @@
   },
   {
    "name": "data-part-010",
-   "path": "multipart/880/data/part-010",
-   "version": 880,
+   "path": "multipart/900/data/part-010",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
@@ -2731,58 +2731,58 @@
   },
   {
    "name": "data-part-011",
-   "path": "multipart/880/data/part-011",
-   "version": 880,
+   "path": "multipart/900/data/part-011",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "C712890B"
+   "hash": "F4B2363E"
   },
   {
    "name": "data-part-012",
-   "path": "multipart/880/data/part-012",
-   "version": 880,
+   "path": "multipart/900/data/part-012",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "9E35FBD6"
+   "hash": "7D5D627C"
   },
   {
    "name": "data-part-013",
-   "path": "multipart/880/data/part-013",
-   "version": 880,
+   "path": "multipart/900/data/part-013",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
    "size": 18000000,
    "load_size": 18000000,
-   "hash": "1F5C0842"
+   "hash": "D29392D7"
   },
   {
    "name": "data-part-014",
-   "path": "multipart/880/data/part-014",
-   "version": 880,
+   "path": "multipart/900/data/part-014",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
-   "size": 456722,
-   "load_size": 456722,
-   "hash": "6050B128"
+   "size": 443665,
+   "load_size": 443665,
+   "hash": "D37E5109"
   },
   {
    "name": "data-manifest",
-   "path": "multipart/880/data/manifest.properties",
-   "version": 880,
+   "path": "multipart/900/data/manifest.properties",
+   "version": 900,
    "update_type": "exists",
    "texture": "",
    "archive": "",
    "size": 1725,
    "load_size": 1725,
-   "hash": "8C919C01"
+   "hash": "640E26CD"
   },
   {
    "name": "texs-part-000",
