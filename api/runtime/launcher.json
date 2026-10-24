@@ -1,12 +1,12 @@
 {
-  "version": "4.17.21",
-  "versionCode": 916,
-  "tag": "v916",
-  "name": "HavanaRP 4.17.21",
-  "published_at": "2026-10-23T18:45:30Z",
-  "size": 162662376,
-  "sha256": "445e84a69b7a0d89445ebf58a99a69e066d48e4234252b46f2f5e90db39c55c4",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v916/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v916",
+  "version": "4.17.22",
+  "versionCode": 917,
+  "tag": "v917",
+  "name": "HavanaRP 4.17.22",
+  "published_at": "2026-10-24T02:13:30Z",
+  "size": 163866108,
+  "sha256": "a360d42ca5017b5d0b99cabc5f95bfe86ed53241290ed7a9313966a198559675",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v917/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v917",
   "notes": "بداية سيزون ثلاث"
 }
