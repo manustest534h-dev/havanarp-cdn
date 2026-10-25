@@ -1,12 +1,12 @@
 {
-  "version": "4.17.28",
-  "versionCode": 923,
-  "tag": "v923",
-  "name": "HavanaRP 4.17.28",
-  "published_at": "2026-10-25T02:07:23Z",
-  "size": 164678710,
-  "sha256": "2d21bc38c9094f6bdcebef1bb75e36e3b2700159b124d17d52f10b23b7b8ff2d",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v923/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v923",
-  "notes": "تحسين شاشات وظيفة الميكانيكي"
+  "version": "4.17.29",
+  "versionCode": 924,
+  "tag": "v924",
+  "name": "HavanaRP 4.17.29",
+  "published_at": "2026-10-25T16:00:28Z",
+  "size": 164691515,
+  "sha256": "347e4d8604f646f67f81cdc204ec121ddbe88283cc564ccaed928e9793e3b17f",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v924/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v924",
+  "notes": "تحديث حماية اللانشر"
 }
