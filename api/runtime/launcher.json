@@ -1,12 +1,12 @@
 {
-  "version": "4.17.26",
-  "versionCode": 921,
-  "tag": "v921",
-  "name": "HavanaRP 4.17.26",
-  "published_at": "2026-10-24T17:48:16Z",
-  "size": 163989185,
-  "sha256": "4d875cf159674f35749719bc399a071ec07927a919b432f25fd0f06a66b37ec7",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v921/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v921",
-  "notes": "ورشة هافانا للميكانيك + نظام الحزم الإضافية"
+  "version": "4.17.27",
+  "versionCode": 922,
+  "tag": "v922",
+  "name": "HavanaRP 4.17.27",
+  "published_at": "2026-10-25T00:52:20Z",
+  "size": 164648898,
+  "sha256": "6e47e1a5353a6956ee65f188746ef31e43a6ed49fa4bbecb2be0d4188277c754",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v922/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v922",
+  "notes": "وظيفة ميكانيكي هافانا"
 }
