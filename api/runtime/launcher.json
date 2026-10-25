@@ -1,12 +1,12 @@
 {
-  "version": "4.17.29",
-  "versionCode": 924,
-  "tag": "v924",
-  "name": "HavanaRP 4.17.29",
-  "published_at": "2026-10-25T16:00:28Z",
-  "size": 164691515,
-  "sha256": "347e4d8604f646f67f81cdc204ec121ddbe88283cc564ccaed928e9793e3b17f",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v924/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v924",
-  "notes": "تحديث حماية اللانشر"
+  "version": "4.17.30",
+  "versionCode": 925,
+  "tag": "v925",
+  "name": "HavanaRP 4.17.30",
+  "published_at": "2026-10-25T22:58:06Z",
+  "size": 164706762,
+  "sha256": "d7beee5ebc3dcaac4f69f92c507d118ddc7078f7d7dc42ab6a51f6c3c8e16ae6",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v925/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v925",
+  "notes": "زر إطفاء/تشغيل المحرك بجانب القفل + جالون بنزين في محطة الوقود"
 }

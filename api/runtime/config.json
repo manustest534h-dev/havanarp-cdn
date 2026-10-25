@@ -1,53 +1,43 @@
 {
   "config_version": 1,
   "apk": {
-    "version": 924,
-    "str": "4.17.29",
-    "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v924/HavanaRp.apk",
+    "version": 925,
+    "str": "4.17.30",
+    "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v925/HavanaRp.apk",
     "auto_update": true,
     "manual_update": true,
-    "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v924/HavanaRp.apk",
-    "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v924/HavanaRp.apk",
+    "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v925/HavanaRp.apk",
+    "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v925/HavanaRp.apk",
     "patches": {
+      "924": {
+        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v925/HavanaRp-924-925.patch",
+        "size": 1501541,
+        "sha256": "9d6a673e4fd10618e32cdf7f53ea985532184b1d46124b56362602a2127e03dc",
+        "sha256_base": "347e4d8604f646f67f81cdc204ec121ddbe88283cc564ccaed928e9793e3b17f",
+        "size_base": 164691515,
+        "sha256_out": "d7beee5ebc3dcaac4f69f92c507d118ddc7078f7d7dc42ab6a51f6c3c8e16ae6",
+        "size_out": 164706762,
+        "to": 925
+      },
       "923": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/1ea34977f083b1c8df1f038d82d40ce931822e5f/files/patch/v924/HavanaRp-923-924.patch",
-        "size": 497300,
-        "sha256": "7a32b5f40160c94f01d3cdaf580953658802bf8053be83082d01441338ba3605",
+        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v925/HavanaRp-923-925.patch",
+        "size": 1518141,
+        "sha256": "d7cd5036492fb7a4b9d269e82cb56cb33ad2da3f1b598ceeae618e0cdd4f7241",
         "sha256_base": "2d21bc38c9094f6bdcebef1bb75e36e3b2700159b124d17d52f10b23b7b8ff2d",
         "size_base": 164678710,
-        "sha256_out": "347e4d8604f646f67f81cdc204ec121ddbe88283cc564ccaed928e9793e3b17f",
-        "size_out": 164691515,
-        "to": 924
+        "sha256_out": "d7beee5ebc3dcaac4f69f92c507d118ddc7078f7d7dc42ab6a51f6c3c8e16ae6",
+        "size_out": 164706762,
+        "to": 925
       },
       "922": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/1ea34977f083b1c8df1f038d82d40ce931822e5f/files/patch/v924/HavanaRp-922-924.patch",
-        "size": 620839,
-        "sha256": "52442efb896408b7d7f511f1863b936edf0e2ee3dc03a93b701f96e0a223e8bd",
+        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v925/HavanaRp-922-925.patch",
+        "size": 1663684,
+        "sha256": "2fd57a7700a557d708c6c983b774713ac9dbb27f302416cdf88e93941ea3adbb",
         "sha256_base": "6e47e1a5353a6956ee65f188746ef31e43a6ed49fa4bbecb2be0d4188277c754",
         "size_base": 164648898,
-        "sha256_out": "347e4d8604f646f67f81cdc204ec121ddbe88283cc564ccaed928e9793e3b17f",
-        "size_out": 164691515,
-        "to": 924
-      },
-      "921": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/1ea34977f083b1c8df1f038d82d40ce931822e5f/files/patch/v924/HavanaRp-921-924.patch",
-        "size": 2265586,
-        "sha256": "856e285a319ba842bc952435375d619956aac75b72b1435de19d17597b009a64",
-        "sha256_base": "4d875cf159674f35749719bc399a071ec07927a919b432f25fd0f06a66b37ec7",
-        "size_base": 163989185,
-        "sha256_out": "347e4d8604f646f67f81cdc204ec121ddbe88283cc564ccaed928e9793e3b17f",
-        "size_out": 164691515,
-        "to": 924
-      },
-      "920": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/1ea34977f083b1c8df1f038d82d40ce931822e5f/files/patch/v924/HavanaRp-920-924.patch",
-        "size": 2265587,
-        "sha256": "9af525bfab5bd47894ffd6d6c809a04c8ddf31f25582e42ce8176e60f43b4fd7",
-        "sha256_base": "bf0c44184b7383084364d0d06d3f38a80dbf99d27c5a333010ea157a245f12ef",
-        "size_base": 163962622,
-        "sha256_out": "347e4d8604f646f67f81cdc204ec121ddbe88283cc564ccaed928e9793e3b17f",
-        "size_out": 164691515,
-        "to": 924
+        "sha256_out": "d7beee5ebc3dcaac4f69f92c507d118ddc7078f7d7dc42ab6a51f6c3c8e16ae6",
+        "size_out": 164706762,
+        "to": 925
       }
     }
   },
