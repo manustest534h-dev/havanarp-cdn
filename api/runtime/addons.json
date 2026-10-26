@@ -1,8 +1,8 @@
 {
  "format": 1,
- "version": 9,
+ "version": 10,
  "pack": ".event",
- "note": "v180: add-on v9 = v8 + Toyota Land Cruiser 70 (15982 hvlc70, base LANDSTAL) + Nissan D22 double cab (15983 hvd22, base HUNTLEY): both dffs appended to texdb\\hv_garage.img (no new archive / texdb; decal geometry + flat colours + stock shared textures). Rows added after hvroadster in orp_vehicles_02.ide, custom_handlings.cfg, vehicle_audio_settings.cfg.",
+ "note": "v184: add-on v10 = v9 + Land Rover Defender OCTA (15984 hvoct, base HUNTLEY): dff appended to texdb\\hv_garage.img (no new archive / texdb; flat colours + geometry details + stock shared textures). Row added after hvd22 in orp_vehicles_02.ide, custom_handlings.cfg, vehicle_audio_settings.cfg.",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
  "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/files/addons/blobs/",
@@ -24,23 +24,23 @@
   },
   {
    "path": "!client/data/maps/orp/orp_vehicles_02.ide",
-   "size": 5971,
-   "sha256": "d22b554764712ad7decdee4e9802ff88a45ac81d4a56dc65fcdc99f4955ed5a2"
+   "size": 6060,
+   "sha256": "d45db31521df5cb7765ef0d5110753111ab7196983b002f502d37f55d600f733"
   },
   {
    "path": "!client/custom_handlings.cfg",
-   "size": 111654,
-   "sha256": "143fa7bcf1e56b453d1e848e506b611a71fa21c375eeccf0875eb262e9fac1e8"
+   "size": 112114,
+   "sha256": "e669fa833a4ff9c918e1648b35730d9fac419e6f1074fd2b8596905c8767970a"
   },
   {
    "path": "!client/vehicle_audio_settings.cfg",
-   "size": 106551,
-   "sha256": "2cba1388d3ef74e32965e73584061cec9244d06a0fdf422e504a7bd04301b6ba"
+   "size": 106751,
+   "sha256": "9bb135fca9025326e1674689b7a6e1d8d9662262cd1481c3fc0bbce8abe9c595"
   },
   {
    "path": "!client/texdb/hv_garage.img",
-   "size": 15671296,
-   "sha256": "4ab75f17adb7f93bb3abf97005362fcba2b493f2287f114f10298ac972bd1b7e"
+   "size": 18311168,
+   "sha256": "c5fa60701aefc8af9a0714e5585a88c965b3f8553cad5ae0c7b51171a5346cea"
   },
   {
    "path": "!client/data/maps/orp/hv_garage.ide",
@@ -108,6 +108,6 @@
    "sha256": "97e1b2ea891580c94f5131030f4789a28a2c68c0c93e99022e81a9b445128256"
   }
  ],
- "out_size": 63349997,
- "out_sha256": "1a8adc5091a09e943530966baa0e46310fbe9f839924f9d3d89dc0db69091aa8"
+ "out_size": 65990618,
+ "out_sha256": "5285d86f1eb9380b181ac8aed6aefee3898def2597c95cdb7f1d5ba9d9942e07"
 }
