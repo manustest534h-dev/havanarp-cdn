@@ -1,8 +1,8 @@
 {
  "format": 1,
- "version": 10,
+ "version": 11,
  "pack": ".event",
- "note": "v184: add-on v10 = v9 + Land Rover Defender OCTA (15984 hvoct, base HUNTLEY): dff appended to texdb\\hv_garage.img (no new archive / texdb; flat colours + geometry details + stock shared textures). Row added after hvd22 in orp_vehicles_02.ide, custom_handlings.cfg, vehicle_audio_settings.cfg.",
+ "note": "v185: add-on v11 = v10 + personal skin 12303 (hv185, peds line in hv_garage.ide, dff appended to texdb\\hv_garage.img, 7 hv185_* textures appended to texdb hv_garage). Old 49 textures / 28 IMG entries byte-identical.",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
  "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/files/addons/blobs/",
@@ -39,13 +39,13 @@
   },
   {
    "path": "!client/texdb/hv_garage.img",
-   "size": 18311168,
-   "sha256": "c5fa60701aefc8af9a0714e5585a88c965b3f8553cad5ae0c7b51171a5346cea"
+   "size": 18771968,
+   "sha256": "e6e07b02f243eec9b6567ad7928ab198f87796c64c17f3711dff180a67d87f25"
   },
   {
    "path": "!client/data/maps/orp/hv_garage.ide",
-   "size": 1152,
-   "sha256": "aa6930330ac01c73c31e3eedf6a6d1358b386d09ce7453ed33d1c7c0ec73d30d"
+   "size": 1365,
+   "sha256": "76023ae69306da33adfdf471a6fff6c1577773ff994da88bef8139666bcc96cd"
   },
   {
    "path": "!client/models/coll/hv_garage.col",
@@ -54,53 +54,53 @@
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.txt",
-   "size": 2465,
-   "sha256": "0fb53433fc33b80b5be9e578e7b97bcf29355f2825133876f143c0bac5019da4"
+   "size": 2805,
+   "sha256": "a30ff58b6b7ce15ae274c14568bb0606bc40b7beee99d96d712e71d607d8273a"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.dat",
-   "size": 10389280,
-   "sha256": "f72a5e8e055d44329b90bb89732580277b590a0a1b29fd8e6ae21d419f4f8301"
+   "size": 11670168,
+   "sha256": "8aac1e320de2b091f220015d46a9fc60c1706a0a3a9243e527d4f3d1b1d79a3e"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.tmb",
-   "size": 2640,
-   "sha256": "a45b61720a1ee4a09f0648ab6a114d2d094b493ef1cf55fc10299e5936cb8aae"
+   "size": 2976,
+   "sha256": "c605a2d14657a1447afccb6d0cfc26c3cbc79385a869d6a55439f5fffae71e4b"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.toc",
-   "size": 200,
-   "sha256": "d64afbbc3ee47abc7925e8b1822b073635cdea3a5af073ec5405b431498d346a"
+   "size": 228,
+   "sha256": "b3e9166be588ee1d18b8de6d608fe227378ed541790bba639867882e56b74d0d"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.dat",
-   "size": 13032170,
-   "sha256": "cb5e5de2271ca56f30a50d1968a3a11751800f9d72db5eb097a8b7879567545f"
+   "size": 14313058,
+   "sha256": "6e4d89d42c5f012aeb5f4ba1f43fb867ee917b1b352d2dda5e1acf109b07f6bc"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.tmb",
-   "size": 3216,
-   "sha256": "9c1908c8f8748a4b0d3394881b2da414b4217b05df35d2ba1052cce1494c33aa"
+   "size": 3552,
+   "sha256": "f787500899ce5d7922cc1097199151e3f35a256b4b7750ab6464ca888d2489e3"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.toc",
-   "size": 200,
-   "sha256": "2ab72dba077685bf42dc957e0b54573402c69081dbc8bc42be4b5b8b86e1a7ce"
+   "size": 228,
+   "sha256": "919b4adf42a2a7a41cf8de8719ae7fd5af510ac64d31b55f646f67d626204987"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.dat",
-   "size": 13032170,
-   "sha256": "cb5e5de2271ca56f30a50d1968a3a11751800f9d72db5eb097a8b7879567545f"
+   "size": 14313058,
+   "sha256": "6e4d89d42c5f012aeb5f4ba1f43fb867ee917b1b352d2dda5e1acf109b07f6bc"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.tmb",
-   "size": 3216,
-   "sha256": "9c1908c8f8748a4b0d3394881b2da414b4217b05df35d2ba1052cce1494c33aa"
+   "size": 3552,
+   "sha256": "f787500899ce5d7922cc1097199151e3f35a256b4b7750ab6464ca888d2489e3"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.toc",
-   "size": 200,
-   "sha256": "2ab72dba077685bf42dc957e0b54573402c69081dbc8bc42be4b5b8b86e1a7ce"
+   "size": 228,
+   "sha256": "919b4adf42a2a7a41cf8de8719ae7fd5af510ac64d31b55f646f67d626204987"
   },
   {
    "path": "!client/anim/anim.img",
@@ -108,6 +108,6 @@
    "sha256": "97e1b2ea891580c94f5131030f4789a28a2c68c0c93e99022e81a9b445128256"
   }
  ],
- "out_size": 65990618,
- "out_sha256": "5285d86f1eb9380b181ac8aed6aefee3898def2597c95cdb7f1d5ba9d9942e07"
+ "out_size": 70295727,
+ "out_sha256": "63cafefafe171fe58f22e547c4eb35442b64d22b5206ebdf14f387dd96509ed3"
 }
