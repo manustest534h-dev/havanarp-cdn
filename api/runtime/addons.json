@@ -1,8 +1,8 @@
 {
  "format": 1,
- "version": 7,
+ "version": 8,
  "pack": ".event",
- "note": "v174: add-on v7 = v6 + anim.img override (CASINO/cards_loop keyframes replaced by the HavanaRP phone texting loop; same 26 bones/26 keys/byte size, every other block byte-identical). Garage + gang HQs unchanged.",
+ "note": "v178: add-on v8 = v7 + Tesla Roadster car 15981 hvroadster (dff appended to texdb\\hv_garage.img, no new archive / texdb; uses only vehicle-shared stock textures + material colours). Rows added to orp_vehicles_02.ide, custom_handlings.cfg, vehicle_audio_settings.cfg. Garage, HQs, anim unchanged.",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
  "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/files/addons/blobs/",
@@ -23,9 +23,24 @@
    "sha256": "1cd62b31c05de9358d36322e39dfaf5d24399abe07e8f61cbb9f81cf09865795"
   },
   {
+   "path": "!client/data/maps/orp/orp_vehicles_02.ide",
+   "size": 5796,
+   "sha256": "efe7f002e34a6d76c7628f243423228ab303a0aea73bd2130ad46ec1b55e9497"
+  },
+  {
+   "path": "!client/custom_handlings.cfg",
+   "size": 110734,
+   "sha256": "327f411da6ebec70a43c32f431378d25a35f60a77333739afdb196f5cb268ea9"
+  },
+  {
+   "path": "!client/vehicle_audio_settings.cfg",
+   "size": 106151,
+   "sha256": "b40da7c63ef30ed39a4d60deadb128c440b166c8f8cff96ceecf3472dfcc495f"
+  },
+  {
    "path": "!client/texdb/hv_garage.img",
-   "size": 9138176,
-   "sha256": "235c3a149957c74059ef9b55beed9d63589c0bbe61eefa64290d7d18060d00c5"
+   "size": 11126784,
+   "sha256": "0fba2dc11915adb0790718a768c3500913724a4b5897dfc8bab639936a7c87ca"
   },
   {
    "path": "!client/data/maps/orp/hv_garage.ide",
@@ -93,6 +108,6 @@
    "sha256": "97e1b2ea891580c94f5131030f4789a28a2c68c0c93e99022e81a9b445128256"
   }
  ],
- "out_size": 56592508,
- "out_sha256": "5ea81f68bce849064a94e5b682d55e7a7f51ea6ef7b1fdb8331e67b49178a850"
+ "out_size": 58803990,
+ "out_sha256": "4b20f6695614be51e522110cc7e34d4f8ec80e2eec6f180ba1b3be234114214a"
 }
