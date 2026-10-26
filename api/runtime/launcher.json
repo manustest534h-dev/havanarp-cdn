@@ -1,12 +1,12 @@
 {
-  "version": "4.17.31",
-  "versionCode": 926,
-  "tag": "v926",
-  "name": "HavanaRP 4.17.31",
-  "published_at": "2026-10-26T08:36:53Z",
-  "size": 164706282,
-  "sha256": "c0b98fc26752f0e1a972b6de73ef3ee04ea8ffab167063058b93e9e28b983b6e",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v926/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v926",
-  "notes": "زر «المتجر» في دائرة الاختيارات يفتح متجر هافانا على المتصفح"
+  "version": "4.17.32",
+  "versionCode": 927,
+  "tag": "v927",
+  "name": "HavanaRP 4.17.32",
+  "published_at": "2026-10-26T16:10:37Z",
+  "size": 164704956,
+  "sha256": "9ee99f9e8fce79489da7ec92edbf5e07052ae9ba0189033cd89bc2eba5bc5c29",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v927/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v927",
+  "notes": "حماية اللانشر: حظر الأجهزة للهكرز (معرّف الجهاز)\n\nSHA-256: 9ee99f9e8fce79489da7ec92edbf5e07052ae9ba0189033cd89bc2eba5bc5c29"
 }
