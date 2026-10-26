@@ -1,8 +1,8 @@
 {
  "format": 1,
- "version": 6,
+ "version": 7,
  "pack": ".event",
- "note": "v171: add-on v6 = v5 + COL bounds fix (hv_garage.col only: bounding box/sphere of all 24 models = visual + collision; decals / props no longer culled when the camera turns). Garage 12400-12403 + gang HQs 12404-12423 in texdb\\hv_garage.img / texdb hv_garage.",
+ "note": "v174: add-on v7 = v6 + anim.img override (CASINO/cards_loop keyframes replaced by the HavanaRP phone texting loop; same 26 bones/26 keys/byte size, every other block byte-identical). Garage + gang HQs unchanged.",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
  "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/files/addons/blobs/",
@@ -86,8 +86,13 @@
    "path": "!client/texdb/hv_garage/hv_garage.pvr.toc",
    "size": 200,
    "sha256": "2ab72dba077685bf42dc957e0b54573402c69081dbc8bc42be4b5b8b86e1a7ce"
+  },
+  {
+   "path": "!client/anim/anim.img",
+   "size": 10942464,
+   "sha256": "97e1b2ea891580c94f5131030f4789a28a2c68c0c93e99022e81a9b445128256"
   }
  ],
- "out_size": 45649993,
- "out_sha256": "24578e34a008586b12be8dc16475d7f0ff9d8b79e6187d53cb9f82ed4207c1cc"
+ "out_size": 56592508,
+ "out_sha256": "5ea81f68bce849064a94e5b682d55e7a7f51ea6ef7b1fdb8331e67b49178a850"
 }
