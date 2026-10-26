@@ -1,0 +1,63 @@
+# HavanaRP: like apk-release.yml, but STAGE ONLY: attach the APK (split parts on a branch) + delta patches to a DRAFT release
+# and verify them. It does NOT publish the release and does NOT touch config.json (v182: the launcher update is released only
+# after the server runs the matching AMX; publishing is a separate API call that triggers launcher-sync).
+# Inputs: release_id, src_branch, sha256, size.
+name: apk-stage
+on:
+  workflow_dispatch:
+    inputs:
+      release_id: {description: 'release id', required: true}
+      src_branch: {description: 'branch with apk/part_*', required: true}
+      sha256: {description: 'sha256 of the apk', required: true}
+      size: {description: 'size in bytes', required: true}
+permissions:
+  contents: write
+concurrency:
+  group: launcher-sync
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RID: ${{ inputs.release_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: '${{ inputs.src_branch }}', path: src}
+      - name: join + verify
+        run: |
+          cat src/apk/part_* > HavanaRp.apk
+          ls -l HavanaRp.apk
+          test "$(stat -c %s HavanaRp.apk)" = "${{ inputs.size }}"
+          echo "${{ inputs.sha256 }}  HavanaRp.apk" | sha256sum -c
+      - name: upload asset
+        run: |
+          A="https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$RID"
+          for id in $(curl -sf -H "Authorization: Bearer $GH_TOKEN" "$A/assets" | python3 -c "import json,sys;[print(a['id']) for a in json.load(sys.stdin) if a['name']=='HavanaRp.apk']"); do
+            curl -sf -X DELETE -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/assets/$id"; done
+          curl -sf -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/vnd.android.package-archive" \
+            --data-binary @HavanaRp.apk "https://uploads.github.com/repos/$GITHUB_REPOSITORY/releases/$RID/assets?name=HavanaRp.apk" -o up.json
+          python3 -c "import json;d=json.load(open('up.json'));print(d['name'],d['size'],d['state']);assert d['size']==${{ inputs.size }}"
+      - name: upload delta patches (v140)
+        run: |
+          shopt -s nullglob
+          P=(src/patch/HavanaRp-*-*.patch)
+          if [ ${#P[@]} = 0 ]; then echo "no patches staged"; exit 0; fi
+          (cd src/patch && sha256sum -c SHA256SUMS)
+          A="https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$RID"
+          curl -sf -H "Authorization: Bearer $GH_TOKEN" "$A/assets?per_page=100" > assets.json
+          for f in "${P[@]}"; do
+            n=$(basename "$f")
+            for id in $(python3 -c "import json,sys;[print(a['id']) for a in json.load(open('assets.json')) if a['name']==sys.argv[1]]" "$n"); do
+              curl -sf -X DELETE -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/assets/$id"; done
+            curl -sf -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/octet-stream" \
+              --data-binary @"$f" "https://uploads.github.com/repos/$GITHUB_REPOSITORY/releases/$RID/assets?name=$n" -o pu.json
+            python3 -c "import json,sys;d=json.load(open('pu.json'));print(d['name'],d['size'],d['state']);assert d['size']==int(sys.argv[1])" "$(stat -c %s "$f")"
+          done
+      - name: still a draft (nothing published)
+        run: |
+          curl -sf -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$RID" \
+            | python3 -c "import json,sys;d=json.load(sys.stdin);print(d['tag_name'],'draft',d['draft'],[(a['name'],a['size'],a['state']) for a in d['assets']]);assert d['draft']"
+      - name: drop staging branch
+        if: success()
+        run: git -C src push origin --delete "${{ inputs.src_branch }}" || true
