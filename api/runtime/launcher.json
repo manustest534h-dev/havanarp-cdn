@@ -1,12 +1,12 @@
 {
-  "version": "4.17.33",
-  "versionCode": 928,
-  "tag": "v928",
-  "name": "HavanaRP 4.17.33",
-  "published_at": "2026-10-27T11:39:33Z",
-  "size": 164826341,
-  "sha256": "f36a1063be20edd4f9e310713f56124faeecb8549d9bff17a97f6dcdfaf4102f",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v928/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v928",
-  "notes": "نظام تعديل السيارات الجديد في ورشة هافانا (قائمة جديدة: محرك، فرامل، تعليق، جنوط، ألوان، نيون، أضواء، تظليل، كتابة على السيارة، لوحة الأرقام)"
+  "version": "4.17.34",
+  "versionCode": 929,
+  "tag": "v929",
+  "name": "HavanaRP 4.17.34",
+  "published_at": "2026-10-27T12:42:49Z",
+  "size": 164823872,
+  "sha256": "43c4003de28cdab1736f3fff1faa7fdcef2fa84f52ebcca218d101d372e4b6a4",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v929/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v929",
+  "notes": "تحسين قائمة تعديل السيارات: أزرار أكبر وأوضح، وإخفاء باقي الأزرار أثناء فتح القائمة"
 }
