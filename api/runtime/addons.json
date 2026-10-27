@@ -1,8 +1,8 @@
 {
  "format": 1,
- "version": 12,
+ "version": 13,
  "pack": ".event",
- "note": "v186: add-on v12 = v11 + custom skin 12304 (hv186, peds line in hv_garage.ide, dff appended to texdb\\hv_garage.img, 7 hv186_* textures appended to texdb hv_garage). Old 56 textures / 29 IMG entries byte-identical.",
+ "note": "v187: add-on v13 = v12 + \u0648\u0631\u0634\u0629 \u062a\u0639\u062f\u064a\u0644 \u0633\u064a\u0627\u0631\u0627\u062a \u0647\u0627\u0641\u0627\u0646\u0627 objects 12424-12427 (hvt_shell/props/decal/door: dff appended to texdb\\hv_garage.img, 4 COL3 appended to hv_garage.col, objs lines in hv_garage.ide, 7 hvt_* textures appended to texdb hv_garage; hvg_* reused). Old 63 textures / 30 IMG entries / COL3 entries byte-identical.",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
  "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/files/addons/blobs/",
@@ -39,68 +39,68 @@
   },
   {
    "path": "!client/texdb/hv_garage.img",
-   "size": 19582976,
-   "sha256": "c5376eb478ad68474ef0213e0fd266acfb3d2b99c8813625576c671a0e7f3630"
+   "size": 22429696,
+   "sha256": "8918ecf164d6df63a3493d72611b004c6e12329bc185c3ad9aa731bd438542cf"
   },
   {
    "path": "!client/data/maps/orp/hv_garage.ide",
-   "size": 1490,
-   "sha256": "71d63b10fc9aa91a794795c7cac0707806b0d35626cdce465d96e1d735861fcf"
+   "size": 1688,
+   "sha256": "28bd18e6a69acfee30b94be95d73522248c0842fc6dd0fe296bac98c49342860"
   },
   {
    "path": "!client/models/coll/hv_garage.col",
-   "size": 27268,
-   "sha256": "f0e8d361574b0dd0e2b276ccc9ac751d11192b9a392ea8782be25a6e96f7652d"
+   "size": 31300,
+   "sha256": "1c9dc6a932177d14be87152e79894deb23a45a77579e2b7e910fb69fb11daa35"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.txt",
-   "size": 3152,
-   "sha256": "e5ea3a568e7c9227c588fcad8c89335f6408dd54817a226e85616aac128c5047"
+   "size": 3492,
+   "sha256": "a9643bc0a938c4071fa00f237ec0b50c908acef7255cdb71fc9317bd5c8ca8e6"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.dat",
-   "size": 14302736,
-   "sha256": "dd41c13766aee8292a2e20e0701e729857e04b0165510ba366f9dd7653437db0"
+   "size": 16269040,
+   "sha256": "631db137d7d8983e0f5522420f25ef5d8026fa2d43f5d818a7b70dc010628746"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.tmb",
-   "size": 3312,
-   "sha256": "b52fe402061955c3bd34b14992b8280cc9a9ade42ac0d1c6845397ed9727721f"
+   "size": 3680,
+   "sha256": "7940e54754349247a27ce0da800e9d97cf8ddf056354306f947a90ed4b9d148f"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.toc",
-   "size": 256,
-   "sha256": "0a817fc5893fca958a5091f4ae804f36d5933fae3d93ffd307000a37ed8e1d67"
+   "size": 284,
+   "sha256": "7e8bb5fda9a013ab0f4ec4600d76653d02c9519059ef5272ee74a35956441366"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.dat",
-   "size": 16945626,
-   "sha256": "e40a8fc6699856edb2fee45612292835bf9f91231a0326e7c061e77ab4432ee2"
+   "size": 19261428,
+   "sha256": "1b49ca5f9bce326c6e2a4e9acc70e16da0b16d8fd4ccde5e412b9f2c0b852bd0"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.tmb",
-   "size": 3888,
-   "sha256": "887d4245d9a0269ee98d872c8f929b4d13b23cbc1be35196f3bcec45fa4f4d8d"
+   "size": 4320,
+   "sha256": "6a550d88712156ba01516bc31c844a434dee9581d66066b688dee184692d1c34"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.toc",
-   "size": 256,
-   "sha256": "f3ebd2961dfb5668ac0e860fba6629e3b301c7c9a307a74a05230c992ee5847f"
+   "size": 284,
+   "sha256": "b5557aa62c745b488bfd95d477ab9de730f26517f91e530a5f7294c0e254abf7"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.dat",
-   "size": 16945626,
-   "sha256": "e40a8fc6699856edb2fee45612292835bf9f91231a0326e7c061e77ab4432ee2"
+   "size": 19261428,
+   "sha256": "1b49ca5f9bce326c6e2a4e9acc70e16da0b16d8fd4ccde5e412b9f2c0b852bd0"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.tmb",
-   "size": 3888,
-   "sha256": "887d4245d9a0269ee98d872c8f929b4d13b23cbc1be35196f3bcec45fa4f4d8d"
+   "size": 4320,
+   "sha256": "6a550d88712156ba01516bc31c844a434dee9581d66066b688dee184692d1c34"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.toc",
-   "size": 256,
-   "sha256": "f3ebd2961dfb5668ac0e860fba6629e3b301c7c9a307a74a05230c992ee5847f"
+   "size": 284,
+   "sha256": "b5557aa62c745b488bfd95d477ab9de730f26517f91e530a5f7294c0e254abf7"
   },
   {
    "path": "!client/anim/anim.img",
@@ -108,6 +108,6 @@
    "sha256": "97e1b2ea891580c94f5131030f4789a28a2c68c0c93e99022e81a9b445128256"
   }
  ],
- "out_size": 79006003,
- "out_sha256": "d2e0cb6b32600d763c901faaaf341a08929a1e100124ab1108c96548123609e5"
+ "out_size": 88456517,
+ "out_sha256": "160efa54c2eecfd5d3292923bc0cf313d96d2642ccbaa238301a09b262405f1b"
 }
