@@ -1,8 +1,8 @@
 {
  "format": 1,
- "version": 13,
+ "version": 14,
  "pack": ".event",
- "note": "v187: add-on v13 = v12 + \u0648\u0631\u0634\u0629 \u062a\u0639\u062f\u064a\u0644 \u0633\u064a\u0627\u0631\u0627\u062a \u0647\u0627\u0641\u0627\u0646\u0627 objects 12424-12427 (hvt_shell/props/decal/door: dff appended to texdb\\hv_garage.img, 4 COL3 appended to hv_garage.col, objs lines in hv_garage.ide, 7 hvt_* textures appended to texdb hv_garage; hvg_* reused). Old 63 textures / 30 IMG entries / COL3 entries byte-identical.",
+ "note": "v188: add-on v14 = v13 with the workshop 12424-12427 DFFs + COL3 rebuilt (floor/wall z-fight fix, reception redesign, open entrance, visible hall door). Textures / IDE / all other files byte-identical to v13.",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
  "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/files/addons/blobs/",
@@ -39,8 +39,8 @@
   },
   {
    "path": "!client/texdb/hv_garage.img",
-   "size": 22429696,
-   "sha256": "8918ecf164d6df63a3493d72611b004c6e12329bc185c3ad9aa731bd438542cf"
+   "size": 22423552,
+   "sha256": "3506546b4bd8197706ef87c727fa334f477d1f2b215550e961c0a0ddd12cbb82"
   },
   {
    "path": "!client/data/maps/orp/hv_garage.ide",
@@ -49,8 +49,8 @@
   },
   {
    "path": "!client/models/coll/hv_garage.col",
-   "size": 31300,
-   "sha256": "1c9dc6a932177d14be87152e79894deb23a45a77579e2b7e910fb69fb11daa35"
+   "size": 31468,
+   "sha256": "f99f86a2b7912e26d30408ac963ca32f2b67780d92ceaea4901e42ed4f710eac"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.txt",
@@ -108,6 +108,6 @@
    "sha256": "97e1b2ea891580c94f5131030f4789a28a2c68c0c93e99022e81a9b445128256"
   }
  ],
- "out_size": 88456517,
- "out_sha256": "160efa54c2eecfd5d3292923bc0cf313d96d2642ccbaa238301a09b262405f1b"
+ "out_size": 88450541,
+ "out_sha256": "0971b89b195d5bb1e39baf699c2cd8482eaa24ae47a217120a15e7aeb6fc39c5"
 }
