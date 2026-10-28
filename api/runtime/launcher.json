@@ -1,12 +1,9 @@
 {
-  "version": "4.17.38",
-  "versionCode": 933,
-  "tag": "v933",
-  "name": "HavanaRP 4.17.38",
-  "published_at": "2026-10-28T12:58:48Z",
-  "size": 164840068,
-  "sha256": "7dc8e106d4b20b1c16e9f00ab273f5a049e48fe1e82c23f77836e2345f5b9b49",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v933/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v933",
-  "notes": "إصلاح تحميل ملفات اللعبة: تحميل أسرع وأثبت مع استكمال التحميل بعد انقطاع النت، وإصلاح التعليق على 10% وعلى شاشة «تجهيز للتشغيل»"
+ "version": "4.17.35-admin",
+ "versionCode": 930,
+ "tag": "admin-930",
+ "name": "HavanaRP ADMIN 4.17.35-admin",
+ "url": "https://gofile.io/d/c89OmAZk",
+ "release_url": "https://gofile.io/d/c89OmAZk",
+ "notes": "ADMIN/TEST build - server 91.134.166.78:2216"
 }

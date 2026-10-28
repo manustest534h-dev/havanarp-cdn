@@ -5,7 +5,7 @@
  "note": "v188: add-on v14 = v13 with the workshop 12424-12427 DFFs + COL3 rebuilt (floor/wall z-fight fix, reception redesign, open entrance, visible hall door). Textures / IDE / all other files byte-identical to v13.",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
- "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/files/addons/blobs/",
+ "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/admin/files/addons/blobs/",
  "files": [
   {
    "path": "dummyEvent.txt",

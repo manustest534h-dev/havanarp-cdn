@@ -1,68 +1,38 @@
 {
-  "config_version": 1,
-  "apk": {
-    "version": 933,
-    "str": "4.17.38",
-    "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v933/HavanaRp.apk",
-    "auto_update": true,
-    "manual_update": true,
-    "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v933/HavanaRp.apk",
-    "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v933/HavanaRp.apk",
-    "patches": {
-      "929": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/6fd9ccc263b0e1847f18156afe63f2a413032c26/files/patch/v933/HavanaRp-929-933.patch",
-        "size": 4803351,
-        "sha256": "b76f74eda9bdf23a76144ebebe2ae998a2e68e235deb7b71fb0b45d6c500cea9",
-        "sha256_base": "43c4003de28cdab1736f3fff1faa7fdcef2fa84f52ebcca218d101d372e4b6a4",
-        "size_base": 164823872,
-        "sha256_out": "7dc8e106d4b20b1c16e9f00ab273f5a049e48fe1e82c23f77836e2345f5b9b49",
-        "size_out": 164840068,
-        "to": 933
-      },
-      "928": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/6fd9ccc263b0e1847f18156afe63f2a413032c26/files/patch/v933/HavanaRp-928-933.patch",
-        "size": 4828382,
-        "sha256": "c1380e71941b6dee5c17a482b1b90d2e96c6ba0d6cb56954adfa570eeab1823e",
-        "sha256_base": "f36a1063be20edd4f9e310713f56124faeecb8549d9bff17a97f6dcdfaf4102f",
-        "size_base": 164826341,
-        "sha256_out": "7dc8e106d4b20b1c16e9f00ab273f5a049e48fe1e82c23f77836e2345f5b9b49",
-        "size_out": 164840068,
-        "to": 933
-      },
-      "927": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/6fd9ccc263b0e1847f18156afe63f2a413032c26/files/patch/v933/HavanaRp-927-933.patch",
-        "size": 4857667,
-        "sha256": "f89ce1ca02fbdf99e8302b7abbfb1366927606c7b750cf1bb88da9c4c97594a0",
-        "sha256_base": "9ee99f9e8fce79489da7ec92edbf5e07052ae9ba0189033cd89bc2eba5bc5c29",
-        "size_base": 164704956,
-        "sha256_out": "7dc8e106d4b20b1c16e9f00ab273f5a049e48fe1e82c23f77836e2345f5b9b49",
-        "size_out": 164840068,
-        "to": 933
-      }
-    }
+ "config_version": 1,
+ "apk": {
+  "version": 930,
+  "str": "4.17.35-admin",
+  "path": "https://gofile.io/d/c89OmAZk",
+  "auto_update": false,
+  "manual_update": false,
+  "manual_update_url": "https://gofile.io/d/c89OmAZk",
+  "url": "https://gofile.io/d/c89OmAZk",
+  "patches": {}
+ },
+ "urls": {
+  "URL_HOST": "https://igta-online.my-fastdl.com/ONLINERP/prod/files",
+  "URL_UPDATE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/update/${version}/update_${version}.json",
+  "URL_NEWS": "news.json",
+  "URL_HELP": "help.json",
+  "URL_ONLINE_API": "https://api.onlinerp.com/v1/servers",
+  "URL_DONATE_API": "https://api.gta-mobile.ru/oldAPI/donate_api.php",
+  "URL_SITE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/admin/api/runtime",
+  "URL_VK": "https://vk.com/online_samp",
+  "URL_YOUTUBE": "https://www.youtube.com/channel/UCCzB4ySWiZfRvApMU2CTfEA",
+  "URL_INSTAGRAM": "https://www.instagram.com/online_samp",
+  "URL_SUPPORT": "https://vk.me/android_client",
+  "URL_TELEGRAM": "https://t.me/onlinerp_channel",
+  "URL_SHOP": "https://gta-mobile.ru/donate"
+ },
+ "msgs": [],
+ "_admin": {
+  "maintenance": {
+   "enabled": false,
+   "title": "السيرفر تحت الصيانة",
+   "text": "نعتذر، صيانة حالياً",
+   "button": "تم"
   },
-  "urls": {
-    "URL_HOST": "https://igta-online.my-fastdl.com/ONLINERP/prod/files",
-    "URL_UPDATE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/update/${version}/update_${version}.json",
-    "URL_NEWS": "news.json",
-    "URL_HELP": "help.json",
-    "URL_ONLINE_API": "https://api.onlinerp.com/v1/servers",
-    "URL_DONATE_API": "https://api.gta-mobile.ru/oldAPI/donate_api.php",
-    "URL_SITE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/runtime",
-    "URL_VK": "https://vk.com/online_samp",
-    "URL_YOUTUBE": "https://www.youtube.com/channel/UCCzB4ySWiZfRvApMU2CTfEA",
-    "URL_INSTAGRAM": "https://www.instagram.com/online_samp",
-    "URL_SUPPORT": "https://vk.me/android_client",
-    "URL_TELEGRAM": "https://t.me/onlinerp_channel",
-    "URL_SHOP": "https://gta-mobile.ru/donate"
-  },
-  "msgs": [],
-  "_admin": {
-    "maintenance": {
-      "enabled": false,
-      "title": "السيرفر تحت الصيانة",
-      "text": "نعتذر، صيانة حالياً",
-      "button": "تم"
-    }
-  }
+  "channel": "ADMIN/TEST - com.havanarp.admin only; players read main"
+ }
 }
