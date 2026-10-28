@@ -1,8 +1,8 @@
 {
  "format": 1,
- "version": 14,
+ "version": 15,
  "pack": ".event",
- "note": "v188: add-on v14 = v13 with the workshop 12424-12427 DFFs + COL3 rebuilt (floor/wall z-fight fix, reception redesign, open entrance, visible hall door). Textures / IDE / all other files byte-identical to v13.",
+ "note": "v191: add-on v15 = v14 + graphics data only: data/timecyc.dat (teal night sky, richer water, warmer lamp coronas/light pools, darker day shadows, DirMult 1.40 on clear/cloudy 7AM-7PM) + data/colorcycle.dat (luma-preserving saturation x1.10-1.28). No model/texture/IMG/limit change; draw distance/fog unchanged.",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
  "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/files/addons/blobs/",
@@ -106,8 +106,18 @@
    "path": "!client/anim/anim.img",
    "size": 10942464,
    "sha256": "97e1b2ea891580c94f5131030f4789a28a2c68c0c93e99022e81a9b445128256"
+  },
+  {
+   "path": "!client/data/timecyc.dat",
+   "size": 40365,
+   "sha256": "7010c6927239ece247fe53dd3aa10e4518d01185abd219fef93c35181f933ccb"
+  },
+  {
+   "path": "!client/data/colorcycle.dat",
+   "size": 14231,
+   "sha256": "1219d36388699d5004aba3075c4edb8d5a8b6cc9135b370650040ae7d54f1f2a"
   }
  ],
- "out_size": 88450541,
- "out_sha256": "0971b89b195d5bb1e39baf699c2cd8482eaa24ae47a217120a15e7aeb6fc39c5"
+ "out_size": 88505248,
+ "out_sha256": "2cade3d3a94823fbcb50d5a905b9965056d6cac253b9d701d872c84a019e9473"
 }
