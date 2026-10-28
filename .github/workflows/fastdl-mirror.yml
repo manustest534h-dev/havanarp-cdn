@@ -1,0 +1,76 @@
+# HavanaRP v193: mirror every update_705.json row that is served from the vendor host igta-online.my-fastdl.com
+# (URL_HOST of config.json; 101 rows / ~700 MB) as assets of the release 'mirror-fastdl', byte for byte.
+# Launcher 933+ (HvDl) tries this mirror first and the vendor host second. Asset name = path below URL_HOST with
+# '/' -> '__' and ' ' -> '_-_'. Verification per file: size == load_size; non-archive rows also CRC32 == hash.
+# Idempotent: assets already present with the right size are skipped. Additive only (touches no other file/release).
+name: fastdl-mirror
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main, sparse-checkout: 'api', path: src}
+      - name: mirror
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, zlib, urllib.parse, time, sys
+          R = os.environ['GITHUB_REPOSITORY']; T = os.environ['GH_TOKEN']; TAG = 'mirror-fastdl'
+          cfg = json.load(open('src/api/runtime/config.json')); host = cfg['urls']['URL_HOST'].rstrip('/')
+          upd = json.load(open('src/api/update/705/update_705.json'))
+          def api(m, u, data=None, ct=None):
+              a = ['curl', '-sS', '-X', m, '-H', 'Authorization: Bearer ' + T, '-H', 'Accept: application/vnd.github+json', u]
+              if data is not None: a += ['-H', 'Content-Type: ' + (ct or 'application/json'), '--data-binary', data]
+              o = subprocess.run(a, capture_output=True).stdout
+              try: return json.loads(o or b'{}')
+              except Exception: return {'_raw': o[:300].decode('latin1')}
+          rel = api('GET', 'https://api.github.com/repos/%s/releases/tags/%s' % (R, TAG))
+          if 'id' not in rel:
+              rel = api('POST', 'https://api.github.com/repos/%s/releases' % R, json.dumps({'tag_name': TAG, 'target_commitish': 'main', 'name': 'mirror-fastdl (game files mirror for launcher 933+)', 'body': 'Byte-for-byte mirror of the update_705.json rows served from ' + host + '. Do not edit by hand.', 'draft': False, 'prerelease': True, 'make_latest': 'false'}))
+          RID = rel['id']; print('release', RID)
+          have = {}
+          for p in range(1, 10):
+              l = api('GET', 'https://api.github.com/repos/%s/releases/%d/assets?per_page=100&page=%d' % (R, RID, p))
+              if not l: break
+              for a in l: have[a['name']] = (a['size'], a['id'])
+          rows = []
+          for f in upd['files']:
+              p = f['path']
+              if p.startswith('multipart/') or f['version'] == 707: continue
+              rel_path = 'files/%d/%s%s' % (f['version'], p, f.get('archive') or '')
+              rows.append((f, rel_path))
+          print('rows', len(rows), 'bytes', sum(f['load_size'] for f, _ in rows))
+          man = {}; bad = 0
+          for f, rp in rows:
+              name = rp.replace('/', '__').replace(' ', '_-_')
+              man[rp] = name
+              if have.get(name, (None,))[0] == f['load_size']: continue
+              url = host + '/' + urllib.parse.quote(rp)
+              ok = False
+              for t in range(5):
+                  r = subprocess.run(['curl', '-sSfL', '--retry', '3', '-m', '1800', '-o', 'blob', url])
+                  if r.returncode == 0 and os.path.getsize('blob') == f['load_size']: ok = True; break
+                  time.sleep(5 * (t + 1))
+              if not ok: print('DOWNLOAD FAIL', rp); bad += 1; continue
+              if not f.get('archive'):
+                  c = 0
+                  with open('blob', 'rb') as fh:
+                      while True:
+                          b = fh.read(1 << 20)
+                          if not b: break
+                          c = zlib.crc32(b, c)
+                  if ('%X' % c) != f['hash'].upper().lstrip('0') and ('%08X' % c) != f['hash'].upper():
+                      print('CRC FAIL', rp, '%08X' % c, f['hash']); bad += 1; continue
+              if name in have: api('DELETE', 'https://api.github.com/repos/%s/releases/assets/%d' % (R, have[name][1]))
+              up = api('POST', 'https://uploads.github.com/repos/%s/releases/%d/assets?name=%s' % (R, RID, urllib.parse.quote(name)), '@blob', 'application/octet-stream')
+              if up.get('size') != f['load_size'] or up.get('name') != name: print('UPLOAD FAIL', rp, up); bad += 1; continue
+              print('mirrored', rp, f['load_size'])
+          json.dump(man, open('mirror_manifest.json', 'w'), indent=0)
+          print('done, bad =', bad); sys.exit(1 if bad else 0)
+          PY
