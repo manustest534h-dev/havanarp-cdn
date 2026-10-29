@@ -1,8 +1,8 @@
 {
  "format": 1,
- "version": 17,
+ "version": 18,
  "pack": ".event",
- "note": "ADMIN 940: add-on v17 = v16 + HK416 weapon object 12460 hvhk416 (1 dff + empty COL3 + 1 texture 512x512). v190/ADMIN: add-on v16 = v14 + Halloween (number 15 was the rolled-back v191 graphics pack; Halloween content unchanged) event: island city 12428-12454 (27 hw_* dff + COL3), cars 15985-15988 (hvhw_mus/dem/gho/rev, own COL3, livery textures, ide/handling/audio lines), skins 12305-12314 (hvhw5..14 peds). 98 textures appended to texdb hv_garage. Old 70 textures / 34 IMG entries (bytes) / COL3 entries byte-identical; IMG directory grew to 2 sectors (data shifted by whole sectors).",
+ "note": "ADMIN 941: add-on v18 = v17 + weapon 33 (Country Rifle) shown as the HK416: hvhk416w.dff (stock cuntgun clump + HK416 geometry, stock gunflash + muzzle_texture4 in texdb hv_garage), default.ide 357 -> hvhk416w / hv_garage, HUD icon hud_weapon_33.png. [941b] model on the M4 clump + weapon.dat COUNTRYRIFLE = HK416 full-auto (rifle anims, clip 30, loop 6 11 7, flags 7038). ADMIN 940: add-on v17 = v16 + HK416 weapon object 12460 hvhk416 (1 dff + empty COL3 + 1 texture 512x512). v190/ADMIN: add-on v16 = v14 + Halloween (number 15 was the rolled-back v191 graphics pack; Halloween content unchanged) event: island city 12428-12454 (27 hw_* dff + COL3), cars 15985-15988 (hvhw_mus/dem/gho/rev, own COL3, livery textures, ide/handling/audio lines), skins 12305-12314 (hvhw5..14 peds). 98 textures appended to texdb hv_garage. Old 70 textures / 34 IMG entries (bytes) / COL3 entries byte-identical; IMG directory grew to 2 sectors (data shifted by whole sectors).",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
  "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/admin/files/addons/blobs/",
@@ -38,9 +38,19 @@
    "sha256": "416e9e1601cc8dbb1d9e1bc6bfab2ce3643155f76ab35754ca41c5410969fddd"
   },
   {
+   "path": "!client/data/default.ide",
+   "size": 3902,
+   "sha256": "797b9717d66cadc4b5f2c8885eb7c91222f71a5a60e7d10deb52a7ca97099e0d"
+  },
+  {
+   "path": "!client/data/weapon.dat",
+   "size": 11602,
+   "sha256": "36f3f2ccb1305d995ee5d778008441ee7cdcdbb0f21cc253fb04c405e9a6ba0a"
+  },
+  {
    "path": "!client/texdb/hv_garage.img",
-   "size": 46366720,
-   "sha256": "d7f6b6e4fe6c9a8e2728a90a36b508397ea0a17f9f1cec5bd97d6fa7cbadbfa0"
+   "size": 46587904,
+   "sha256": "a44fdc4a05c616ca836f2efb52d9dfa9818585565401dc4126f88c6f97e9e65e"
   },
   {
    "path": "!client/data/maps/orp/hv_garage.ide",
@@ -54,60 +64,65 @@
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.txt",
-   "size": 8285,
-   "sha256": "03d8c2277d5ec4c1abc35759924cc9e67897fdd7027b762d60788e2281d43d06"
+   "size": 8349,
+   "sha256": "2fada7f499e9abffeab7b5e486c090c43b1462a821abc7d85c937dceded5c463"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.dat",
-   "size": 24010816,
-   "sha256": "e09ae56a2e9a77b8d76bde95967945db72720bc26599f7e8d3ca3eceef0348ae"
+   "size": 24021792,
+   "sha256": "c9f4b587b1e05b1bbfb455a764b1ea312ee3789a8ec8be95d9edcc405d3fccd1"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.tmb",
-   "size": 8592,
-   "sha256": "ebcd3313f75317fdb08a3bfe6d4c3da2c3bf6fe499891d500d2f2b6c863119f3"
+   "size": 8672,
+   "sha256": "cbd4518d92072fb9a5c93e97f8b9d5b75bc662cc197451ac5443ad352d4d813e"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.toc",
-   "size": 680,
-   "sha256": "58651957ae46cc87b5b31afdccc55b77943f9b5082280e517d16b93d31500852"
+   "size": 684,
+   "sha256": "b65ec7905e4afc89209591f39028e6a95a7d3835a6dff3d307ca22ade7accd63"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.dat",
-   "size": 27614718,
-   "sha256": "c07933a77663f253b3ff600be9a596455ec25b9cb64448abdb0ddd6c654b7214"
+   "size": 27636580,
+   "sha256": "39e047b39ec851619393eeaba3530857afd71d9f99b30ab9308e59fea8b6b319"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.tmb",
-   "size": 9552,
-   "sha256": "24e37ca099e683ea2bf038b13253e1fafc5de66df5f34a11ee0d975e74ea941e"
+   "size": 9696,
+   "sha256": "d35de171220f0b96a418e5ebec77f481dc942b30045fddae0cea06547a762d12"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.toc",
-   "size": 680,
-   "sha256": "64a6549518e539de6fcc42ff8ad6c42a4c64ba136bcd41fadf7acb37c00181d5"
+   "size": 684,
+   "sha256": "161f8badde8ad558695c775e2e3af005a8f05aba9ea5caa32320779681c3e7b3"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.dat",
-   "size": 27614718,
-   "sha256": "c07933a77663f253b3ff600be9a596455ec25b9cb64448abdb0ddd6c654b7214"
+   "size": 27636580,
+   "sha256": "39e047b39ec851619393eeaba3530857afd71d9f99b30ab9308e59fea8b6b319"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.tmb",
-   "size": 9552,
-   "sha256": "24e37ca099e683ea2bf038b13253e1fafc5de66df5f34a11ee0d975e74ea941e"
+   "size": 9696,
+   "sha256": "d35de171220f0b96a418e5ebec77f481dc942b30045fddae0cea06547a762d12"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.toc",
-   "size": 680,
-   "sha256": "64a6549518e539de6fcc42ff8ad6c42a4c64ba136bcd41fadf7acb37c00181d5"
+   "size": 684,
+   "sha256": "161f8badde8ad558695c775e2e3af005a8f05aba9ea5caa32320779681c3e7b3"
   },
   {
    "path": "!client/anim/anim.img",
    "size": 10942464,
    "sha256": "97e1b2ea891580c94f5131030f4789a28a2c68c0c93e99022e81a9b445128256"
+  },
+  {
+   "path": "!client/samp/textures/new_hud/hud_weapon_33.png",
+   "size": 3184,
+   "sha256": "e5354d9bff827dcc1abda51b898ffdd74e0fd13732ee92191ad63d8f21a42563"
   }
  ],
- "out_size": 136914316,
- "out_sha256": "b250471e93f1b8f48f82e59e323e9266424853ae6f2c8242e804fccc0c43584a"
+ "out_size": 137209516,
+ "out_sha256": "12bd5b8ec96a3c58255d4b036e53172053f7565a9796e8937bf6bdb676b06321"
 }
