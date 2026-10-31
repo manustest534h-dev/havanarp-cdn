@@ -1,12 +1,12 @@
 {
-  "version": "4.17.51-halloween",
-  "versionCode": 947,
-  "tag": "v947",
-  "name": "HavanaRP — Halloween 4.17.51",
+  "version": "4.17.52-fixes",
+  "versionCode": 948,
+  "tag": "v948",
+  "name": "HavanaRP — Halloween fixes 4.17.52",
   "published_at": null,
-  "size": 166578014,
-  "sha256": "50586b3e9de98198c43a84d95f833d18d40f99cfc64a571b3dbbe084ebbbf1cb",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v947/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v947",
+  "size": 166573918,
+  "sha256": "a76133339f5867169dbc69df6359094d27b772e115bc57b3cb4d50474e0bd829",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v948/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v948",
   "notes": "تحديث الهالوين 🎃"
 }
