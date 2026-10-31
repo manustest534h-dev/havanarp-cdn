@@ -1,12 +1,12 @@
 {
-  "version": "4.17.52-fixes",
-  "versionCode": 948,
-  "tag": "v948",
-  "name": "HavanaRP — Halloween fixes 4.17.52",
-  "published_at": null,
-  "size": 166573918,
-  "sha256": "a76133339f5867169dbc69df6359094d27b772e115bc57b3cb4d50474e0bd829",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v948/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v948",
-  "notes": "تحديث الهالوين 🎃"
+  "version": "4.17.53-v200",
+  "versionCode": 949,
+  "tag": "v949",
+  "name": "HavanaRP 4.17.53",
+  "published_at": "2026-10-31T20:04:42Z",
+  "size": 166672779,
+  "sha256": "872c6b870df2f55591afbc4735789fa3671ff657fc84cf031abde90f441343a1",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v949/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v949",
+  "notes": "تحديث HavanaRP 4.17.53\n- فرق الهالوين: قائمة الأعضاء، طرد من الفريق، ترقية القائد، GPS لكل عضو ورسائل أوضح\n- العائلات: صلاحيات وأسماء لكل رتبة، تغيير الرتب والطرد من اللوحة، Family فوق اللاعب والسيارة\n- «متجري» من اللابتوب لأصحاب المتاجر\n- إزالة المشاة من الشوارع وتحسين الأداء\n\nSHA-256: 872c6b870df2f55591afbc4735789fa3671ff657fc84cf031abde90f441343a1"
 }
