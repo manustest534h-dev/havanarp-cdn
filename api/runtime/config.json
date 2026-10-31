@@ -1,73 +1,83 @@
 {
   "config_version": 1,
   "apk": {
-    "version": 934,
-    "str": "4.17.39",
-    "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v934/HavanaRp.apk",
+    "version": 947,
+    "str": "4.17.51-halloween",
+    "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v947/HavanaRp.apk",
     "auto_update": true,
     "manual_update": true,
-    "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v934/HavanaRp.apk",
-    "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v934/HavanaRp.apk",
+    "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v947/HavanaRp.apk",
+    "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v947/HavanaRp.apk",
     "patches": {
+      "934": {
+        "size": 8780047,
+        "sha256": "db8d6e4988d386096ff05b0fed0e5f7e9daacce2512d14958ad781a368383382",
+        "sha256_base": "e990edbb021622220a694a963837fa24406f51b893e02a1c64e203bfb6e8dd6f",
+        "size_base": 164840067,
+        "sha256_out": "50586b3e9de98198c43a84d95f833d18d40f99cfc64a571b3dbbe084ebbbf1cb",
+        "size_out": 166578014,
+        "to": 947,
+        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/c82f24ebf7b81ca4d91654a22c84655cfd69664a/files/patch/v947/HavanaRp-934-947.patch"
+      },
       "933": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/535a94489ad0f2b403c2b7e2a1f44cb4fceab55a/files/patch/v934/HavanaRp-933-934.patch",
-        "size": 1454128,
-        "sha256": "0ff54456fdacb47129ce3fa9e17c4ac476682811db835e92c51e9ef2412acbf0",
+        "size": 8780047,
+        "sha256": "2ea54cad05a88031570bda856b804beeaecf0f27dde6de0f70e57b34bd8e966a",
         "sha256_base": "7dc8e106d4b20b1c16e9f00ab273f5a049e48fe1e82c23f77836e2345f5b9b49",
         "size_base": 164840068,
-        "sha256_out": "e990edbb021622220a694a963837fa24406f51b893e02a1c64e203bfb6e8dd6f",
-        "size_out": 164840067,
-        "to": 934
+        "sha256_out": "50586b3e9de98198c43a84d95f833d18d40f99cfc64a571b3dbbe084ebbbf1cb",
+        "size_out": 166578014,
+        "to": 947,
+        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/c82f24ebf7b81ca4d91654a22c84655cfd69664a/files/patch/v947/HavanaRp-933-947.patch"
       },
       "929": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/535a94489ad0f2b403c2b7e2a1f44cb4fceab55a/files/patch/v934/HavanaRp-929-934.patch",
-        "size": 4803272,
-        "sha256": "bb067c2353e97612963666edf4cc9561e072ea211437b6683df7bb6aa834079d",
+        "size": 8780047,
+        "sha256": "3742e59db042a77e54cddac233407dde948acc339a0d6a38ed09fca7796a060d",
         "sha256_base": "43c4003de28cdab1736f3fff1faa7fdcef2fa84f52ebcca218d101d372e4b6a4",
         "size_base": 164823872,
-        "sha256_out": "e990edbb021622220a694a963837fa24406f51b893e02a1c64e203bfb6e8dd6f",
-        "size_out": 164840067,
-        "to": 934
+        "sha256_out": "50586b3e9de98198c43a84d95f833d18d40f99cfc64a571b3dbbe084ebbbf1cb",
+        "size_out": 166578014,
+        "to": 947,
+        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/c82f24ebf7b81ca4d91654a22c84655cfd69664a/files/patch/v947/HavanaRp-929-947.patch"
       },
       "928": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/535a94489ad0f2b403c2b7e2a1f44cb4fceab55a/files/patch/v934/HavanaRp-928-934.patch",
-        "size": 4828368,
-        "sha256": "98cc44ab1d12b25bf82e79aae7ed775163e50c774fae278dd558392bc78396ad",
+        "size": 8780047,
+        "sha256": "573c95aa768e1cc0854dee298174ed4b1d605c885965f5c58d56755cae9f2e6f",
         "sha256_base": "f36a1063be20edd4f9e310713f56124faeecb8549d9bff17a97f6dcdfaf4102f",
         "size_base": 164826341,
-        "sha256_out": "e990edbb021622220a694a963837fa24406f51b893e02a1c64e203bfb6e8dd6f",
-        "size_out": 164840067,
-        "to": 934
+        "sha256_out": "50586b3e9de98198c43a84d95f833d18d40f99cfc64a571b3dbbe084ebbbf1cb",
+        "size_out": 166578014,
+        "to": 947,
+        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/c82f24ebf7b81ca4d91654a22c84655cfd69664a/files/patch/v947/HavanaRp-928-947.patch"
       },
       "927": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/535a94489ad0f2b403c2b7e2a1f44cb4fceab55a/files/patch/v934/HavanaRp-927-934.patch",
-        "size": 4857659,
-        "sha256": "dc21ce52692bfbf6400291e8f1fd61f48b0859012c80ec3c725b4744724eb56e",
+        "size": 8809036,
+        "sha256": "0dd1b77b6ad474406af055795d11bd300cc8bab61e533773f30e49a80ced2685",
         "sha256_base": "9ee99f9e8fce79489da7ec92edbf5e07052ae9ba0189033cd89bc2eba5bc5c29",
         "size_base": 164704956,
-        "sha256_out": "e990edbb021622220a694a963837fa24406f51b893e02a1c64e203bfb6e8dd6f",
-        "size_out": 164840067,
-        "to": 934
+        "sha256_out": "50586b3e9de98198c43a84d95f833d18d40f99cfc64a571b3dbbe084ebbbf1cb",
+        "size_out": 166578014,
+        "to": 947,
+        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/c82f24ebf7b81ca4d91654a22c84655cfd69664a/files/patch/v947/HavanaRp-927-947.patch"
       },
       "926": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/535a94489ad0f2b403c2b7e2a1f44cb4fceab55a/files/patch/v934/HavanaRp-926-934.patch",
-        "size": 4857800,
-        "sha256": "40a47d65dca0488dff3ec24959cac57e77b82349b2ffba3fd33a69ad7232d52c",
+        "size": 8809036,
+        "sha256": "2f91141337bc299fd04cafcb6fed941b738d73dadeb65bf7bca99854eaab4d36",
         "sha256_base": "c0b98fc26752f0e1a972b6de73ef3ee04ea8ffab167063058b93e9e28b983b6e",
         "size_base": 164706282,
-        "sha256_out": "e990edbb021622220a694a963837fa24406f51b893e02a1c64e203bfb6e8dd6f",
-        "size_out": 164840067,
-        "to": 934
+        "sha256_out": "50586b3e9de98198c43a84d95f833d18d40f99cfc64a571b3dbbe084ebbbf1cb",
+        "size_out": 166578014,
+        "to": 947,
+        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/c82f24ebf7b81ca4d91654a22c84655cfd69664a/files/patch/v947/HavanaRp-926-947.patch"
       },
       "925": {
-        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/535a94489ad0f2b403c2b7e2a1f44cb4fceab55a/files/patch/v934/HavanaRp-925-934.patch",
-        "size": 4857658,
-        "sha256": "bccbf23c2eb614b4dec759d52c8641a514d66262fd0a71c3130b3e79d3d93897",
+        "size": 8809036,
+        "sha256": "a7e3deee31e2659c4448543069615015bd59336830a67d6fa7c83379ec5b84a0",
         "sha256_base": "d7beee5ebc3dcaac4f69f92c507d118ddc7078f7d7dc42ab6a51f6c3c8e16ae6",
         "size_base": 164706762,
-        "sha256_out": "e990edbb021622220a694a963837fa24406f51b893e02a1c64e203bfb6e8dd6f",
-        "size_out": 164840067,
-        "to": 934
+        "sha256_out": "50586b3e9de98198c43a84d95f833d18d40f99cfc64a571b3dbbe084ebbbf1cb",
+        "size_out": 166578014,
+        "to": 947,
+        "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/c82f24ebf7b81ca4d91654a22c84655cfd69664a/files/patch/v947/HavanaRp-925-947.patch"
       }
     }
   },
