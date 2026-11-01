@@ -1,12 +1,12 @@
 {
-  "version": "4.17.53-v200",
-  "versionCode": 949,
-  "tag": "v949",
-  "name": "HavanaRP 4.17.53",
-  "published_at": "2026-10-31T20:04:42Z",
-  "size": 166672779,
-  "sha256": "872c6b870df2f55591afbc4735789fa3671ff657fc84cf031abde90f441343a1",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v949/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v949",
-  "notes": "تحديث HavanaRP 4.17.53\n- فرق الهالوين: قائمة الأعضاء، طرد من الفريق، ترقية القائد، GPS لكل عضو ورسائل أوضح\n- العائلات: صلاحيات وأسماء لكل رتبة، تغيير الرتب والطرد من اللوحة، Family فوق اللاعب والسيارة\n- «متجري» من اللابتوب لأصحاب المتاجر\n- إزالة المشاة من الشوارع وتحسين الأداء\n\nSHA-256: 872c6b870df2f55591afbc4735789fa3671ff657fc84cf031abde90f441343a1"
+  "version": "4.17.54-v201",
+  "versionCode": 950,
+  "tag": "v950",
+  "name": "HavanaRP 4.17.54",
+  "published_at": "2026-11-01T19:35:20Z",
+  "size": 166824535,
+  "sha256": "daa6eeb2e9478d9dbbbad8d2211ffd3b7685b46bed46f4efd88a2c7fd7ede185",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v950/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v950",
+  "notes": "تحديث HavanaRP 4.17.54\n- وظيفة جديدة: عامل بناء مع شركة هافانا للإنشاءات (من المستوى 6)\n- بناء بيوت وفلل خطوة بخطوة: عقد العمل، لوحة الشركة، المخطط والتقدم على الشاشة\n\nSHA-256: daa6eeb2e9478d9dbbbad8d2211ffd3b7685b46bed46f4efd88a2c7fd7ede185"
 }
