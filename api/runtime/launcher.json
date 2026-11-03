@@ -1,12 +1,12 @@
 {
-  "version": "4.17.55-v203",
-  "versionCode": 951,
-  "tag": "v951",
-  "name": "HavanaRP 4.17.55",
-  "published_at": "2026-11-03T17:13:14Z",
-  "size": 166828579,
-  "sha256": "c16312d179bd452cb03726c3199175d7b5590a57b981d944c4b4b16852c4d50b",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v951/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v951",
-  "notes": "تحديث HavanaRP 4.17.55\n- عامل البناء: دائرة التفاعل صارت ثابتة على الهدف من أول لحظة، بدون انزلاق\n- الخريطة: كل الأماكن موجودة فيها (ومنها الأماكن الجديدة) وتطلع فوراً\n- إصلاحات وظيفة البناء: نقاط صب الخرسانة والسلم\n\nSHA-256: c16312d179bd452cb03726c3199175d7b5590a57b981d944c4b4b16852c4d50b"
+  "version": "4.17.56-v205",
+  "versionCode": 952,
+  "tag": "v952",
+  "name": "HavanaRP 4.17.56",
+  "published_at": "2026-11-03T21:59:32Z",
+  "size": 166844953,
+  "sha256": "035d3ca48da5ce7e9f7b33df26e04b1f58e255ca6680ebfac18a3734b2841c59",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v952/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v952",
+  "notes": "تحديث HavanaRP 4.17.56\n- متاجر 24/7 جديدة: تدخل مشي من الباب، فيها كاشير وتشتري من عند الكاونتر\n- صراف آلي في الشارع جنب كل متجر: سحب وإيداع ببطاقة الماستركارد\n- لازم تحدّث اللعبة عشان تشوف المتاجر الجديدة\n\nSHA-256: 035d3ca48da5ce7e9f7b33df26e04b1f58e255ca6680ebfac18a3734b2841c59"
 }
