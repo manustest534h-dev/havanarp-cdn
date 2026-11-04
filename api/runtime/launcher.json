@@ -1,12 +1,12 @@
 {
-  "version": "4.17.57-v207",
-  "versionCode": 953,
-  "tag": "v953",
-  "name": "HavanaRP 4.17.57",
-  "published_at": "2026-11-04T07:59:29Z",
-  "size": 166844946,
-  "sha256": "72c4343523e32216bc77e813a482e26de5877c45281744c35f80c074cda8e980",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v953/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v953",
-  "notes": "تحديث HavanaRP 4.17.57\n- الجيش والإسعاف وباقي المنظمات صار إلها لوحة قيادة للقائد والنائب: دعوة لاعب، ترقية، فصل، تغيير ملابس\n- زر المنظمة في عين التفاعل: الجيش (بني) والإسعاف (أحمر)\n- ملابس إسعاف جديدة بالعربي\n- لازم تحدّث اللعبة عشان تشوف الأزرار الجديدة\n\nSHA-256: 72c4343523e32216bc77e813a482e26de5877c45281744c35f80c074cda8e980"
+  "version": "4.17.58-v208",
+  "versionCode": 954,
+  "tag": "v954",
+  "name": "HavanaRP 4.17.58",
+  "published_at": "2026-11-04T09:48:11Z",
+  "size": 166873612,
+  "sha256": "ff165e97a702469e2d823040b852db5071029115d258e0a667cec741c3d3696b",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v954/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v954",
+  "notes": "تحديث HavanaRP 4.17.58\n- نظام الإسعاف الجديد: لما تنصاب ما بتموت فوراً، بتصير فاقد للوعي 10 دقائق وبتقدر تطلب مسعف\n- المسعف يشوف البلاغات ويقبلها، وأنت بتشوفه جاي إليك على الخريطة مباشرة\n- لعبة إسعاف بسيطة للمسعف، وأجر حسب بعد المكان عن المستشفى\n- المسعف بيعالج الأمراض وبيبيع أدوية، وسيارات إسعاف حسب الرتبة\n- ألوان أزرار الجيش والإسعاف والمنظمات في عين التفاعل\n\nSHA-256: ff165e97a702469e2d823040b852db5071029115d258e0a667cec741c3d3696b"
 }
