@@ -1,12 +1,12 @@
 {
-  "version": "4.17.58-v208",
-  "versionCode": 954,
-  "tag": "v954",
-  "name": "HavanaRP 4.17.58",
-  "published_at": "2026-11-04T09:48:11Z",
-  "size": 166873612,
-  "sha256": "ff165e97a702469e2d823040b852db5071029115d258e0a667cec741c3d3696b",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v954/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v954",
-  "notes": "تحديث HavanaRP 4.17.58\n- نظام الإسعاف الجديد: لما تنصاب ما بتموت فوراً، بتصير فاقد للوعي 10 دقائق وبتقدر تطلب مسعف\n- المسعف يشوف البلاغات ويقبلها، وأنت بتشوفه جاي إليك على الخريطة مباشرة\n- لعبة إسعاف بسيطة للمسعف، وأجر حسب بعد المكان عن المستشفى\n- المسعف بيعالج الأمراض وبيبيع أدوية، وسيارات إسعاف حسب الرتبة\n- ألوان أزرار الجيش والإسعاف والمنظمات في عين التفاعل\n\nSHA-256: ff165e97a702469e2d823040b852db5071029115d258e0a667cec741c3d3696b"
+  "version": "4.17.59-v209",
+  "versionCode": 955,
+  "tag": "v955",
+  "name": "HavanaRP 4.17.59",
+  "published_at": "2026-11-04T11:31:18Z",
+  "size": 166873603,
+  "sha256": "4e583b090be55cd66b0496fa97fc63875f02629386d80d19b03bcfcd9e84dcbb",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v955/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v955",
+  "notes": "تحديث HavanaRP 4.17.59\n- إصلاح وضعية المصاب: صار الكل يشوفه مرمي على الأرض مش واقف\n- علامة [ مسقط ] فوق المصاب مع حالته: بانتظار الإسعاف أو المسعف في الطريق\n- لما يقبل المسعف البلاغ يتوقف العداد لين يوصل، والتفنيش متاح دائماً\n- شاشة المصاب صارت خضراء، ونقطة سيارات الإسعاف مثل نقاط العصابات\n- أجر المسعف حسب المسافة اللي قطعها فعلاً، ويظهر له سبب عدم الأجر\n\nSHA-256: 4e583b090be55cd66b0496fa97fc63875f02629386d80d19b03bcfcd9e84dcbb"
 }
