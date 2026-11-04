@@ -1,12 +1,12 @@
 {
-  "version": "4.17.56-v205",
-  "versionCode": 952,
-  "tag": "v952",
-  "name": "HavanaRP 4.17.56",
-  "published_at": "2026-11-03T21:59:32Z",
-  "size": 166844953,
-  "sha256": "035d3ca48da5ce7e9f7b33df26e04b1f58e255ca6680ebfac18a3734b2841c59",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v952/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v952",
-  "notes": "تحديث HavanaRP 4.17.56\n- متاجر 24/7 جديدة: تدخل مشي من الباب، فيها كاشير وتشتري من عند الكاونتر\n- صراف آلي في الشارع جنب كل متجر: سحب وإيداع ببطاقة الماستركارد\n- لازم تحدّث اللعبة عشان تشوف المتاجر الجديدة\n\nSHA-256: 035d3ca48da5ce7e9f7b33df26e04b1f58e255ca6680ebfac18a3734b2841c59"
+  "version": "4.17.57-v207",
+  "versionCode": 953,
+  "tag": "v953",
+  "name": "HavanaRP 4.17.57",
+  "published_at": "2026-11-04T07:59:29Z",
+  "size": 166844946,
+  "sha256": "72c4343523e32216bc77e813a482e26de5877c45281744c35f80c074cda8e980",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v953/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v953",
+  "notes": "تحديث HavanaRP 4.17.57\n- الجيش والإسعاف وباقي المنظمات صار إلها لوحة قيادة للقائد والنائب: دعوة لاعب، ترقية، فصل، تغيير ملابس\n- زر المنظمة في عين التفاعل: الجيش (بني) والإسعاف (أحمر)\n- ملابس إسعاف جديدة بالعربي\n- لازم تحدّث اللعبة عشان تشوف الأزرار الجديدة\n\nSHA-256: 72c4343523e32216bc77e813a482e26de5877c45281744c35f80c074cda8e980"
 }
