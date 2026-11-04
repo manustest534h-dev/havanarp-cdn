@@ -1,12 +1,12 @@
 {
-  "version": "4.17.59-v209",
-  "versionCode": 955,
-  "tag": "v955",
-  "name": "HavanaRP 4.17.59",
-  "published_at": "2026-11-04T11:31:18Z",
-  "size": 166873603,
-  "sha256": "4e583b090be55cd66b0496fa97fc63875f02629386d80d19b03bcfcd9e84dcbb",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v955/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v955",
-  "notes": "تحديث HavanaRP 4.17.59\n- إصلاح وضعية المصاب: صار الكل يشوفه مرمي على الأرض مش واقف\n- علامة [ مسقط ] فوق المصاب مع حالته: بانتظار الإسعاف أو المسعف في الطريق\n- لما يقبل المسعف البلاغ يتوقف العداد لين يوصل، والتفنيش متاح دائماً\n- شاشة المصاب صارت خضراء، ونقطة سيارات الإسعاف مثل نقاط العصابات\n- أجر المسعف حسب المسافة اللي قطعها فعلاً، ويظهر له سبب عدم الأجر\n\nSHA-256: 4e583b090be55cd66b0496fa97fc63875f02629386d80d19b03bcfcd9e84dcbb"
+  "version": "4.17.60-v210",
+  "versionCode": 956,
+  "tag": "v956",
+  "name": "HavanaRP 4.17.60",
+  "published_at": "2026-11-04T13:51:59Z",
+  "size": 166873590,
+  "sha256": "54e07cc6d3cf06c57ba065d31939f39586da58b66dfcbc4ae12a891f6b2b9557",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v956/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v956",
+  "notes": "تحديث HavanaRP 4.17.60\n- أزرار الشاشة صارت أيقونات فقط بدون الدائرة السوداء والإطار، بشكل أنظف وأخف\n- نفس الشكل الجديد في شاشة تعديل أماكن الأزرار (مشي وسيارة)، وأماكن أزرارك المحفوظة ما تتغير\n- القفل والمحرك والمايك واللاسلكي وزر الشات صاروا أيقونات بظل خفيف يبين على أي خلفية\n\nSHA-256: 54e07cc6d3cf06c57ba065d31939f39586da58b66dfcbc4ae12a891f6b2b9557"
 }
