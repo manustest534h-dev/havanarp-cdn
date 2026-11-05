@@ -1,12 +1,12 @@
 {
-  "version": "4.17.61-v216",
-  "versionCode": 957,
-  "tag": "v957",
-  "name": "HavanaRP 4.17.61",
-  "published_at": "2026-11-05T15:36:12Z",
-  "size": 167349517,
-  "sha256": "dabd8b551ccdaf43ceed3912a987197b9805ca9f665d402812562e4acb3c814d",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v957/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v957",
-  "notes": "تحديث HavanaRP 4.17.61\n- تطبيق تيك توك داخل الجوال: فيديوهات، بث مباشر بصوت المذيع، هدايا، جولات PK، تعليقات\n\nSHA-256: dabd8b551ccdaf43ceed3912a987197b9805ca9f665d402812562e4acb3c814d"
+  "version": "4.17.62-v217",
+  "versionCode": 958,
+  "tag": "v958",
+  "name": "HavanaRP 4.17.62",
+  "published_at": "2026-11-05T18:25:35Z",
+  "size": 167759464,
+  "sha256": "c53a88740a81ee2060f8f3bbe63c19b9268b11882ab0b1c4ed5540a553b3f0a9",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v958/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v958",
+  "notes": "تحديث HavanaRP 4.17.62\n- تيك توك: تصميم جديد، تشغيل الفيديوهات أسرع وأثبت، البث بالعرض، تعليقات وأوصاف كاملة، إصلاح اتصال جولات PK، الأحدث أولاً\n- إصلاح الرجوع للمطار بعد مشاهدة البث، وإصلاح قفل المايك بعد المشاهدة\n- الجيش: مخزن سلاح خاص، لوحة قيادة للجيش والإسعاف، رتب جديدة، راتب الدوام، الرسبون في المقر\n\nSHA-256: c53a88740a81ee2060f8f3bbe63c19b9268b11882ab0b1c4ed5540a553b3f0a9"
 }
