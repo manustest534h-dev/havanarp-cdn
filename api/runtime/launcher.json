@@ -1,12 +1,12 @@
 {
-  "version": "4.17.60-v210",
-  "versionCode": 956,
-  "tag": "v956",
-  "name": "HavanaRP 4.17.60",
-  "published_at": "2026-11-04T13:51:59Z",
-  "size": 166873590,
-  "sha256": "54e07cc6d3cf06c57ba065d31939f39586da58b66dfcbc4ae12a891f6b2b9557",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v956/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v956",
-  "notes": "تحديث HavanaRP 4.17.60\n- أزرار الشاشة صارت أيقونات فقط بدون الدائرة السوداء والإطار، بشكل أنظف وأخف\n- نفس الشكل الجديد في شاشة تعديل أماكن الأزرار (مشي وسيارة)، وأماكن أزرارك المحفوظة ما تتغير\n- القفل والمحرك والمايك واللاسلكي وزر الشات صاروا أيقونات بظل خفيف يبين على أي خلفية\n\nSHA-256: 54e07cc6d3cf06c57ba065d31939f39586da58b66dfcbc4ae12a891f6b2b9557"
+  "version": "4.17.61-v216",
+  "versionCode": 957,
+  "tag": "v957",
+  "name": "HavanaRP 4.17.61",
+  "published_at": "2026-11-05T15:36:12Z",
+  "size": 167349517,
+  "sha256": "dabd8b551ccdaf43ceed3912a987197b9805ca9f665d402812562e4acb3c814d",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v957/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v957",
+  "notes": "تحديث HavanaRP 4.17.61\n- تطبيق تيك توك داخل الجوال: فيديوهات، بث مباشر بصوت المذيع، هدايا، جولات PK، تعليقات\n\nSHA-256: dabd8b551ccdaf43ceed3912a987197b9805ca9f665d402812562e4acb3c814d"
 }
