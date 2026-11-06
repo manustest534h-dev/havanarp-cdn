@@ -1,43 +1,43 @@
 {
   "config_version": 1,
   "apk": {
-    "version": 958,
-    "str": "4.17.62-v217",
-    "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v958/HavanaRp.apk",
+    "version": 959,
+    "str": "4.17.63-v225",
+    "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v959/HavanaRp.apk",
     "auto_update": true,
     "manual_update": true,
-    "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v958/HavanaRp.apk",
-    "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v958/HavanaRp.apk",
+    "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v959/HavanaRp.apk",
+    "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v959/HavanaRp.apk",
     "patches": {
+      "958": {
+        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v959/HavanaRp-958-959.patch",
+        "size": 692377,
+        "sha256": "94302d2efdedd43f196d2f5678e30feb091cd25fad39c1b2af6caf65feb65aa5",
+        "sha256_base": "c53a88740a81ee2060f8f3bbe63c19b9268b11882ab0b1c4ed5540a553b3f0a9",
+        "size_base": 167759464,
+        "sha256_out": "7180786a5f3688f912d8c47402e3d54f4aa16de1ffa8e0551d9565cd7b724826",
+        "size_out": 167956138,
+        "to": 959
+      },
       "957": {
-        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v958/HavanaRp-957-958.patch",
-        "size": 2152650,
-        "sha256": "c287f7f40bf849b601848570f80a6629c79c0a62573267351185abab9b70f13b",
+        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v959/HavanaRp-957-959.patch",
+        "size": 2349220,
+        "sha256": "777d38c8c62b9338f0cefaf91ec028a9c241ee864e5873b385b5b684a949ab5f",
         "sha256_base": "dabd8b551ccdaf43ceed3912a987197b9805ca9f665d402812562e4acb3c814d",
         "size_base": 167349517,
-        "sha256_out": "c53a88740a81ee2060f8f3bbe63c19b9268b11882ab0b1c4ed5540a553b3f0a9",
-        "size_out": 167759464,
-        "to": 958
+        "sha256_out": "7180786a5f3688f912d8c47402e3d54f4aa16de1ffa8e0551d9565cd7b724826",
+        "size_out": 167956138,
+        "to": 959
       },
       "956": {
-        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v958/HavanaRp-956-958.patch",
-        "size": 2517956,
-        "sha256": "a8abf2ec67c635b222b764728449cae8239191b15044c73e5eb428d45bab990a",
+        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v959/HavanaRp-956-959.patch",
+        "size": 2714428,
+        "sha256": "7af79c7dbab2a2bba3b9cc8faaa50a7f5d5eeba5bfb51d6cfcefbce35367ea72",
         "sha256_base": "54e07cc6d3cf06c57ba065d31939f39586da58b66dfcbc4ae12a891f6b2b9557",
         "size_base": 166873590,
-        "sha256_out": "c53a88740a81ee2060f8f3bbe63c19b9268b11882ab0b1c4ed5540a553b3f0a9",
-        "size_out": 167759464,
-        "to": 958
-      },
-      "955": {
-        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v958/HavanaRp-955-958.patch",
-        "size": 2542841,
-        "sha256": "fadcb35fbfce7305b0a0f38441222a9e0bbbe3e8d53c55b77897080dd5c67c49",
-        "sha256_base": "4e583b090be55cd66b0496fa97fc63875f02629386d80d19b03bcfcd9e84dcbb",
-        "size_base": 166873603,
-        "sha256_out": "c53a88740a81ee2060f8f3bbe63c19b9268b11882ab0b1c4ed5540a553b3f0a9",
-        "size_out": 167759464,
-        "to": 958
+        "sha256_out": "7180786a5f3688f912d8c47402e3d54f4aa16de1ffa8e0551d9565cd7b724826",
+        "size_out": 167956138,
+        "to": 959
       }
     }
   },

@@ -1,12 +1,12 @@
 {
-  "version": "4.17.62-v217",
-  "versionCode": 958,
-  "tag": "v958",
-  "name": "HavanaRP 4.17.62",
-  "published_at": "2026-11-05T18:25:35Z",
-  "size": 167759464,
-  "sha256": "c53a88740a81ee2060f8f3bbe63c19b9268b11882ab0b1c4ed5540a553b3f0a9",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v958/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v958",
-  "notes": "تحديث HavanaRP 4.17.62\n- تيك توك: تصميم جديد، تشغيل الفيديوهات أسرع وأثبت، البث بالعرض، تعليقات وأوصاف كاملة، إصلاح اتصال جولات PK، الأحدث أولاً\n- إصلاح الرجوع للمطار بعد مشاهدة البث، وإصلاح قفل المايك بعد المشاهدة\n- الجيش: مخزن سلاح خاص، لوحة قيادة للجيش والإسعاف، رتب جديدة، راتب الدوام، الرسبون في المقر\n\nSHA-256: c53a88740a81ee2060f8f3bbe63c19b9268b11882ab0b1c4ed5540a553b3f0a9"
+  "version": "4.17.63-v225",
+  "versionCode": 959,
+  "tag": "v959",
+  "name": "HavanaRP 4.17.63",
+  "published_at": "2026-11-06T16:53:32Z",
+  "size": 167956138,
+  "sha256": "7180786a5f3688f912d8c47402e3d54f4aa16de1ffa8e0551d9565cd7b724826",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v959/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v959",
+  "notes": "تحديث HavanaRP 4.17.63\n- سرقة الصراف الآلي للعصابات: صانع السيفور بمقر العصابة بصوت وكلام، مهمة جمع الموارد، تفجير الـ ATM\n- بلاغ سرقة ATM للشرطة مع زر قبول وتتبع المجرم على الخريطة\n- عداد المطاردة 10 دقائق للمجرم وللشرطي تحت عداد الراتب\n\nSHA-256: 7180786a5f3688f912d8c47402e3d54f4aa16de1ffa8e0551d9565cd7b724826"
 }
