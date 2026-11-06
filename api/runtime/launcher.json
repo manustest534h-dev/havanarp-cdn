@@ -1,12 +1,12 @@
 {
-  "version": "4.17.64-v226",
-  "versionCode": 960,
-  "tag": "v960",
-  "name": "HavanaRP 4.17.64",
-  "published_at": "2026-11-06T18:48:26Z",
-  "size": 168054577,
-  "sha256": "6a01c8bd5c28da6254e4c76326d5debddabb978d3b78f01a947dc265ddbbe6ca",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v960/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v960",
-  "notes": "تحديث HavanaRP 4.17.64\n- الحقيبة تعرف موارد السيفور والسيفور: أيقونة وزر استخدام\n- كلام صانع السيفور على شاشة تاجر السلاح نفسها بصوته\n- الصرافات ومقر العصابة معلّمة على الخريطة\n\nSHA-256: 6a01c8bd5c28da6254e4c76326d5debddabb978d3b78f01a947dc265ddbbe6ca"
+  "version": "4.17.65-v228",
+  "versionCode": 961,
+  "tag": "v961",
+  "name": "HavanaRP 4.17.65",
+  "published_at": "2026-11-06T21:28:17Z",
+  "size": 168058669,
+  "sha256": "44df0f8c117f6da8c112b263cf9da728699a173d65428d2d2a016955db98fb06",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v961/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v961",
+  "notes": "تحديث HavanaRP 4.17.65\n- الرادار العريض يرجع على كل الأجهزة (64 و 32 بت)\n- حماية تيك توك: أي خطأ بالفيديو أو الصور أو البث ما بيسكّر اللعبة\n- تقارير الأعطال توصل للسيرفر لنصلحها بسرعة\n\nSHA-256: 44df0f8c117f6da8c112b263cf9da728699a173d65428d2d2a016955db98fb06"
 }
