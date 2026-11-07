@@ -1,12 +1,12 @@
 {
-  "version": "4.17.66-v230",
-  "versionCode": 962,
-  "tag": "v962",
-  "name": "HavanaRP 4.17.66",
-  "published_at": "2026-11-07T08:03:55Z",
-  "size": 168070684,
-  "sha256": "a66980514e3d0ea044e3758c92a8ff3e29e73c239a256807612df71d54f0be89",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v962/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v962",
-  "notes": "تحديث HavanaRP 4.17.66\n- مطعم داخل مقرات الشرطة والجيش والمستشفى بواجهة خاصة لكل جهة\n- واجهة اللعب أكبر ومرتبة على التابلت والشاشات الكبيرة، والرادار بحجم صحيح\n- أزرار القفل والمحرك والشات ما بتتداخل باللمس\n- إصلاح إغلاق اللعبة المفاجئ على أجهزة أندرويد الحديثة\n\nSHA-256: a66980514e3d0ea044e3758c92a8ff3e29e73c239a256807612df71d54f0be89"
+  "version": "4.17.67-v231",
+  "versionCode": 963,
+  "tag": "v963",
+  "name": "HavanaRP 4.17.67",
+  "published_at": "2026-11-07T09:53:14Z",
+  "size": 168070915,
+  "sha256": "12da8811cd55d4446cd4dcfdcaad67911e7cf59c425074d84e7a0ea5f26935c1",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v963/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v963",
+  "notes": "تحديث HavanaRP 4.17.67\n- صفارات الإنذار وأضواء السيارات تشتغل على سيارات الشرطة والإسعاف الجديدة\n- تفتيش الجيش للاعب المسقط بواجهة خاصة بالجيش\n- رجوع واجهة اللعب لشكلها السابق\n\nSHA-256: 12da8811cd55d4446cd4dcfdcaad67911e7cf59c425074d84e7a0ea5f26935c1"
 }
