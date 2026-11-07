@@ -1,12 +1,12 @@
 {
-  "version": "4.17.67-v231",
-  "versionCode": 963,
-  "tag": "v963",
-  "name": "HavanaRP 4.17.67",
-  "published_at": "2026-11-07T09:53:14Z",
-  "size": 168070915,
-  "sha256": "12da8811cd55d4446cd4dcfdcaad67911e7cf59c425074d84e7a0ea5f26935c1",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v963/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v963",
-  "notes": "تحديث HavanaRP 4.17.67\n- صفارات الإنذار وأضواء السيارات تشتغل على سيارات الشرطة والإسعاف الجديدة\n- تفتيش الجيش للاعب المسقط بواجهة خاصة بالجيش\n- رجوع واجهة اللعب لشكلها السابق\n\nSHA-256: 12da8811cd55d4446cd4dcfdcaad67911e7cf59c425074d84e7a0ea5f26935c1"
+  "version": "4.17.68-v232",
+  "versionCode": 964,
+  "tag": "v964",
+  "name": "HavanaRP 4.17.68",
+  "published_at": "2026-11-07T11:55:28Z",
+  "size": 168083194,
+  "sha256": "558a6caac9f371bccc1a03100ea083e7827f5a51e0afa248653ef476be568452",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v964/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v964",
+  "notes": "تحديث HavanaRP 4.17.68\n- صندوق السيارة: خزّن أغراضك وأسلحتك بسيارتك الخاصة (من خلف السيارة)\n- بيع البيت للدولة بنصف السعر من شاشة البيت\n- طاولة تطوير البيت صارت 60,000\n\nSHA-256: 558a6caac9f371bccc1a03100ea083e7827f5a51e0afa248653ef476be568452"
 }
