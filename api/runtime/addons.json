@@ -1,8 +1,8 @@
 {
  "format": 1,
- "version": 24,
+ "version": 25,
  "pack": ".event",
- "note": "v224: add-on v24 = v23 + Arabic police/EMS liveries: car twins 15990-15996 (hvar_m5sf/dodls/trnls/tslv/explv = vendor police dffs 15814/15822/15819/15818/15812, hvar_mvan/mtahoe = EMS 15864/15863) in texdb\\hv_garage.img with their textures in texdb hv_garage (liveries / tx_amb Arabic), ide/handling/audio rows + AVS siren refs; server shows a twin only to add-on >= 24 clients. v210: add-on v23 = v22 + icon-only HUD buttons: texdb widgets (78 widget textures: baked dark disc + light ring removed, white glyph + soft shadow, hud_circle cleared; same names/sizes/toc as .texs v860) + SA-MP button PNGs new_gbutton/new_soundpad/new_voice/new_voice_on/voice_speaking (+ legacy gbutton/soundpad/voice/voice_on) icon-only. v207: add-on v22 = v21 + EMS skins 12315-12320 hvems1..6 (Live Russia medic skins 12131/12132/12133/11927/11990/12005 with every Russian print replaced by Arabic; 6 dff in texdb\\hv_garage.img, 41 textures hvems*_* appended to texdb hv_garage, 6 peds lines in hv_garage.ide). v206: add-on v21 = v20 + 24/7 store fix: hv247_shell/props/atm.dff rebuilt (interior walls / skirting / stripes faced INTO the walls in v20 -> see-through from inside; door frame trim lay exactly on the wall jamb faces -> flicker; every coplanar overlap removed). Only texdb\\hv_garage.img changes. v205: add-on v20 = v19 + 24/7 store 12461-12471 (hv247_shell/props/glass/atm + rebuilt stock pieces rb_idl/mul/fc + ramps rp_idl/mul/red/fc; 11 dff in texdb\\hv_garage.img, 11 COL3, 31 textures appended to texdb hv_garage: 8 hv247_* + 23 stock copies). v200 BMW: add-on v19 = v18 + car 15989 hvm5cs BMW M5 CS (F90) (hvm5cs.dff in texdb\\hv_garage.img, no own textures, ide/handling/audio rows after hvhw_rev). ADMIN 941: add-on v18 = v17 + weapon 33 (Country Rifle) shown as the HK416: hvhk416w.dff (stock cuntgun clump + HK416 geometry, stock gunflash + muzzle_texture4 in texdb hv_garage), default.ide 357 -> hvhk416w / hv_garage, HUD icon hud_weapon_33.png. [941b] model on the M4 clump + weapon.dat COUNTRYRIFLE = HK416 full-auto (rifle anims, clip 30, loop 6 11 7, flags 7038). ADMIN 940: add-on v17 = v16 + HK416 weapon object 12460 hvhk416 (1 dff + empty COL3 + 1 texture 512x512). v190/ADMIN: add-on v16 = v14 + Halloween (number 15 was the rolled-back v191 graphics pack; Halloween content unchanged) event: island city 12428-12454 (27 hw_* dff + COL3), cars 15985-15988 (hvhw_mus/dem/gho/rev, own COL3, livery textures, ide/handling/audio lines), skins 12305-12314 (hvhw5..14 peds). 98 textures appended to texdb hv_garage. Old 70 textures / 34 IMG entries (bytes) / COL3 entries byte-identical; IMG directory grew to 2 sectors (data shifted by whole sectors).",
+ "note": "v233: add-on v25 = v24 + personal skin 12321 hv233 (Omaz_Baker; base LR 12255 lr_skin422 rebuilt: platinum crop, black zip hoodie with white thorn/star sleeve embroidery, harness + holsters, chain, washed-black wide jeans, white sneakers; dff in texdb\\hv_garage.img, 10 textures hv233_* in texdb hv_garage, peds line in hv_garage.ide); server shows it only to add-on >= 25 clients. v224: add-on v24 = v23 + Arabic police/EMS liveries: car twins 15990-15996 (hvar_m5sf/dodls/trnls/tslv/explv = vendor police dffs 15814/15822/15819/15818/15812, hvar_mvan/mtahoe = EMS 15864/15863) in texdb\\hv_garage.img with their textures in texdb hv_garage (liveries / tx_amb Arabic), ide/handling/audio rows + AVS siren refs; server shows a twin only to add-on >= 24 clients. v210: add-on v23 = v22 + icon-only HUD buttons: texdb widgets (78 widget textures: baked dark disc + light ring removed, white glyph + soft shadow, hud_circle cleared; same names/sizes/toc as .texs v860) + SA-MP button PNGs new_gbutton/new_soundpad/new_voice/new_voice_on/voice_speaking (+ legacy gbutton/soundpad/voice/voice_on) icon-only. v207: add-on v22 = v21 + EMS skins 12315-12320 hvems1..6 (Live Russia medic skins 12131/12132/12133/11927/11990/12005 with every Russian print replaced by Arabic; 6 dff in texdb\\hv_garage.img, 41 textures hvems*_* appended to texdb hv_garage, 6 peds lines in hv_garage.ide). v206: add-on v21 = v20 + 24/7 store fix: hv247_shell/props/atm.dff rebuilt (interior walls / skirting / stripes faced INTO the walls in v20 -> see-through from inside; door frame trim lay exactly on the wall jamb faces -> flicker; every coplanar overlap removed). Only texdb\\hv_garage.img changes. v205: add-on v20 = v19 + 24/7 store 12461-12471 (hv247_shell/props/glass/atm + rebuilt stock pieces rb_idl/mul/fc + ramps rp_idl/mul/red/fc; 11 dff in texdb\\hv_garage.img, 11 COL3, 31 textures appended to texdb hv_garage: 8 hv247_* + 23 stock copies). v200 BMW: add-on v19 = v18 + car 15989 hvm5cs BMW M5 CS (F90) (hvm5cs.dff in texdb\\hv_garage.img, no own textures, ide/handling/audio rows after hvhw_rev). ADMIN 941: add-on v18 = v17 + weapon 33 (Country Rifle) shown as the HK416: hvhk416w.dff (stock cuntgun clump + HK416 geometry, stock gunflash + muzzle_texture4 in texdb hv_garage), default.ide 357 -> hvhk416w / hv_garage, HUD icon hud_weapon_33.png. [941b] model on the M4 clump + weapon.dat COUNTRYRIFLE = HK416 full-auto (rifle anims, clip 30, loop 6 11 7, flags 7038). ADMIN 940: add-on v17 = v16 + HK416 weapon object 12460 hvhk416 (1 dff + empty COL3 + 1 texture 512x512). v190/ADMIN: add-on v16 = v14 + Halloween (number 15 was the rolled-back v191 graphics pack; Halloween content unchanged) event: island city 12428-12454 (27 hw_* dff + COL3), cars 15985-15988 (hvhw_mus/dem/gho/rev, own COL3, livery textures, ide/handling/audio lines), skins 12305-12314 (hvhw5..14 peds). 98 textures appended to texdb hv_garage. Old 70 textures / 34 IMG entries (bytes) / COL3 entries byte-identical; IMG directory grew to 2 sectors (data shifted by whole sectors).",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
  "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/files/addons/blobs/",
@@ -49,13 +49,13 @@
   },
   {
    "path": "!client/texdb/hv_garage.img",
-   "size": 62656512,
-   "sha256": "b2e83a7f31d882d1fc4260231613501c755b3f1dd2b81c7fe889df0a6e1616b3"
+   "size": 63471616,
+   "sha256": "f1f50b49dde14edb7d568ecc650cce9d718928ecb04eed5e43b4b4c219383f2a"
   },
   {
    "path": "!client/data/maps/orp/hv_garage.ide",
-   "size": 5492,
-   "sha256": "393a72e745c700f9407dc589bb35b0950ce8862546c9a0a879d2d811f3e61632"
+   "size": 5617,
+   "sha256": "8d57de5b11b55b9437a6b614447063b41039109fc8531fa4b2d94198fb937bcb"
   },
   {
    "path": "!client/models/coll/hv_garage.col",
@@ -64,53 +64,53 @@
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.txt",
-   "size": 13808,
-   "sha256": "8163eab66c53cd8a14dd19be40825ead882e031eb856b7e7279b097ac172c786"
+   "size": 14302,
+   "sha256": "927b44cb5426850d843f5e06e3c2064fb7128838ce256e0477ca097ede91a60b"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.dat",
-   "size": 46202440,
-   "sha256": "d0fe4021d7cfddf0c793120fc3a5b85be92ea3ba5882a1cbc6521c9ed02385e3"
+   "size": 49403080,
+   "sha256": "9f41e57d664eb56c7c0a06baa602d3bf5d123a5d141d1fb7ec14be3965395e54"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.tmb",
-   "size": 16000,
-   "sha256": "a94243f702813a68ec3e0b3d485b3b1ab1755e6ae9046df4e2c69b2c138d74e7"
+   "size": 16480,
+   "sha256": "048ce73cdd736c8e4ad2a10e0b2ae26ae1c030d65455888e348574628ca2b481"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.toc",
-   "size": 1108,
-   "sha256": "ccf5703bd4e6a5def48849c804a3dd1079094ba37fb5b2d0b787334633cc87c7"
+   "size": 1148,
+   "sha256": "ef53e6be6bd1b776265ed1f711c7b922d77f0c469763f3c081ab30c4e0322b39"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.dat",
-   "size": 50253906,
-   "sha256": "3fc846b46d9684f8c46c21a7247b52c8e708c433b41e577b8f33b577b3917516"
+   "size": 53454546,
+   "sha256": "0642804045110ed16a93915618923f984e24ba9752bdbb48ed9e6970297c2ad1"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.tmb",
-   "size": 17472,
-   "sha256": "2f6cd1cf404c821b0d3a6b441ab4eab88421863f1ae1c12dbc2a7c07d073b452"
+   "size": 17952,
+   "sha256": "0e853d24a496213e97518e7ddcc326a2fa3374c6bb84bc7261672cd830b2a650"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.toc",
-   "size": 1108,
-   "sha256": "f567dfdbc7d32aae65f4116a9393b9f06cd5aaa2bf1d1b31490a1b530020f3d4"
+   "size": 1148,
+   "sha256": "2cec12bf1562a61b4c8c9d5459111a499409f55cbb53211781a564b4d5abde3e"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.dat",
-   "size": 50253906,
-   "sha256": "3fc846b46d9684f8c46c21a7247b52c8e708c433b41e577b8f33b577b3917516"
+   "size": 53454546,
+   "sha256": "0642804045110ed16a93915618923f984e24ba9752bdbb48ed9e6970297c2ad1"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.tmb",
-   "size": 17472,
-   "sha256": "2f6cd1cf404c821b0d3a6b441ab4eab88421863f1ae1c12dbc2a7c07d073b452"
+   "size": 17952,
+   "sha256": "0e853d24a496213e97518e7ddcc326a2fa3374c6bb84bc7261672cd830b2a650"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.toc",
-   "size": 1108,
-   "sha256": "f567dfdbc7d32aae65f4116a9393b9f06cd5aaa2bf1d1b31490a1b530020f3d4"
+   "size": 1148,
+   "sha256": "2cec12bf1562a61b4c8c9d5459111a499409f55cbb53211781a564b4d5abde3e"
   },
   {
    "path": "!client/anim/anim.img",
@@ -228,6 +228,6 @@
    "sha256": "4fd74341e03bcef360a5887b7956e212fc978d7e1df7954eb9cf7a0416a02ecf"
   }
  ],
- "out_size": 245176038,
- "out_sha256": "8be0e6ef962676b8d6ca204b32edf8f2987e278a65e7047dd3084f068672bda6"
+ "out_size": 255595241,
+ "out_sha256": "bd4cf932bd8c44a91a525b624f8ce916fb9cc3ec827818c66fc3de2f481d899a"
 }
