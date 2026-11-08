@@ -1,8 +1,8 @@
 {
  "format": 1,
- "version": 29,
+ "version": 30,
  "pack": ".event",
- "note": "v236 ADMIN: add-on v29 (v28 + seabed.ipl LOD link fix for lodseabed121 4478; v28 = v27 + empty COL3 for no-collision models) = main v25 + Sahara desert replacing the LV box (x1000..2930 y620..2930; old city removed via hv236 IPLs, water.dat oasis, info.zon, 22 radar tiles) + camels v3 + 6 Wadi Rum dome villas (dh_* 12740..12747) + Petra/Giza island + box-edge seam fillers; 279 models ids 12480..12790 in texdb\\hv_garage.img, COL3 in hv_garage.col, objs in hv_garage.ide, 84 textures in texdb hv_garage. v233: add-on v25 = v24 + personal skin 12321 hv233 (Omaz_Baker; base LR 12255 lr_skin422 rebuilt: platinum crop, black zip hoodie with white thorn/star sleeve embroidery, harness + holsters, chain, washed-black wide jeans, white sneakers; dff in texdb\\hv_garage.img, 10 textures hv233_* in texdb hv_garage, peds line in hv_garage.ide); server shows it only to add-on >= 25 clients. v224: add-on v24 = v23 + Arabic police/EMS liveries: car twins 15990-15996 (hvar_m5sf/dodls/trnls/tslv/explv = vendor police dffs 15814/15822/15819/15818/15812, hvar_mvan/mtahoe = EMS 15864/15863) in texdb\\hv_garage.img with their textures in texdb hv_garage (liveries / tx_amb Arabic), ide/handling/audio rows + AVS siren refs; server shows a twin only to add-on >= 24 clients. v210: add-on v23 = v22 + icon-only HUD buttons: texdb widgets (78 widget textures: baked dark disc + light ring removed, white glyph + soft shadow, hud_circle cleared; same names/sizes/toc as .texs v860) + SA-MP button PNGs new_gbutton/new_soundpad/new_voice/new_voice_on/voice_speaking (+ legacy gbutton/soundpad/voice/voice_on) icon-only. v207: add-on v22 = v21 + EMS skins 12315-12320 hvems1..6 (Live Russia medic skins 12131/12132/12133/11927/11990/12005 with every Russian print replaced by Arabic; 6 dff in texdb\\hv_garage.img, 41 textures hvems*_* appended to texdb hv_garage, 6 peds lines in hv_garage.ide). v206: add-on v21 = v20 + 24/7 store fix: hv247_shell/props/atm.dff rebuilt (interior walls / skirting / stripes faced INTO the walls in v20 -> see-through from inside; door frame trim lay exactly on the wall jamb faces -> flicker; every coplanar overlap removed). Only texdb\\hv_garage.img changes. v205: add-on v20 = v19 + 24/7 store 12461-12471 (hv247_shell/props/glass/atm + rebuilt stock pieces rb_idl/mul/fc + ramps rp_idl/mul/red/fc; 11 dff in texdb\\hv_garage.img, 11 COL3, 31 textures appended to texdb hv_garage: 8 hv247_* + 23 stock copies). v200 BMW: add-on v19 = v18 + car 15989 hvm5cs BMW M5 CS (F90) (hvm5cs.dff in texdb\\hv_garage.img, no own textures, ide/handling/audio rows after hvhw_rev). ADMIN 941: add-on v18 = v17 + weapon 33 (Country Rifle) shown as the HK416: hvhk416w.dff (stock cuntgun clump + HK416 geometry, stock gunflash + muzzle_texture4 in texdb hv_garage), default.ide 357 -> hvhk416w / hv_garage, HUD icon hud_weapon_33.png. [941b] model on the M4 clump + weapon.dat COUNTRYRIFLE = HK416 full-auto (rifle anims, clip 30, loop 6 11 7, flags 7038). ADMIN 940: add-on v17 = v16 + HK416 weapon object 12460 hvhk416 (1 dff + empty COL3 + 1 texture 512x512). v190/ADMIN: add-on v16 = v14 + Halloween (number 15 was the rolled-back v191 graphics pack; Halloween content unchanged) event: island city 12428-12454 (27 hw_* dff + COL3), cars 15985-15988 (hvhw_mus/dem/gho/rev, own COL3, livery textures, ide/handling/audio lines), skins 12305-12314 (hvhw5..14 peds). 98 textures appended to texdb hv_garage. Old 70 textures / 34 IMG entries (bytes) / COL3 entries byte-identical; IMG directory grew to 2 sectors (data shifted by whole sectors).",
+ "note": "v236 ADMIN: add-on v30 (v29 + IPL store fix: stock vegas IPL names, 36 rebuilt vegas stream IPLs in hv_garage.img listed first in mod_imgs.cfg, hvdes merged into vegasw; v29 = v28 + seabed.ipl LOD link fix for lodseabed121 4478; v28 = v27 + empty COL3 for no-collision models) = main v25 + Sahara desert replacing the LV box (x1000..2930 y620..2930; old city removed via hv236 IPLs, water.dat oasis, info.zon, 22 radar tiles) + camels v3 + 6 Wadi Rum dome villas (dh_* 12740..12747) + Petra/Giza island + box-edge seam fillers; 279 models ids 12480..12790 in texdb\\hv_garage.img, COL3 in hv_garage.col, objs in hv_garage.ide, 84 textures in texdb hv_garage. v233: add-on v25 = v24 + personal skin 12321 hv233 (Omaz_Baker; base LR 12255 lr_skin422 rebuilt: platinum crop, black zip hoodie with white thorn/star sleeve embroidery, harness + holsters, chain, washed-black wide jeans, white sneakers; dff in texdb\\hv_garage.img, 10 textures hv233_* in texdb hv_garage, peds line in hv_garage.ide); server shows it only to add-on >= 25 clients. v224: add-on v24 = v23 + Arabic police/EMS liveries: car twins 15990-15996 (hvar_m5sf/dodls/trnls/tslv/explv = vendor police dffs 15814/15822/15819/15818/15812, hvar_mvan/mtahoe = EMS 15864/15863) in texdb\\hv_garage.img with their textures in texdb hv_garage (liveries / tx_amb Arabic), ide/handling/audio rows + AVS siren refs; server shows a twin only to add-on >= 24 clients. v210: add-on v23 = v22 + icon-only HUD buttons: texdb widgets (78 widget textures: baked dark disc + light ring removed, white glyph + soft shadow, hud_circle cleared; same names/sizes/toc as .texs v860) + SA-MP button PNGs new_gbutton/new_soundpad/new_voice/new_voice_on/voice_speaking (+ legacy gbutton/soundpad/voice/voice_on) icon-only. v207: add-on v22 = v21 + EMS skins 12315-12320 hvems1..6 (Live Russia medic skins 12131/12132/12133/11927/11990/12005 with every Russian print replaced by Arabic; 6 dff in texdb\\hv_garage.img, 41 textures hvems*_* appended to texdb hv_garage, 6 peds lines in hv_garage.ide). v206: add-on v21 = v20 + 24/7 store fix: hv247_shell/props/atm.dff rebuilt (interior walls / skirting / stripes faced INTO the walls in v20 -> see-through from inside; door frame trim lay exactly on the wall jamb faces -> flicker; every coplanar overlap removed). Only texdb\\hv_garage.img changes. v205: add-on v20 = v19 + 24/7 store 12461-12471 (hv247_shell/props/glass/atm + rebuilt stock pieces rb_idl/mul/fc + ramps rp_idl/mul/red/fc; 11 dff in texdb\\hv_garage.img, 11 COL3, 31 textures appended to texdb hv_garage: 8 hv247_* + 23 stock copies). v200 BMW: add-on v19 = v18 + car 15989 hvm5cs BMW M5 CS (F90) (hvm5cs.dff in texdb\\hv_garage.img, no own textures, ide/handling/audio rows after hvhw_rev). ADMIN 941: add-on v18 = v17 + weapon 33 (Country Rifle) shown as the HK416: hvhk416w.dff (stock cuntgun clump + HK416 geometry, stock gunflash + muzzle_texture4 in texdb hv_garage), default.ide 357 -> hvhk416w / hv_garage, HUD icon hud_weapon_33.png. [941b] model on the M4 clump + weapon.dat COUNTRYRIFLE = HK416 full-auto (rifle anims, clip 30, loop 6 11 7, flags 7038). ADMIN 940: add-on v17 = v16 + HK416 weapon object 12460 hvhk416 (1 dff + empty COL3 + 1 texture 512x512). v190/ADMIN: add-on v16 = v14 + Halloween (number 15 was the rolled-back v191 graphics pack; Halloween content unchanged) event: island city 12428-12454 (27 hw_* dff + COL3), cars 15985-15988 (hvhw_mus/dem/gho/rev, own COL3, livery textures, ide/handling/audio lines), skins 12305-12314 (hvhw5..14 peds). 98 textures appended to texdb hv_garage. Old 70 textures / 34 IMG entries (bytes) / COL3 entries byte-identical; IMG directory grew to 2 sectors (data shifted by whole sectors).",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
  "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/admin/files/addons/blobs/",
@@ -14,8 +14,8 @@
   },
   {
    "path": "!client/data/gta.dat",
-   "size": 13928,
-   "sha256": "8c82d6a27ac9af96cef97f032fb60c68ea4749662ba25881920ce5b39e0e64c7"
+   "size": 13876,
+   "sha256": "705e6652042c04e7c786b8dbb45816f30474fc7ee8926ef81c78e9c19572583e"
   },
   {
    "path": "!client/mod_texdbs.cfg",
@@ -49,8 +49,8 @@
   },
   {
    "path": "!client/texdb/hv_garage.img",
-   "size": 122615808,
-   "sha256": "78710dbf5fb10241ae80d14c5bb63417ae624335f153eb108b891ae9e74beeb4"
+   "size": 122695680,
+   "sha256": "6ebd4a2fb70f1254e73cc6cab7e5819227a6a923bcd533dba74eb85cfb83b08b"
   },
   {
    "path": "!client/data/maps/orp/hv_garage.ide",
@@ -243,36 +243,6 @@
    "sha256": "1964678408aa689c7dc7fa66addd1e9c0f92f1e7bba08cfd6e72a1f5450fcac3"
   },
   {
-   "path": "!client/data/maps/hv236/hvdes.ipl",
-   "size": 20668,
-   "sha256": "9abd10aecfd7311142de96cb5927070ca79e98f6cd41a4d96bb398dfce680f85"
-  },
-  {
-   "path": "!client/data/maps/hv236/hvlve.ipl",
-   "size": 1399,
-   "sha256": "7eb78326701213dc672b0683daa4b10706c1360ad5eb933f2c65dcee26955540"
-  },
-  {
-   "path": "!client/data/maps/hv236/hvlvn.ipl",
-   "size": 1771,
-   "sha256": "b9512c70908f4dd8c4e38f72cbab23747a312e7a86c8038e2e1dc0485e5f772c"
-  },
-  {
-   "path": "!client/data/maps/hv236/hvlvs.ipl",
-   "size": 9196,
-   "sha256": "4228c5f8b7938325c005b4473b53cd20e325b43398f211b0ba57b6f592bb2f7b"
-  },
-  {
-   "path": "!client/data/maps/hv236/hvlvw.ipl",
-   "size": 18525,
-   "sha256": "8eca9058282e1d965741dd627ffcb17ef497fb3e8ef7b28d49c96a288713a3e2"
-  },
-  {
-   "path": "!client/data/maps/interior/int_veg.ipl",
-   "size": 4567,
-   "sha256": "6eea66858229ca2107599fb6f898879b1c0f077e2a07af711c25c595bd6038fb"
-  },
-  {
    "path": "!client/data/maps/la/lan.ipl",
    "size": 18173,
    "sha256": "56f95dcc0dc4ad099578673da4f90c2523761362408207fe06dff36ba0f192e2"
@@ -281,11 +251,6 @@
    "path": "!client/data/maps/leveldes/seabed.ipl",
    "size": 23330,
    "sha256": "d3e4370beb0584cb3de7a9aea0f14d4bb7c4261b50aab0a6dbda76f75dc65097"
-  },
-  {
-   "path": "!client/data/maps/occluint.ipl",
-   "size": 748,
-   "sha256": "97a509f00525516115d3b006f7838aac42254c0b50fd1fada107862c0500c705"
   },
   {
    "path": "!client/data/maps/occluveg.ipl",
@@ -313,11 +278,36 @@
    "sha256": "526759707ea775a0808d2c47709c87c6d6d447275be66f503f392972a1b014ed"
   },
   {
+   "path": "!client/data/maps/vegas/vegase.ipl",
+   "size": 1399,
+   "sha256": "7eb78326701213dc672b0683daa4b10706c1360ad5eb933f2c65dcee26955540"
+  },
+  {
+   "path": "!client/data/maps/vegas/vegasn.ipl",
+   "size": 1684,
+   "sha256": "2dbdaf3f6608f0e6f90978a639896d0cd1fc7c416474a6e6e8017d01cd3c9fe5"
+  },
+  {
+   "path": "!client/data/maps/vegas/vegass.ipl",
+   "size": 1214,
+   "sha256": "61bb2a2ccdf6e767c62639ffe7a274e71859b0ff9f6dd9db7f31bb7f3302080b"
+  },
+  {
+   "path": "!client/data/maps/vegas/vegasw.ipl",
+   "size": 24610,
+   "sha256": "66f75e17d2a3cf913b57e38b69afdcb8b191e9c2aea7f43d6debfdb5f6660fe2"
+  },
+  {
    "path": "!client/data/water.dat",
    "size": 70639,
    "sha256": "ee36005a7cfb5a1067171a4b18656507d0ae65c7c977e2a394b42d01e2f99e88"
+  },
+  {
+   "path": "!client/mod_imgs.cfg",
+   "size": 1125,
+   "sha256": "8d9cb910d45709d04e9af6704b566a371937fec17da1cb5b35ca6b828aec11b8"
   }
  ],
- "out_size": 400136108,
- "out_sha256": "626a0b7acaec992da4949fbc2243a00de0112dfb99c3d63834a68be807ab5137"
+ "out_size": 400188949,
+ "out_sha256": "0a511ede0f097ae1ba48c27b7d37be03474629c9dc010fe86a490a433a34082e"
 }
