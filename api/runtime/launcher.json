@@ -1,12 +1,12 @@
 {
-  "version": "4.17.68-v232",
-  "versionCode": 964,
-  "tag": "v964",
-  "name": "HavanaRP 4.17.68",
-  "published_at": "2026-11-07T11:55:28Z",
-  "size": 168083194,
-  "sha256": "558a6caac9f371bccc1a03100ea083e7827f5a51e0afa248653ef476be568452",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v964/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v964",
-  "notes": "تحديث HavanaRP 4.17.68\n- صندوق السيارة: خزّن أغراضك وأسلحتك بسيارتك الخاصة (من خلف السيارة)\n- بيع البيت للدولة بنصف السعر من شاشة البيت\n- طاولة تطوير البيت صارت 60,000\n\nSHA-256: 558a6caac9f371bccc1a03100ea083e7827f5a51e0afa248653ef476be568452"
+  "version": "4.17.69-v235",
+  "versionCode": 965,
+  "tag": "v965",
+  "name": "HavanaRP 4.17.69",
+  "published_at": "2026-11-08T01:24:39Z",
+  "size": 168087282,
+  "sha256": "478438928d9adbea55617b9419d9e0489f82b4f0171e962e114e883494f789b4",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v965/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v965",
+  "notes": "تحديث HavanaRP 4.17.69\n- إصلاح رسائل \"هذا الاسم متصل الآن\" و\"السيرفر لم يقبل دخولك\" عند الدخول\n- إذا السيرفر متوقف مؤقتًا بتظهر لك رسالة واضحة بدل تغيير الاسم\n- إذا جلستك السابقة لسا مفتوحة اللانشر بيستنى ويدخلك تلقائيًا\n\nSHA-256: 478438928d9adbea55617b9419d9e0489f82b4f0171e962e114e883494f789b4"
 }
