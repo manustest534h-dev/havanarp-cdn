@@ -1,8 +1,8 @@
 {
  "format": 1,
- "version": 18,
+ "version": 27,
  "pack": ".event",
- "note": "ADMIN 941: add-on v18 = v17 + weapon 33 (Country Rifle) shown as the HK416: hvhk416w.dff (stock cuntgun clump + HK416 geometry, stock gunflash + muzzle_texture4 in texdb hv_garage), default.ide 357 -> hvhk416w / hv_garage, HUD icon hud_weapon_33.png. [941b] model on the M4 clump + weapon.dat COUNTRYRIFLE = HK416 full-auto (rifle anims, clip 30, loop 6 11 7, flags 7038). ADMIN 940: add-on v17 = v16 + HK416 weapon object 12460 hvhk416 (1 dff + empty COL3 + 1 texture 512x512). v190/ADMIN: add-on v16 = v14 + Halloween (number 15 was the rolled-back v191 graphics pack; Halloween content unchanged) event: island city 12428-12454 (27 hw_* dff + COL3), cars 15985-15988 (hvhw_mus/dem/gho/rev, own COL3, livery textures, ide/handling/audio lines), skins 12305-12314 (hvhw5..14 peds). 98 textures appended to texdb hv_garage. Old 70 textures / 34 IMG entries (bytes) / COL3 entries byte-identical; IMG directory grew to 2 sectors (data shifted by whole sectors).",
+ "note": "v236 ADMIN: add-on v27 = main v25 + Sahara desert replacing the LV box (x1000..2930 y620..2930; old city removed via hv236 IPLs, water.dat oasis, info.zon, 22 radar tiles) + camels v3 + 6 Wadi Rum dome villas (dh_* 12740..12747) + Petra/Giza island + box-edge seam fillers; 279 models ids 12480..12790 in texdb\\hv_garage.img, COL3 in hv_garage.col, objs in hv_garage.ide, 84 textures in texdb hv_garage. v233: add-on v25 = v24 + personal skin 12321 hv233 (Omaz_Baker; base LR 12255 lr_skin422 rebuilt: platinum crop, black zip hoodie with white thorn/star sleeve embroidery, harness + holsters, chain, washed-black wide jeans, white sneakers; dff in texdb\\hv_garage.img, 10 textures hv233_* in texdb hv_garage, peds line in hv_garage.ide); server shows it only to add-on >= 25 clients. v224: add-on v24 = v23 + Arabic police/EMS liveries: car twins 15990-15996 (hvar_m5sf/dodls/trnls/tslv/explv = vendor police dffs 15814/15822/15819/15818/15812, hvar_mvan/mtahoe = EMS 15864/15863) in texdb\\hv_garage.img with their textures in texdb hv_garage (liveries / tx_amb Arabic), ide/handling/audio rows + AVS siren refs; server shows a twin only to add-on >= 24 clients. v210: add-on v23 = v22 + icon-only HUD buttons: texdb widgets (78 widget textures: baked dark disc + light ring removed, white glyph + soft shadow, hud_circle cleared; same names/sizes/toc as .texs v860) + SA-MP button PNGs new_gbutton/new_soundpad/new_voice/new_voice_on/voice_speaking (+ legacy gbutton/soundpad/voice/voice_on) icon-only. v207: add-on v22 = v21 + EMS skins 12315-12320 hvems1..6 (Live Russia medic skins 12131/12132/12133/11927/11990/12005 with every Russian print replaced by Arabic; 6 dff in texdb\\hv_garage.img, 41 textures hvems*_* appended to texdb hv_garage, 6 peds lines in hv_garage.ide). v206: add-on v21 = v20 + 24/7 store fix: hv247_shell/props/atm.dff rebuilt (interior walls / skirting / stripes faced INTO the walls in v20 -> see-through from inside; door frame trim lay exactly on the wall jamb faces -> flicker; every coplanar overlap removed). Only texdb\\hv_garage.img changes. v205: add-on v20 = v19 + 24/7 store 12461-12471 (hv247_shell/props/glass/atm + rebuilt stock pieces rb_idl/mul/fc + ramps rp_idl/mul/red/fc; 11 dff in texdb\\hv_garage.img, 11 COL3, 31 textures appended to texdb hv_garage: 8 hv247_* + 23 stock copies). v200 BMW: add-on v19 = v18 + car 15989 hvm5cs BMW M5 CS (F90) (hvm5cs.dff in texdb\\hv_garage.img, no own textures, ide/handling/audio rows after hvhw_rev). ADMIN 941: add-on v18 = v17 + weapon 33 (Country Rifle) shown as the HK416: hvhk416w.dff (stock cuntgun clump + HK416 geometry, stock gunflash + muzzle_texture4 in texdb hv_garage), default.ide 357 -> hvhk416w / hv_garage, HUD icon hud_weapon_33.png. [941b] model on the M4 clump + weapon.dat COUNTRYRIFLE = HK416 full-auto (rifle anims, clip 30, loop 6 11 7, flags 7038). ADMIN 940: add-on v17 = v16 + HK416 weapon object 12460 hvhk416 (1 dff + empty COL3 + 1 texture 512x512). v190/ADMIN: add-on v16 = v14 + Halloween (number 15 was the rolled-back v191 graphics pack; Halloween content unchanged) event: island city 12428-12454 (27 hw_* dff + COL3), cars 15985-15988 (hvhw_mus/dem/gho/rev, own COL3, livery textures, ide/handling/audio lines), skins 12305-12314 (hvhw5..14 peds). 98 textures appended to texdb hv_garage. Old 70 textures / 34 IMG entries (bytes) / COL3 entries byte-identical; IMG directory grew to 2 sectors (data shifted by whole sectors).",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
  "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/admin/files/addons/blobs/",
@@ -14,8 +14,8 @@
   },
   {
    "path": "!client/data/gta.dat",
-   "size": 13901,
-   "sha256": "bc69e067b0fc51054c87f17dd42c1a6653e62d1bcbaf9c297753613e4d47c23b"
+   "size": 13928,
+   "sha256": "8c82d6a27ac9af96cef97f032fb60c68ea4749662ba25881920ce5b39e0e64c7"
   },
   {
    "path": "!client/mod_texdbs.cfg",
@@ -24,18 +24,18 @@
   },
   {
    "path": "!client/data/maps/orp/orp_vehicles_02.ide",
-   "size": 6438,
-   "sha256": "c91516a25c3f948ca40c00bddd002759c763dc98040d6342651acee8ee2d9c84"
+   "size": 7207,
+   "sha256": "44cab892206d7d1757254623c7197df933e04724494acce316cdf2fe283639d4"
   },
   {
    "path": "!client/custom_handlings.cfg",
-   "size": 112829,
-   "sha256": "96c3f99b88b6f7e0873fba86b7ecef9873612aadc34f14b3b0ed201bdd889076"
+   "size": 116532,
+   "sha256": "2a3f4958606671953a1d81b1e4e3893413ee8b6cbfe9fc4ad2cfe4a04344280d"
   },
   {
    "path": "!client/vehicle_audio_settings.cfg",
-   "size": 106950,
-   "sha256": "416e9e1601cc8dbb1d9e1bc6bfab2ce3643155f76ab35754ca41c5410969fddd"
+   "size": 108807,
+   "sha256": "ac36f998375011c17df953e520815272dcd2b4b7472d6cba6b2b7ad511ba6289"
   },
   {
    "path": "!client/data/default.ide",
@@ -49,68 +49,68 @@
   },
   {
    "path": "!client/texdb/hv_garage.img",
-   "size": 46587904,
-   "sha256": "a44fdc4a05c616ca836f2efb52d9dfa9818585565401dc4126f88c6f97e9e65e"
+   "size": 122615808,
+   "sha256": "78710dbf5fb10241ae80d14c5bb63417ae624335f153eb108b891ae9e74beeb4"
   },
   {
    "path": "!client/data/maps/orp/hv_garage.ide",
-   "size": 4178,
-   "sha256": "d4f719ce334aeeb971c10d4695cd6e9a979fcd6a3502c8f5c3f9c6650b3de320"
+   "size": 15972,
+   "sha256": "4dd4a6bf170592473080487530caf5a5efdd4692dbf49c3cb09fa4305e69d91f"
   },
   {
    "path": "!client/models/coll/hv_garage.col",
-   "size": 78580,
-   "sha256": "81501e5cccfc6ac203f9afe9550d2811a7ca9c07dac75655668037215038bc5f"
+   "size": 5855676,
+   "sha256": "5fdff9b4f55acd495ae1d808422eef5c0690a1f95ffc6e09a197d7df3c765183"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.txt",
-   "size": 8349,
-   "sha256": "2fada7f499e9abffeab7b5e486c090c43b1462a821abc7d85c937dceded5c463"
+   "size": 19369,
+   "sha256": "48cf3bd81e272040930b34aec0437e5019734a3c1c8ece6ddbd3ca861e6d2d3e"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.dat",
-   "size": 24021792,
-   "sha256": "c9f4b587b1e05b1bbfb455a764b1ea312ee3789a8ec8be95d9edcc405d3fccd1"
+   "size": 73607424,
+   "sha256": "de4bcf4933f73024dfaa3d2d4cf91b1915ca41d6fb9e6ac37923f664ee00fa1b"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.tmb",
-   "size": 8672,
-   "sha256": "cbd4518d92072fb9a5c93e97f8b9d5b75bc662cc197451ac5443ad352d4d813e"
+   "size": 24096,
+   "sha256": "c15f418e519bed9a9afd22331f6561f12ba047f3fd4ecf6a5994ce3b9af7dead"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.toc",
-   "size": 684,
-   "sha256": "b65ec7905e4afc89209591f39028e6a95a7d3835a6dff3d307ca22ade7accd63"
+   "size": 1572,
+   "sha256": "c46608ac37c948a96b142f0c84cbd7ef165af6d6376a298ebd2137ecf8f5649b"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.dat",
-   "size": 27636580,
-   "sha256": "39e047b39ec851619393eeaba3530857afd71d9f99b30ab9308e59fea8b6b319"
+   "size": 80940768,
+   "sha256": "73eaa1f9dd74e187675f2c5f3fd416fceca080074e98e9a7e4fc1104d4f92b0d"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.tmb",
-   "size": 9696,
-   "sha256": "d35de171220f0b96a418e5ebec77f481dc942b30045fddae0cea06547a762d12"
+   "size": 26400,
+   "sha256": "175df66f1f89e5905579d09503adce26047e007ca911ef07224215b12a548583"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.toc",
-   "size": 684,
-   "sha256": "161f8badde8ad558695c775e2e3af005a8f05aba9ea5caa32320779681c3e7b3"
+   "size": 1572,
+   "sha256": "1f91cf38ae4df6a25af8e8645198f0a923620871f3c29afce29c05376f5a177a"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.dat",
-   "size": 27636580,
-   "sha256": "39e047b39ec851619393eeaba3530857afd71d9f99b30ab9308e59fea8b6b319"
+   "size": 80940768,
+   "sha256": "73eaa1f9dd74e187675f2c5f3fd416fceca080074e98e9a7e4fc1104d4f92b0d"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.tmb",
-   "size": 9696,
-   "sha256": "d35de171220f0b96a418e5ebec77f481dc942b30045fddae0cea06547a762d12"
+   "size": 26400,
+   "sha256": "175df66f1f89e5905579d09503adce26047e007ca911ef07224215b12a548583"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.toc",
-   "size": 684,
-   "sha256": "161f8badde8ad558695c775e2e3af005a8f05aba9ea5caa32320779681c3e7b3"
+   "size": 1572,
+   "sha256": "1f91cf38ae4df6a25af8e8645198f0a923620871f3c29afce29c05376f5a177a"
   },
   {
    "path": "!client/anim/anim.img",
@@ -121,8 +121,203 @@
    "path": "!client/samp/textures/new_hud/hud_weapon_33.png",
    "size": 3184,
    "sha256": "e5354d9bff827dcc1abda51b898ffdd74e0fd13732ee92191ad63d8f21a42563"
+  },
+  {
+   "path": "!client/texdb/widgets/widgets.txt",
+   "size": 4512,
+   "sha256": "11c24375f4324e0bf86ac8097704a80207042f56a009e3de9fb71edd59a5d52c"
+  },
+  {
+   "path": "!client/texdb/widgets/widgets.pvr.dat",
+   "size": 24271236,
+   "sha256": "3a5da4b05f0ba2ec779b93cddd3b1498b8f228e28da620bff2edef78b252200a"
+  },
+  {
+   "path": "!client/texdb/widgets/widgets.pvr.tmb",
+   "size": 19856,
+   "sha256": "f93174445631516572a87b6b87db800aeb6093b19ed5a0fdec3d0a8efc5ced65"
+  },
+  {
+   "path": "!client/texdb/widgets/widgets.pvr.toc",
+   "size": 316,
+   "sha256": "211e0763f83ee508306ca04ef70263f724655f252d3752baf15a3ff7a42ef499"
+  },
+  {
+   "path": "!client/samp/textures/new_gbutton.png",
+   "size": 11228,
+   "sha256": "a51280d82e9da041420ed2b9a3a31c36d414e88e959c45fb0bec7a0c457b034b"
+  },
+  {
+   "path": "!client/samp/textures/new_soundpad.png",
+   "size": 22526,
+   "sha256": "88f402ed9d5b4682e85429d52b5420037fc5e63ef2ae3584a9aac05ce12443b6"
+  },
+  {
+   "path": "!client/samp/textures/new_voice.png",
+   "size": 13522,
+   "sha256": "498d12fa001f759720d90b73ffbf8785a08b9de2a7e7377c48da83593a924396"
+  },
+  {
+   "path": "!client/samp/textures/new_voice_on.png",
+   "size": 13141,
+   "sha256": "26dd32a7eb91ce10bb573146b02d5250854ae85c3eb0300bf9990c3db2a56264"
+  },
+  {
+   "path": "!client/samp/textures/voice_speaking.png",
+   "size": 6351,
+   "sha256": "eab8f757dce8ec52ac30140b9d9602efa456e640534126c782035cdf3cea1a33"
+  },
+  {
+   "path": "!client/samp/textures/gbutton.png",
+   "size": 11228,
+   "sha256": "a51280d82e9da041420ed2b9a3a31c36d414e88e959c45fb0bec7a0c457b034b"
+  },
+  {
+   "path": "!client/samp/textures/soundpad.png",
+   "size": 22526,
+   "sha256": "88f402ed9d5b4682e85429d52b5420037fc5e63ef2ae3584a9aac05ce12443b6"
+  },
+  {
+   "path": "!client/samp/textures/voice.png",
+   "size": 13522,
+   "sha256": "498d12fa001f759720d90b73ffbf8785a08b9de2a7e7377c48da83593a924396"
+  },
+  {
+   "path": "!client/samp/textures/voice_on.png",
+   "size": 13141,
+   "sha256": "26dd32a7eb91ce10bb573146b02d5250854ae85c3eb0300bf9990c3db2a56264"
+  },
+  {
+   "path": "!client/avs/sirens.dat",
+   "size": 336,
+   "sha256": "655f65b86953b8c8b6491f32c1c04b7e9d71b424bbee38d66c5cb1160bea0947"
+  },
+  {
+   "path": "!client/avs/sirens/hvar_dodls.json",
+   "size": 29,
+   "sha256": "e35bb396e345ade277788355617a2b978309e98ea0a3ca7e3cfa35ddd137b22a"
+  },
+  {
+   "path": "!client/avs/sirens/hvar_explv.json",
+   "size": 32,
+   "sha256": "70714f236884d4177ebaf9305aca23d2516771493510a507eb548aceda16efd3"
+  },
+  {
+   "path": "!client/avs/sirens/hvar_m5sf.json",
+   "size": 30,
+   "sha256": "c7e54a094a61ef852e75aa161de070632841914d46a3fc2e4b9958068f6e00c2"
+  },
+  {
+   "path": "!client/avs/sirens/hvar_mtahoe.json",
+   "size": 27,
+   "sha256": "8448688856448460aafc46ce5df91f27f4e6b4a0b1bb018f1363cb4199da6b55"
+  },
+  {
+   "path": "!client/avs/sirens/hvar_mvan.json",
+   "size": 25,
+   "sha256": "328ed735bd615eed303fa569ee71ebb00aecb8be94f421bf120d12326d1aa8c9"
+  },
+  {
+   "path": "!client/avs/sirens/hvar_trnls.json",
+   "size": 30,
+   "sha256": "4fd74341e03bcef360a5887b7956e212fc978d7e1df7954eb9cf7a0416a02ecf"
+  },
+  {
+   "path": "!client/avs/sirens/hvar_tslv.json",
+   "size": 30,
+   "sha256": "4fd74341e03bcef360a5887b7956e212fc978d7e1df7954eb9cf7a0416a02ecf"
+  },
+  {
+   "path": "!client/data/info.zon",
+   "size": 28174,
+   "sha256": "88a7a273bdff000b16390bb002bcd40d6f8c1f8aa9970b3ffa7cde9ad3dc88c2"
+  },
+  {
+   "path": "!client/data/maps/audiozon.ipl",
+   "size": 10049,
+   "sha256": "9ee3d1bb749206e25afe4c2148d249ec0c67896a5c0bf16758a2ee96b0e3778c"
+  },
+  {
+   "path": "!client/data/maps/cull.ipl",
+   "size": 91175,
+   "sha256": "1964678408aa689c7dc7fa66addd1e9c0f92f1e7bba08cfd6e72a1f5450fcac3"
+  },
+  {
+   "path": "!client/data/maps/hv236/hvdes.ipl",
+   "size": 20668,
+   "sha256": "9abd10aecfd7311142de96cb5927070ca79e98f6cd41a4d96bb398dfce680f85"
+  },
+  {
+   "path": "!client/data/maps/hv236/hvlve.ipl",
+   "size": 1399,
+   "sha256": "7eb78326701213dc672b0683daa4b10706c1360ad5eb933f2c65dcee26955540"
+  },
+  {
+   "path": "!client/data/maps/hv236/hvlvn.ipl",
+   "size": 1771,
+   "sha256": "b9512c70908f4dd8c4e38f72cbab23747a312e7a86c8038e2e1dc0485e5f772c"
+  },
+  {
+   "path": "!client/data/maps/hv236/hvlvs.ipl",
+   "size": 9196,
+   "sha256": "4228c5f8b7938325c005b4473b53cd20e325b43398f211b0ba57b6f592bb2f7b"
+  },
+  {
+   "path": "!client/data/maps/hv236/hvlvw.ipl",
+   "size": 18525,
+   "sha256": "8eca9058282e1d965741dd627ffcb17ef497fb3e8ef7b28d49c96a288713a3e2"
+  },
+  {
+   "path": "!client/data/maps/interior/int_veg.ipl",
+   "size": 4567,
+   "sha256": "6eea66858229ca2107599fb6f898879b1c0f077e2a07af711c25c595bd6038fb"
+  },
+  {
+   "path": "!client/data/maps/la/lan.ipl",
+   "size": 18173,
+   "sha256": "56f95dcc0dc4ad099578673da4f90c2523761362408207fe06dff36ba0f192e2"
+  },
+  {
+   "path": "!client/data/maps/leveldes/seabed.ipl",
+   "size": 23329,
+   "sha256": "6552bb6149f16a6f7cbccb6a8370d033ac719da3892ce115afab7f31bad2478b"
+  },
+  {
+   "path": "!client/data/maps/occluint.ipl",
+   "size": 748,
+   "sha256": "97a509f00525516115d3b006f7838aac42254c0b50fd1fada107862c0500c705"
+  },
+  {
+   "path": "!client/data/maps/occluveg.ipl",
+   "size": 11,
+   "sha256": "8702517108af8261bf060bb82420e85208828467e83b34ba80925719d0d5959c"
+  },
+  {
+   "path": "!client/data/maps/orp/orp.ipl",
+   "size": 34204,
+   "sha256": "845b13e2bdd8f059162a786bce476b11cee30388acdea7fd1bd9d2580e8b79cc"
+  },
+  {
+   "path": "!client/data/maps/orp/orp_windcacti.ipl",
+   "size": 43295,
+   "sha256": "fcb14b094dea4faf21d86acea5f5f61a9498a4e05b2a71c476f6814123271811"
+  },
+  {
+   "path": "!client/data/maps/sf/sfe.ipl",
+   "size": 33058,
+   "sha256": "2d836814cdd326a3ae8ea52b0879bc549668baff7b5ace34ab06bfef17ef8c0e"
+  },
+  {
+   "path": "!client/data/maps/tunnels.ipl",
+   "size": 2848,
+   "sha256": "526759707ea775a0808d2c47709c87c6d6d447275be66f503f392972a1b014ed"
+  },
+  {
+   "path": "!client/data/water.dat",
+   "size": 70639,
+   "sha256": "ee36005a7cfb5a1067171a4b18656507d0ae65c7c977e2a394b42d01e2f99e88"
   }
  ],
- "out_size": 137209516,
- "out_sha256": "12bd5b8ec96a3c58255d4b036e53172053f7565a9796e8937bf6bdb676b06321"
+ "out_size": 400127107,
+ "out_sha256": "e02d8bef2752017b0056f2dbe722386b09cc8817d6a2d5cf13dfd9b2d886c53c"
 }
