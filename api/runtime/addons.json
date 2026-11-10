@@ -1,8 +1,8 @@
 {
  "format": 1,
- "version": 39,
+ "version": 41,
  "pack": ".event",
- "note": "v236 ADMIN: add-on v39 (v38 + HAVANA DESERT OVERHEAD GANTRY SIGNS at the 6 road crossings of the desert box edge: grey steel posts with rusty bases, beam and a 2-sided blue sign 8 x 4 m (Arabic + Latin, straight-ahead arrow): entering = WELCOME TO HAVANA DESERT, leaving = thank you + WELCOME TO LOS SANTOS / LAS VENTURAS; hs_gate_* ids 12540..12545, dd 299 with collision); add-on v38 (v37 + VILLA BOARDWALK/STAIR RENDER FIX: the z-fight post-pass of v34 had dragged boardwalk and villa-deck vertices up to 5.4 m (north stair: deck corners and edge fascia pulled across the deck -> dark flat triangles over/beside the walk, deck parts missing/see-through, owner v37 night video); every vertex moved > 0.10 m restored to its built position on dh_walk + dh_dome, deck holes closed, new walk visibility gate); v37 = (v36 + RUNTIME COLLISION ROOT FIX: SA mobile CFileLoader::LoadScene turns every text-IPL entity whose model draw distance is > 300 into a big building WITHOUT collision (SetupBigBuilding) - the dome-villa plateau sand dh_ledge (dd 450) and the cinema cliff (dd 1000) were drawn but not solid; dh_ledge dd 299 (its LOD dh_ledgel draws beyond), ds_cine_cliff dd 299 + new LOD ds_cine_cliffl (same mesh, dd 1000); new runtime collision gate); v36 = (v35 + walkable-surface collision: desert track ribbons carry their COMPLETE drawn mesh as collision (owner v35 video: motorbike sank 0.3-1.2 m into the floating rumble-track ribbon at the villa boardwalk), Petra deir/khazneh/tombs/theatre, Sphinx, Khufu e/n/s/w treads, camp, jebel5, resort paths get collision under every visible walkable face; far-layer ground sunk under the HD terrain, far-layer triangles bridging over HD jebel walls subdivided and projected under the HD (vehicle sink tolerance 0.20 m), 6 far-layer pieces hanging under Petra overhangs removed, far-layer remnants inside Khufu removed); v35 = (v34 + COLLISION ROOT FIX: degenerate COL faces (zero area after the 1/128 m quantisation, left by in-place deletions) dropped from every model - in SA mobile they became unbounded vertical planes that stole the ped ground contact (dome-villa plateau sand was walk-through); boardwalk south ramp + pool steps collision; ds_lod sunk under HD terrain, plateau/pool separation); v34 = (v33 + dome villas on a CLOSED Wadi Rum sandstone plateau (full collision, pools pocketed), z-fight root fix on every model + between instances (new z-fight gate), ds_lake water plane removed (game water only), Khufu: torches wall-mounted, 3D mummy in a gilded coffin, 3D pharaoh statues); v33 = (v32 + ORIENTATION FIX: every model wound outward toward the air (SA mobile culls back faces; jebels/cinema cliff/Petra massif/Sphinx/lounges/dome ledges were inside-out), IDE flag 0x200000 for cards/sheets; renderer-faithful winding gate); v32 = (v31 + standalone far layers, hole fillers/skirts, ramp + connectors, 27 clipped border pieces hk_*, restored sea floor, radar db shipped); v31 = (v30 + water.dat fix: one oasis quad, 292 quads <= stock, no m_aQuads overflow; 6 interior audio zones restored); v30 = (v29 + IPL store fix: stock vegas IPL names, 36 rebuilt vegas stream IPLs in hv_garage.img listed first in mod_imgs.cfg, hvdes merged into vegasw; v29 = v28 + seabed.ipl LOD link fix for lodseabed121 4478; v28 = v27 + empty COL3 for no-collision models) = main v25 + Sahara desert replacing the LV box (x1000..2930 y620..2930; old city removed via hv236 IPLs, water.dat oasis, info.zon, 22 radar tiles) + camels v3 + 6 Wadi Rum dome villas (dh_* 12740..12747) + Petra/Giza island + box-edge seam fillers; 207 models ids 12480..12797 in texdb\\hv_garage.img, COL3 in hv_garage.col, objs in hv_garage.ide, 139 textures in texdb hv_garage. v233: add-on v25 = v24 + personal skin 12321 hv233 (Omaz_Baker; base LR 12255 lr_skin422 rebuilt: platinum crop, black zip hoodie with white thorn/star sleeve embroidery, harness + holsters, chain, washed-black wide jeans, white sneakers; dff in texdb\\hv_garage.img, 10 textures hv233_* in texdb hv_garage, peds line in hv_garage.ide); server shows it only to add-on >= 25 clients. v224: add-on v24 = v23 + Arabic police/EMS liveries: car twins 15990-15996 (hvar_m5sf/dodls/trnls/tslv/explv = vendor police dffs 15814/15822/15819/15818/15812, hvar_mvan/mtahoe = EMS 15864/15863) in texdb\\hv_garage.img with their textures in texdb hv_garage (liveries / tx_amb Arabic), ide/handling/audio rows + AVS siren refs; server shows a twin only to add-on >= 24 clients. v210: add-on v23 = v22 + icon-only HUD buttons: texdb widgets (78 widget textures: baked dark disc + light ring removed, white glyph + soft shadow, hud_circle cleared; same names/sizes/toc as .texs v860) + SA-MP button PNGs new_gbutton/new_soundpad/new_voice/new_voice_on/voice_speaking (+ legacy gbutton/soundpad/voice/voice_on) icon-only. v207: add-on v22 = v21 + EMS skins 12315-12320 hvems1..6 (Live Russia medic skins 12131/12132/12133/11927/11990/12005 with every Russian print replaced by Arabic; 6 dff in texdb\\hv_garage.img, 41 textures hvems*_* appended to texdb hv_garage, 6 peds lines in hv_garage.ide). v206: add-on v21 = v20 + 24/7 store fix: hv247_shell/props/atm.dff rebuilt (interior walls / skirting / stripes faced INTO the walls in v20 -> see-through from inside; door frame trim lay exactly on the wall jamb faces -> flicker; every coplanar overlap removed). Only texdb\\hv_garage.img changes. v205: add-on v20 = v19 + 24/7 store 12461-12471 (hv247_shell/props/glass/atm + rebuilt stock pieces rb_idl/mul/fc + ramps rp_idl/mul/red/fc; 11 dff in texdb\\hv_garage.img, 11 COL3, 31 textures appended to texdb hv_garage: 8 hv247_* + 23 stock copies). v200 BMW: add-on v19 = v18 + car 15989 hvm5cs BMW M5 CS (F90) (hvm5cs.dff in texdb\\hv_garage.img, no own textures, ide/handling/audio rows after hvhw_rev). ADMIN 941: add-on v18 = v17 + weapon 33 (Country Rifle) shown as the HK416: hvhk416w.dff (stock cuntgun clump + HK416 geometry, stock gunflash + muzzle_texture4 in texdb hv_garage), default.ide 357 -> hvhk416w / hv_garage, HUD icon hud_weapon_33.png. [941b] model on the M4 clump + weapon.dat COUNTRYRIFLE = HK416 full-auto (rifle anims, clip 30, loop 6 11 7, flags 7038). ADMIN 940: add-on v17 = v16 + HK416 weapon object 12460 hvhk416 (1 dff + empty COL3 + 1 texture 512x512). v190/ADMIN: add-on v16 = v14 + Halloween (number 15 was the rolled-back v191 graphics pack; Halloween content unchanged) event: island city 12428-12454 (27 hw_* dff + COL3), cars 15985-15988 (hvhw_mus/dem/gho/rev, own COL3, livery textures, ide/handling/audio lines), skins 12305-12314 (hvhw5..14 peds). 98 textures appended to texdb hv_garage. Old 70 textures / 34 IMG entries (bytes) / COL3 entries byte-identical; IMG directory grew to 2 sectors (data shifted by whole sectors).",
+ "note": "v236 ADMIN: add-on v41 (v39 + ROUTE-66 ROADSIDE STOP on the desert hwy (x~1790 y~1100): weathered clapboard BBQ diner + gas stop (gable porch, shingle roof, neon OPEN / banner, giant bottles, GAS arrow + pole sign, tyres / drums / crates), 3 pump islands with 6 vintage pumps (fuel station 2 + restaurant 2 of AMX v38), cracked-concrete / gravel lot, 13 rusted wrecks (bus + 2 classic sedans) along the hwy and on the dunes, Route 66 signs; rd_* ids 12546..12554, dd 299 with collision); add-on v39 (v38 + HAVANA DESERT OVERHEAD GANTRY SIGNS at the 6 road crossings of the desert box edge: grey steel posts with rusty bases, beam and a 2-sided blue sign 8 x 4 m (Arabic + Latin, straight-ahead arrow): entering = WELCOME TO HAVANA DESERT, leaving = thank you + WELCOME TO LOS SANTOS / LAS VENTURAS; hs_gate_* ids 12540..12545, dd 299 with collision); add-on v38 (v37 + VILLA BOARDWALK/STAIR RENDER FIX: the z-fight post-pass of v34 had dragged boardwalk and villa-deck vertices up to 5.4 m (north stair: deck corners and edge fascia pulled across the deck -> dark flat triangles over/beside the walk, deck parts missing/see-through, owner v37 night video); every vertex moved > 0.10 m restored to its built position on dh_walk + dh_dome, deck holes closed, new walk visibility gate); v37 = (v36 + RUNTIME COLLISION ROOT FIX: SA mobile CFileLoader::LoadScene turns every text-IPL entity whose model draw distance is > 300 into a big building WITHOUT collision (SetupBigBuilding) - the dome-villa plateau sand dh_ledge (dd 450) and the cinema cliff (dd 1000) were drawn but not solid; dh_ledge dd 299 (its LOD dh_ledgel draws beyond), ds_cine_cliff dd 299 + new LOD ds_cine_cliffl (same mesh, dd 1000); new runtime collision gate); v36 = (v35 + walkable-surface collision: desert track ribbons carry their COMPLETE drawn mesh as collision (owner v35 video: motorbike sank 0.3-1.2 m into the floating rumble-track ribbon at the villa boardwalk), Petra deir/khazneh/tombs/theatre, Sphinx, Khufu e/n/s/w treads, camp, jebel5, resort paths get collision under every visible walkable face; far-layer ground sunk under the HD terrain, far-layer triangles bridging over HD jebel walls subdivided and projected under the HD (vehicle sink tolerance 0.20 m), 6 far-layer pieces hanging under Petra overhangs removed, far-layer remnants inside Khufu removed); v35 = (v34 + COLLISION ROOT FIX: degenerate COL faces (zero area after the 1/128 m quantisation, left by in-place deletions) dropped from every model - in SA mobile they became unbounded vertical planes that stole the ped ground contact (dome-villa plateau sand was walk-through); boardwalk south ramp + pool steps collision; ds_lod sunk under HD terrain, plateau/pool separation); v34 = (v33 + dome villas on a CLOSED Wadi Rum sandstone plateau (full collision, pools pocketed), z-fight root fix on every model + between instances (new z-fight gate), ds_lake water plane removed (game water only), Khufu: torches wall-mounted, 3D mummy in a gilded coffin, 3D pharaoh statues); v33 = (v32 + ORIENTATION FIX: every model wound outward toward the air (SA mobile culls back faces; jebels/cinema cliff/Petra massif/Sphinx/lounges/dome ledges were inside-out), IDE flag 0x200000 for cards/sheets; renderer-faithful winding gate); v32 = (v31 + standalone far layers, hole fillers/skirts, ramp + connectors, 27 clipped border pieces hk_*, restored sea floor, radar db shipped); v31 = (v30 + water.dat fix: one oasis quad, 292 quads <= stock, no m_aQuads overflow; 6 interior audio zones restored); v30 = (v29 + IPL store fix: stock vegas IPL names, 36 rebuilt vegas stream IPLs in hv_garage.img listed first in mod_imgs.cfg, hvdes merged into vegasw; v29 = v28 + seabed.ipl LOD link fix for lodseabed121 4478; v28 = v27 + empty COL3 for no-collision models) = main v25 + Sahara desert replacing the LV box (x1000..2930 y620..2930; old city removed via hv236 IPLs, water.dat oasis, info.zon, 22 radar tiles) + camels v3 + 6 Wadi Rum dome villas (dh_* 12740..12747) + Petra/Giza island + box-edge seam fillers; 207 models ids 12480..12797 in texdb\\hv_garage.img, COL3 in hv_garage.col, objs in hv_garage.ide, 139 textures in texdb hv_garage. v233: add-on v25 = v24 + personal skin 12321 hv233 (Omaz_Baker; base LR 12255 lr_skin422 rebuilt: platinum crop, black zip hoodie with white thorn/star sleeve embroidery, harness + holsters, chain, washed-black wide jeans, white sneakers; dff in texdb\\hv_garage.img, 10 textures hv233_* in texdb hv_garage, peds line in hv_garage.ide); server shows it only to add-on >= 25 clients. v224: add-on v24 = v23 + Arabic police/EMS liveries: car twins 15990-15996 (hvar_m5sf/dodls/trnls/tslv/explv = vendor police dffs 15814/15822/15819/15818/15812, hvar_mvan/mtahoe = EMS 15864/15863) in texdb\\hv_garage.img with their textures in texdb hv_garage (liveries / tx_amb Arabic), ide/handling/audio rows + AVS siren refs; server shows a twin only to add-on >= 24 clients. v210: add-on v23 = v22 + icon-only HUD buttons: texdb widgets (78 widget textures: baked dark disc + light ring removed, white glyph + soft shadow, hud_circle cleared; same names/sizes/toc as .texs v860) + SA-MP button PNGs new_gbutton/new_soundpad/new_voice/new_voice_on/voice_speaking (+ legacy gbutton/soundpad/voice/voice_on) icon-only. v207: add-on v22 = v21 + EMS skins 12315-12320 hvems1..6 (Live Russia medic skins 12131/12132/12133/11927/11990/12005 with every Russian print replaced by Arabic; 6 dff in texdb\\hv_garage.img, 41 textures hvems*_* appended to texdb hv_garage, 6 peds lines in hv_garage.ide). v206: add-on v21 = v20 + 24/7 store fix: hv247_shell/props/atm.dff rebuilt (interior walls / skirting / stripes faced INTO the walls in v20 -> see-through from inside; door frame trim lay exactly on the wall jamb faces -> flicker; every coplanar overlap removed). Only texdb\\hv_garage.img changes. v205: add-on v20 = v19 + 24/7 store 12461-12471 (hv247_shell/props/glass/atm + rebuilt stock pieces rb_idl/mul/fc + ramps rp_idl/mul/red/fc; 11 dff in texdb\\hv_garage.img, 11 COL3, 31 textures appended to texdb hv_garage: 8 hv247_* + 23 stock copies). v200 BMW: add-on v19 = v18 + car 15989 hvm5cs BMW M5 CS (F90) (hvm5cs.dff in texdb\\hv_garage.img, no own textures, ide/handling/audio rows after hvhw_rev). ADMIN 941: add-on v18 = v17 + weapon 33 (Country Rifle) shown as the HK416: hvhk416w.dff (stock cuntgun clump + HK416 geometry, stock gunflash + muzzle_texture4 in texdb hv_garage), default.ide 357 -> hvhk416w / hv_garage, HUD icon hud_weapon_33.png. [941b] model on the M4 clump + weapon.dat COUNTRYRIFLE = HK416 full-auto (rifle anims, clip 30, loop 6 11 7, flags 7038). ADMIN 940: add-on v17 = v16 + HK416 weapon object 12460 hvhk416 (1 dff + empty COL3 + 1 texture 512x512). v190/ADMIN: add-on v16 = v14 + Halloween (number 15 was the rolled-back v191 graphics pack; Halloween content unchanged) event: island city 12428-12454 (27 hw_* dff + COL3), cars 15985-15988 (hvhw_mus/dem/gho/rev, own COL3, livery textures, ide/handling/audio lines), skins 12305-12314 (hvhw5..14 peds). 98 textures appended to texdb hv_garage. Old 70 textures / 34 IMG entries (bytes) / COL3 entries byte-identical; IMG directory grew to 2 sectors (data shifted by whole sectors).",
  "header": "b8d45c1fab540000542c4ac18dbaeebc0000c0e08a04c0e08a0431000000",
  "trailer": "64",
  "base_url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/admin/files/addons/blobs/",
@@ -49,68 +49,68 @@
   },
   {
    "path": "!client/texdb/hv_garage.img",
-   "size": 124825600,
-   "sha256": "eb4af3f11a403fbecce2aa8b84265f0fc1cfd4dad0380664d408eb01140ff31a"
+   "size": 125892608,
+   "sha256": "2b6b47f9af6487390270c2d33d524fecd818baa08657e7dafd6b7c7bfe790661"
   },
   {
    "path": "!client/data/maps/orp/hv_garage.ide",
-   "size": 14120,
-   "sha256": "0584ebbb75fcfd45c197917e177236c4c8f444a82eae16f2ea33730cacff5ea1"
+   "size": 14440,
+   "sha256": "729d5665e9381e4b4c4b28504ef13421c6f45e0ae3abe3916b93ad991e1dc90d"
   },
   {
    "path": "!client/models/coll/hv_garage.col",
-   "size": 5895528,
-   "sha256": "ded430ad1f23bb5f79bbf7cfb503c4b13e215a3ed8a23d9ccfc6312ae4ba8935"
+   "size": 5954108,
+   "sha256": "dac136543fbdd13385fac497593bd684c9d4e3463e7f17f77bdc4ca130a56254"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.txt",
-   "size": 21924,
-   "sha256": "d76cb885d8859ec9194d627cb91642c59875e099e98674bf05a719c8599a0521"
+   "size": 23237,
+   "sha256": "d426e4b661cb20c1b52df6d155ea584f799ba321138d704bb02b9d8d586cdee9"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.dat",
-   "size": 73720984,
-   "sha256": "ea234a4cdf5e7bbcdc5d3e41e9b74cdc86679ca7621ff918799c5d7084867843"
+   "size": 80900056,
+   "sha256": "9c2356c119b426679889f67c1cb0514fef5a0563152e716f6cfff1d11e58b7e7"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.tmb",
-   "size": 24128,
-   "sha256": "685cf24aa2567d11de8f83975d5950c293c5c33dd7a910767808fd40729c3050"
+   "size": 25472,
+   "sha256": "5e5dcd72ff9c955b16992082c7bbb499af4293c6976f0a4dfcd0ad6583e31c0c"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.dxt.toc",
-   "size": 1732,
-   "sha256": "2e1fa55738842f132a5184b1310b84e8b511016c133b377a923a61d9dabfab17"
+   "size": 1844,
+   "sha256": "9c07b28cd4eba1fb0595139900a8901eef946cd88a7d125338497cbd60e1a5f3"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.dat",
-   "size": 81299878,
-   "sha256": "bcf532692bed4fafa5058ee544ffb89eed79bc5402d7a94293b3a9371d6f80ea"
+   "size": 88478950,
+   "sha256": "3858e9e243f11b7ce01f251a131f52d500c3d46ac6a8742ec70fc8d097bfe8c5"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.tmb",
-   "size": 26880,
-   "sha256": "6f9450a11476ee664e73472de23e88913177efc8e260398e75fb3eeee663b627"
+   "size": 28224,
+   "sha256": "dbe86052b4f41f5b667a9e6cd524f93b47f4bc8e9c7fa3b129642d020fee4f98"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.etc.toc",
-   "size": 1732,
-   "sha256": "1b51b492d1d931d1a47e38e30055f1c5a017025487bc69a3f0911144508ff3ae"
+   "size": 1844,
+   "sha256": "32086d24451a6929cbd213b5b03235f62e80f69c826ab3e81a33059d55bb504c"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.dat",
-   "size": 81299878,
-   "sha256": "bcf532692bed4fafa5058ee544ffb89eed79bc5402d7a94293b3a9371d6f80ea"
+   "size": 88478950,
+   "sha256": "3858e9e243f11b7ce01f251a131f52d500c3d46ac6a8742ec70fc8d097bfe8c5"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.tmb",
-   "size": 26880,
-   "sha256": "6f9450a11476ee664e73472de23e88913177efc8e260398e75fb3eeee663b627"
+   "size": 28224,
+   "sha256": "dbe86052b4f41f5b667a9e6cd524f93b47f4bc8e9c7fa3b129642d020fee4f98"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.pvr.toc",
-   "size": 1732,
-   "sha256": "1b51b492d1d931d1a47e38e30055f1c5a017025487bc69a3f0911144508ff3ae"
+   "size": 1844,
+   "sha256": "32086d24451a6929cbd213b5b03235f62e80f69c826ab3e81a33059d55bb504c"
   },
   {
    "path": "!client/anim/anim.img",
@@ -299,8 +299,8 @@
   },
   {
    "path": "!client/data/maps/vegas/vegasw.ipl",
-   "size": 18595,
-   "sha256": "76d62b7a3c7f06d0ff252f4563a3e62dfd1738b29241fa96d316194c05725ca9"
+   "size": 21138,
+   "sha256": "01918b94151763dc01d7b81d0a8fe238362f9bce8da454b5e70914c9942ba23a"
   },
   {
    "path": "!client/data/water.dat",
@@ -333,6 +333,6 @@
    "sha256": "9d0ce003ba28f574851a11b642e18a1c04f4d9bc9aeb3076d4fa974976d1b5d9"
   }
  ],
- "out_size": 407681488,
- "out_sha256": "0ad0451b03dd7224d1d8fe289fa7f96c240390d25f5117e5744c9e0f5d2daafc"
+ "out_size": 430352836,
+ "out_sha256": "9dd8f68dc14807d57fae1825c1cda919e098d3a4a68a9afd8151d557553aab09"
 }
