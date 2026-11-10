@@ -59,8 +59,8 @@
   },
   {
    "path": "!client/models/coll/hv_garage.col",
-   "size": 5957960,
-   "sha256": "35cf30ab6e793cd0949421bbaae530d0ef6476c89d250dc2771083307d86da71"
+   "size": 5958364,
+   "sha256": "b04a10baa1c306d12d2cc552e95a6432b5747145b4e41f8d61c90bae8d51971b"
   },
   {
    "path": "!client/texdb/hv_garage/hv_garage.txt",
@@ -333,6 +333,6 @@
    "sha256": "9d0ce003ba28f574851a11b642e18a1c04f4d9bc9aeb3076d4fa974976d1b5d9"
   }
  ],
- "out_size": 432597639,
- "out_sha256": "832798502cec27e178f1571c6b1f644dee8375bdf238e1824302a4c90c015a18"
+ "out_size": 432598043,
+ "out_sha256": "877f73ffb5e5d3c3c7936db84e9fb9e461d6fc40ad7cb6459837047df6077a84"
 }
