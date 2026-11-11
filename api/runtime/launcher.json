@@ -1,12 +1,12 @@
 {
-  "version": "4.17.69-v235",
-  "versionCode": 965,
-  "tag": "v965",
-  "name": "HavanaRP 4.17.69",
-  "published_at": "2026-11-08T01:24:39Z",
-  "size": 168087282,
-  "sha256": "478438928d9adbea55617b9419d9e0489f82b4f0171e962e114e883494f789b4",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v965/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v965",
-  "notes": "تحديث HavanaRP 4.17.69\n- إصلاح رسائل \"هذا الاسم متصل الآن\" و\"السيرفر لم يقبل دخولك\" عند الدخول\n- إذا السيرفر متوقف مؤقتًا بتظهر لك رسالة واضحة بدل تغيير الاسم\n- إذا جلستك السابقة لسا مفتوحة اللانشر بيستنى ويدخلك تلقائيًا\n\nSHA-256: 478438928d9adbea55617b9419d9e0489f82b4f0171e962e114e883494f789b4"
+  "version": "4.17.70-v236",
+  "versionCode": 977,
+  "tag": "v977",
+  "name": "HavanaRP 4.17.70",
+  "published_at": "2026-11-11T16:14:12Z",
+  "size": 168437868,
+  "sha256": "34f161bd06c94f104b6db86b455138e70cebdb901ea24c58729364b9218fd128",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v977/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v977",
+  "notes": "تحديث HavanaRP 4.17.70 - صحراء هافانا\n- صحراء هافانا مكان لاس فينتوراس: واحة، الجمال، بترا والأهرامات، فلل القباب، سينما الصحراء\n- ركوب الجمال، معرض سيارات الصحراء (6 سيارات جديدة)، محطة وقود ومطعم على طريق 66\n- قائمة الحركات والرقصات، حركات GTA V، إصلاح السقوط عند القفز على الكثبان\n- أصحاب البيوت المزالة في لاس فينتوراس يتم تعويضهم تلقائيًا\n\nSHA-256: 34f161bd06c94f104b6db86b455138e70cebdb901ea24c58729364b9218fd128"
 }
