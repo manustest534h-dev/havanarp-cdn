@@ -1,12 +1,12 @@
 {
-  "version": "4.17.71-v236",
-  "versionCode": 978,
-  "tag": "v978",
-  "name": "HavanaRP 4.17.71",
-  "published_at": "2026-11-11T17:18:13Z",
-  "size": 168441955,
-  "sha256": "8aa3ce1eaac26d7d73f7d75c4babf97cff210d0b7779c0538e5885f3c7fd5e9f",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v978/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v978",
-  "notes": "تحديث HavanaRP 4.17.71 - إصلاح الكراش\n- إصلاح الكراش والتعليق أثناء الرقص وفي أماكن عشوائية (نوافذ الواجهة تُفتح وتُغلق الآن بأمان)\n- إصلاح تكرار تحديث الواجهة عند اللمس\n- كل مزايا 4.17.70 (صحراء هافانا) كما هي\n\nSHA-256: 8aa3ce1eaac26d7d73f7d75c4babf97cff210d0b7779c0538e5885f3c7fd5e9f"
+  "version": "4.17.72-v236",
+  "versionCode": 979,
+  "tag": "v979",
+  "name": "HavanaRP 4.17.72",
+  "published_at": "2026-11-11T18:13:31Z",
+  "size": 168441951,
+  "sha256": "860a887a77eb97d97be8d5af7db980148ba053b1fa8567182627445e4c0b05a2",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v979/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v979",
+  "notes": "تحديث HavanaRP 4.17.72 - إصلاح كراش الفيديو\n- إصلاح كراش مفاجئ على بعض أجهزة شاومي/ريدمي (أندرويد 16) عند فتح أو إغلاق الفيديوهات والبث\n- إغلاق مشغلات الفيديو بأمان قبل إزالة الشاشة\n- كل إصلاحات 4.17.71 كما هي\n\nSHA-256: 860a887a77eb97d97be8d5af7db980148ba053b1fa8567182627445e4c0b05a2"
 }
