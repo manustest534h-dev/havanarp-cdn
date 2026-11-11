@@ -1,68 +1,68 @@
 {
- "config_version": 1,
- "apk": {
-  "version": 977,
-  "str": "4.17.70-v236",
-  "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v977/HavanaRp.apk",
-  "auto_update": true,
-  "manual_update": true,
-  "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v977/HavanaRp.apk",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v977/HavanaRp.apk",
-  "patches": {
-   "965": {
-    "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/9e0afc54d8636ef1df13dbec7cbff032bad9023b/patch/HavanaRp-965-977.patch",
-    "size": 6397883,
-    "sha256": "d3b9fa7db29a3f80fa0f8ec21319e91d2b6ea62b5b40df28d085d945226a7632",
-    "sha256_base": "478438928d9adbea55617b9419d9e0489f82b4f0171e962e114e883494f789b4",
-    "size_base": 168087282,
-    "sha256_out": "34f161bd06c94f104b6db86b455138e70cebdb901ea24c58729364b9218fd128",
-    "size_out": 168437868,
-    "to": 977
-   },
-   "964": {
-    "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/9e0afc54d8636ef1df13dbec7cbff032bad9023b/patch/HavanaRp-964-977.patch",
-    "size": 6397990,
-    "sha256": "0652ac8fdaa894f0d576dd6afd013063ce9be9e3d1d3410db93fe94e0d9bda08",
-    "sha256_base": "558a6caac9f371bccc1a03100ea083e7827f5a51e0afa248653ef476be568452",
-    "size_base": 168083194,
-    "sha256_out": "34f161bd06c94f104b6db86b455138e70cebdb901ea24c58729364b9218fd128",
-    "size_out": 168437868,
-    "to": 977
-   },
-   "963": {
-    "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/9e0afc54d8636ef1df13dbec7cbff032bad9023b/patch/HavanaRp-963-977.patch",
-    "size": 6398036,
-    "sha256": "febeb11d5fee8f8a97482ff3cc1b725fd98c451cbac393eb8e3a934c8a5c859e",
-    "sha256_base": "12da8811cd55d4446cd4dcfdcaad67911e7cf59c425074d84e7a0ea5f26935c1",
-    "size_base": 168070915,
-    "sha256_out": "34f161bd06c94f104b6db86b455138e70cebdb901ea24c58729364b9218fd128",
-    "size_out": 168437868,
-    "to": 977
-   }
+  "config_version": 1,
+  "apk": {
+    "version": 978,
+    "str": "4.17.71-v236",
+    "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v978/HavanaRp.apk",
+    "auto_update": true,
+    "manual_update": true,
+    "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v978/HavanaRp.apk",
+    "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v978/HavanaRp.apk",
+    "patches": {
+      "977": {
+        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v978/HavanaRp-977-978.patch",
+        "size": 5252535,
+        "sha256": "cf586eb1b3d633723e92cd2105e1d846def244cde35587addd26e71d5d29e3f5",
+        "sha256_base": "34f161bd06c94f104b6db86b455138e70cebdb901ea24c58729364b9218fd128",
+        "size_base": 168437868,
+        "sha256_out": "8aa3ce1eaac26d7d73f7d75c4babf97cff210d0b7779c0538e5885f3c7fd5e9f",
+        "size_out": 168441955,
+        "to": 978
+      },
+      "965": {
+        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v978/HavanaRp-965-978.patch",
+        "size": 6596698,
+        "sha256": "c326a838579809b0d9dc44057112397c787dca6c220cb12c65a3702d9e7da05c",
+        "sha256_base": "478438928d9adbea55617b9419d9e0489f82b4f0171e962e114e883494f789b4",
+        "size_base": 168087282,
+        "sha256_out": "8aa3ce1eaac26d7d73f7d75c4babf97cff210d0b7779c0538e5885f3c7fd5e9f",
+        "size_out": 168441955,
+        "to": 978
+      },
+      "964": {
+        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v978/HavanaRp-964-978.patch",
+        "size": 6596747,
+        "sha256": "972a9137052fe244ac4ecb814d8014a82d9c07e0a8c03b842454ab66514df3b4",
+        "sha256_base": "558a6caac9f371bccc1a03100ea083e7827f5a51e0afa248653ef476be568452",
+        "size_base": 168083194,
+        "sha256_out": "8aa3ce1eaac26d7d73f7d75c4babf97cff210d0b7779c0538e5885f3c7fd5e9f",
+        "size_out": 168441955,
+        "to": 978
+      }
+    }
+  },
+  "urls": {
+    "URL_HOST": "https://igta-online.my-fastdl.com/ONLINERP/prod/files",
+    "URL_UPDATE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/update/${version}/update_${version}.json",
+    "URL_NEWS": "news.json",
+    "URL_HELP": "help.json",
+    "URL_ONLINE_API": "https://api.onlinerp.com/v1/servers",
+    "URL_DONATE_API": "https://api.gta-mobile.ru/oldAPI/donate_api.php",
+    "URL_SITE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/runtime",
+    "URL_VK": "https://vk.com/online_samp",
+    "URL_YOUTUBE": "https://www.youtube.com/channel/UCCzB4ySWiZfRvApMU2CTfEA",
+    "URL_INSTAGRAM": "https://www.instagram.com/online_samp",
+    "URL_SUPPORT": "https://vk.me/android_client",
+    "URL_TELEGRAM": "https://t.me/onlinerp_channel",
+    "URL_SHOP": "https://gta-mobile.ru/donate"
+  },
+  "msgs": [],
+  "_admin": {
+    "maintenance": {
+      "enabled": false,
+      "title": "السيرفر تحت الصيانة",
+      "text": "نعتذر، صيانة حالياً",
+      "button": "تم"
+    }
   }
- },
- "urls": {
-  "URL_HOST": "https://igta-online.my-fastdl.com/ONLINERP/prod/files",
-  "URL_UPDATE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/update/${version}/update_${version}.json",
-  "URL_NEWS": "news.json",
-  "URL_HELP": "help.json",
-  "URL_ONLINE_API": "https://api.onlinerp.com/v1/servers",
-  "URL_DONATE_API": "https://api.gta-mobile.ru/oldAPI/donate_api.php",
-  "URL_SITE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/runtime",
-  "URL_VK": "https://vk.com/online_samp",
-  "URL_YOUTUBE": "https://www.youtube.com/channel/UCCzB4ySWiZfRvApMU2CTfEA",
-  "URL_INSTAGRAM": "https://www.instagram.com/online_samp",
-  "URL_SUPPORT": "https://vk.me/android_client",
-  "URL_TELEGRAM": "https://t.me/onlinerp_channel",
-  "URL_SHOP": "https://gta-mobile.ru/donate"
- },
- "msgs": [],
- "_admin": {
-  "maintenance": {
-   "enabled": false,
-   "title": "السيرفر تحت الصيانة",
-   "text": "نعتذر، صيانة حالياً",
-   "button": "تم"
-  }
- }
 }

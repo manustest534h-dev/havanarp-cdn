@@ -1,12 +1,12 @@
 {
-  "version": "4.17.70-v236",
-  "versionCode": 977,
-  "tag": "v977",
-  "name": "HavanaRP 4.17.70",
-  "published_at": "2026-11-11T16:14:12Z",
-  "size": 168437868,
-  "sha256": "34f161bd06c94f104b6db86b455138e70cebdb901ea24c58729364b9218fd128",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v977/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v977",
-  "notes": "تحديث HavanaRP 4.17.70 - صحراء هافانا\n- صحراء هافانا مكان لاس فينتوراس: واحة، الجمال، بترا والأهرامات، فلل القباب، سينما الصحراء\n- ركوب الجمال، معرض سيارات الصحراء (6 سيارات جديدة)، محطة وقود ومطعم على طريق 66\n- قائمة الحركات والرقصات، حركات GTA V، إصلاح السقوط عند القفز على الكثبان\n- أصحاب البيوت المزالة في لاس فينتوراس يتم تعويضهم تلقائيًا\n\nSHA-256: 34f161bd06c94f104b6db86b455138e70cebdb901ea24c58729364b9218fd128"
+  "version": "4.17.71-v236",
+  "versionCode": 978,
+  "tag": "v978",
+  "name": "HavanaRP 4.17.71",
+  "published_at": "2026-11-11T17:18:13Z",
+  "size": 168441955,
+  "sha256": "8aa3ce1eaac26d7d73f7d75c4babf97cff210d0b7779c0538e5885f3c7fd5e9f",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v978/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v978",
+  "notes": "تحديث HavanaRP 4.17.71 - إصلاح الكراش\n- إصلاح الكراش والتعليق أثناء الرقص وفي أماكن عشوائية (نوافذ الواجهة تُفتح وتُغلق الآن بأمان)\n- إصلاح تكرار تحديث الواجهة عند اللمس\n- كل مزايا 4.17.70 (صحراء هافانا) كما هي\n\nSHA-256: 8aa3ce1eaac26d7d73f7d75c4babf97cff210d0b7779c0538e5885f3c7fd5e9f"
 }
