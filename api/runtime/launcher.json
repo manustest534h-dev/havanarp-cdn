@@ -1,12 +1,12 @@
 {
-  "version": "4.17.73-v236",
-  "versionCode": 980,
-  "tag": "v980",
-  "name": "HavanaRP 4.17.73",
-  "published_at": "2026-11-12T05:35:59Z",
-  "size": 168446042,
-  "sha256": "e45ece0672ba0dfc72bc4b18db327f30ceca3cf0b3386296eb03b25e0dca7ade",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v980/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v980",
-  "notes": "تحديث HavanaRP 4.17.73\n- تحذير AFK جديد: إذا ما تحركت دقيقة بيطلع تحذير أحمر على الشاشة مع عداد، وإذا ضليت بدون حركة 30 ثانية بيتم فصلك\n- سعر خانات سيارات العائلة صار 50,000 بدل 500,000\n- كل إصلاحات 4.17.72 كما هي\n\nSHA-256: e45ece0672ba0dfc72bc4b18db327f30ceca3cf0b3386296eb03b25e0dca7ade"
+  "version": "4.17.74-v236",
+  "versionCode": 982,
+  "tag": "v982",
+  "name": "HavanaRP 4.17.74",
+  "published_at": "2026-11-12T07:54:09Z",
+  "size": 168496253,
+  "sha256": "31ab8abc410ffe399480b1af477ffe5456c99cf6e8da6bae66ef80e8c9072336",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v982/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v982",
+  "notes": "تحديث HavanaRP 4.17.74\n- جديد: إعدادات الحساسية من قائمة التفاعل، صفحة الشخصية، زر الحساسية\n- تقدر تعدل سرعة الكاميرا يمين ويسار وفوق وتحت، كاميرا المركبة، التصويب، المنظار، ولكل نوع سلاح لحاله\n- الإعدادات بتنحفظ لحسابك، وزر إعادة الضبط يرجع كل شي للوضع الأصلي\n- كل تحديثات 4.17.73 كما هي\n\nSHA-256: 31ab8abc410ffe399480b1af477ffe5456c99cf6e8da6bae66ef80e8c9072336"
 }
