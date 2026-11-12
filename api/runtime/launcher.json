@@ -1,12 +1,12 @@
 {
-  "version": "4.17.72-v236",
-  "versionCode": 979,
-  "tag": "v979",
-  "name": "HavanaRP 4.17.72",
-  "published_at": "2026-11-11T18:13:31Z",
-  "size": 168441951,
-  "sha256": "860a887a77eb97d97be8d5af7db980148ba053b1fa8567182627445e4c0b05a2",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v979/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v979",
-  "notes": "تحديث HavanaRP 4.17.72 - إصلاح كراش الفيديو\n- إصلاح كراش مفاجئ على بعض أجهزة شاومي/ريدمي (أندرويد 16) عند فتح أو إغلاق الفيديوهات والبث\n- إغلاق مشغلات الفيديو بأمان قبل إزالة الشاشة\n- كل إصلاحات 4.17.71 كما هي\n\nSHA-256: 860a887a77eb97d97be8d5af7db980148ba053b1fa8567182627445e4c0b05a2"
+  "version": "4.17.73-v236",
+  "versionCode": 980,
+  "tag": "v980",
+  "name": "HavanaRP 4.17.73",
+  "published_at": "2026-11-12T05:35:59Z",
+  "size": 168446042,
+  "sha256": "e45ece0672ba0dfc72bc4b18db327f30ceca3cf0b3386296eb03b25e0dca7ade",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v980/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v980",
+  "notes": "تحديث HavanaRP 4.17.73\n- تحذير AFK جديد: إذا ما تحركت دقيقة بيطلع تحذير أحمر على الشاشة مع عداد، وإذا ضليت بدون حركة 30 ثانية بيتم فصلك\n- سعر خانات سيارات العائلة صار 50,000 بدل 500,000\n- كل إصلاحات 4.17.72 كما هي\n\nSHA-256: e45ece0672ba0dfc72bc4b18db327f30ceca3cf0b3386296eb03b25e0dca7ade"
 }
