@@ -1,12 +1,12 @@
 {
-  "version": "4.17.75-v236",
-  "versionCode": 987,
-  "tag": "v987",
-  "name": "HavanaRP 4.17.75",
-  "published_at": "2026-11-13T13:55:44Z",
-  "size": 168541303,
-  "sha256": "5b83816e65f41aa5b587915c0197b919ee0f6629e399f75e0d480bf95d562f2b",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v987/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v987",
-  "notes": "تحديث HavanaRP 4.17.75\n- جديد: كازينو هافانا الكبير في لوس سانتوس: روليت، سلوتس، عجلة الحظ، طاولات وغرفة VIP\n- بار الكازينو والمشروبات في الحقيبة، طابق ثاني فيه سينما، وموسيقى داخل الكازينو\n- بلياردو 8-ball ضد لاعب ثاني على طاولتين\n- الكازينو صار أول شي في دليل الخريطة\n- كل تحديثات 4.17.74 كما هي\n\nSHA-256: 5b83816e65f41aa5b587915c0197b919ee0f6629e399f75e0d480bf95d562f2b"
+  "version": "4.17.76-v988",
+  "versionCode": 988,
+  "tag": "v988",
+  "name": "HavanaRP 4.17.76",
+  "published_at": "2026-11-13T16:05:18Z",
+  "size": 168545391,
+  "sha256": "e9ecb365d12959eecf838d447fad978856b6156de684450197e8a37a47f9af14",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v988/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v988",
+  "notes": "تحديث HavanaRP 4.17.76\n- البلياردو: شاشة لعب جديدة ومرتبة، الشاشة تصفى وقت اللعب، الكرات المخططة والأرقام صارت تبين صح، والضربات أنعم وأقوى\n- عجلة الحظ: السكن اللي بتربحه بروح عالحقيبة، بتلبسه وبتخلعه منها وقت ما بدك ولبسك الأصلي برجع\n- الكازينو: بعد الرسبون أو الدخول من جديد داخل الكازينو ترجع الفيشات والنقاط والموسيقى فوراً بدون ما تطلع وترجع\n- كل تحديثات 4.17.75 كما هي\n\nSHA-256: e9ecb365d12959eecf838d447fad978856b6156de684450197e8a37a47f9af14"
 }
