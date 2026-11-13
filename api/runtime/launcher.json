@@ -1,12 +1,12 @@
 {
-  "version": "4.17.74-v236",
-  "versionCode": 982,
-  "tag": "v982",
-  "name": "HavanaRP 4.17.74",
-  "published_at": "2026-11-12T07:58:47Z",
-  "size": 168496253,
-  "sha256": "31ab8abc410ffe399480b1af477ffe5456c99cf6e8da6bae66ef80e8c9072336",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v982/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v982",
-  "notes": "تحديث HavanaRP 4.17.74\n- جديد: إعدادات الحساسية من قائمة التفاعل، صفحة الشخصية، زر الحساسية\n- تقدر تعدل سرعة الكاميرا يمين ويسار وفوق وتحت، كاميرا المركبة، التصويب، المنظار، ولكل نوع سلاح لحاله\n- الإعدادات بتنحفظ لحسابك، وزر إعادة الضبط يرجع كل شي للوضع الأصلي\n- كل تحديثات 4.17.73 كما هي\n\nSHA-256: 31ab8abc410ffe399480b1af477ffe5456c99cf6e8da6bae66ef80e8c9072336"
+  "version": "4.17.75-v236",
+  "versionCode": 987,
+  "tag": "v987",
+  "name": "HavanaRP 4.17.75",
+  "published_at": "2026-11-13T13:55:44Z",
+  "size": 168541303,
+  "sha256": "5b83816e65f41aa5b587915c0197b919ee0f6629e399f75e0d480bf95d562f2b",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v987/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v987",
+  "notes": "تحديث HavanaRP 4.17.75\n- جديد: كازينو هافانا الكبير في لوس سانتوس: روليت، سلوتس، عجلة الحظ، طاولات وغرفة VIP\n- بار الكازينو والمشروبات في الحقيبة، طابق ثاني فيه سينما، وموسيقى داخل الكازينو\n- بلياردو 8-ball ضد لاعب ثاني على طاولتين\n- الكازينو صار أول شي في دليل الخريطة\n- كل تحديثات 4.17.74 كما هي\n\nSHA-256: 5b83816e65f41aa5b587915c0197b919ee0f6629e399f75e0d480bf95d562f2b"
 }
