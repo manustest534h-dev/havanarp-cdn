@@ -1,13 +1,13 @@
 {
  "config_version": 1,
  "apk": {
-  "version": 984,
-  "str": "4.17.65-hw-admin",
-  "path": "https://gofile.io/d/JmfSurx1",
+  "version": 985,
+  "str": "4.17.66-hw-admin",
+  "path": "https://gofile.io/d/tmPNvChI",
   "auto_update": false,
   "manual_update": true,
-  "manual_update_url": "https://gofile.io/d/JmfSurx1",
-  "url": "https://gofile.io/d/JmfSurx1",
+  "manual_update_url": "https://gofile.io/d/tmPNvChI",
+  "url": "https://gofile.io/d/tmPNvChI",
   "patches": {}
  },
  "urls": {
