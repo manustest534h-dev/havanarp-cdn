@@ -1,12 +1,12 @@
 {
-  "version": "4.17.77-v992",
-  "versionCode": 992,
-  "tag": "v992",
-  "name": "HavanaRP 4.17.77",
-  "published_at": "2026-11-13T19:56:55Z",
-  "size": 168545379,
-  "sha256": "e8254028ea01cbf2c37a0951450d1865b755338b41f2353209bfd5524b47162a",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v992/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v992",
-  "notes": "تحديث HavanaRP 4.17.77\n- HK416 الهالوين: معلومات السلاح صارت حسب الأرقام الجديدة (ضرر 30 بالطلقة، بيسخن بعد 6 طلقات متواصلة وبيبرد خلال 4 ثواني) بالبطاقة والحقيبة ومتجر مجموعة الهالوين\n- كل تحديثات 4.17.76 كما هي\n\nSHA-256: e8254028ea01cbf2c37a0951450d1865b755338b41f2353209bfd5524b47162a"
+  "version": "4.17.78-v995",
+  "versionCode": 995,
+  "tag": "v995",
+  "name": "HavanaRP 4.17.78",
+  "published_at": "2026-11-14T13:12:31Z",
+  "size": 168606714,
+  "sha256": "75f6f8cd22ec8d0ed487bf6444791195cff8c09257b68576fd59dbfc6a261c9e",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v995/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v995",
+  "notes": "تحديث HavanaRP 4.17.78\n- السوق السوداء بالصحراء: استأجر طاولة، اعرض أغراضك وبيع واشتر بين اللاعبين (شاشة البيع والشراء الجديدة) + مكانها على الخريطة\n- أمفيكار 770: السيارة البرمائية اللي بتمشي على الأرض وبتسبح بالماء (معروضة عند ميراج موتورز)\n- كل تحديثات 4.17.77 كما هي\n\nSHA-256: 75f6f8cd22ec8d0ed487bf6444791195cff8c09257b68576fd59dbfc6a261c9e"
 }
