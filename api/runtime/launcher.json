@@ -1,12 +1,12 @@
 {
-  "version": "4.17.84-v1008",
-  "versionCode": 1008,
-  "tag": "v1008",
-  "name": "HavanaRP 4.17.84",
-  "published_at": "2026-11-15T20:58:25Z",
-  "size": 168743594,
-  "sha256": "20c8f67dd5ac83c449a3319b3f9ebc9b2868cd52a58bf14fda76250d3e402b0d",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1008/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1008",
-  "notes": "تحديث HavanaRP 4.17.84\n- جديد: «الورشة» صارت للاعبين: لوحة السيارة ونص السيارة\n- إصلاح: اللوحة صارت بمكان اللوحة الحقيقي بكل سيارة (قدام وورا)، مسطّحة ومش فوق الشبك أو الصدام\n- جديد: زر «مقابلة» صار بلوحة قيادة الجيش والإسعاف (نفس إعلان الشرطة والعصابات)\n- كل تحديثات 4.17.83 كما هي\n\nSHA-256: 20c8f67dd5ac83c449a3319b3f9ebc9b2868cd52a58bf14fda76250d3e402b0d"
+  "version": "4.17.85-v1010",
+  "versionCode": 1010,
+  "tag": "v1010",
+  "name": "HavanaRP 4.17.85",
+  "published_at": "2026-11-15T21:45:33Z",
+  "size": 167577312,
+  "sha256": "57cb18dd3542bad9d816885b50ee7b70a49eab236fcd38fe7e6a36f7ff9223b3",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1010/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1010",
+  "notes": "تحديث HavanaRP 4.17.85\n- انتهت فعالية الهالوين: انشالت الجزيرة والمهمات وملك اليقطين وزينة المدينة وثيم الهالوين من اللعبة واللانشر\n- أيقونة التطبيق رجعت الأيقونة الخضراء الأصلية\n- سيارات الهالوين والملابس التنكرية وHK416 ونقاطك كلها بقيت إلك\n- كل تحديثات 4.17.84 كما هي\n\nSHA-256: 57cb18dd3542bad9d816885b50ee7b70a49eab236fcd38fe7e6a36f7ff9223b3"
 }
