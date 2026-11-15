@@ -1,68 +1,68 @@
 {
-  "config_version": 1,
-  "apk": {
-    "version": 1008,
-    "str": "4.17.84-v1008",
-    "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1008/HavanaRp.apk",
-    "auto_update": true,
-    "manual_update": true,
-    "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1008/HavanaRp.apk",
-    "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1008/HavanaRp.apk",
-    "patches": {
-      "1005": {
-        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1008/HavanaRp-1005-1008.patch",
-        "size": 1097331,
-        "sha256": "042b1fa6939a1dc2f70987d06a1638059331068b908df0e69d28e45bd7c2979b",
-        "sha256_base": "04727f4e9e95ff86e9f23fe626c3e6efc216b67f62fa41baa4f55b418e602d7f",
-        "size_base": 168635354,
-        "sha256_out": "20c8f67dd5ac83c449a3319b3f9ebc9b2868cd52a58bf14fda76250d3e402b0d",
-        "size_out": 168743594,
-        "to": 1008
-      },
-      "1003": {
-        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1008/HavanaRp-1003-1008.patch",
-        "size": 1097299,
-        "sha256": "cefcc59dd2e20f5b528173e9b58d06fdca42bbc71b92c43a863c4e11f0c9d002",
-        "sha256_base": "fdd9bf15edd773de98c5d4563ae9dc6e599a6760d7e91a41bf7c9a9a6aa1a4a9",
-        "size_base": 168635362,
-        "sha256_out": "20c8f67dd5ac83c449a3319b3f9ebc9b2868cd52a58bf14fda76250d3e402b0d",
-        "size_out": 168743594,
-        "to": 1008
-      },
-      "997": {
-        "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1008/HavanaRp-997-1008.patch",
-        "size": 2086909,
-        "sha256": "6f68fcc039950418bda883646265673f9c72aa79b36ed38a669d3557fcb78be6",
-        "sha256_base": "36dbcbe1903334532e80d9d01deb0aaa228c5e716ba8ae6506a13ea7fc0c4c1c",
-        "size_base": 168618989,
-        "sha256_out": "20c8f67dd5ac83c449a3319b3f9ebc9b2868cd52a58bf14fda76250d3e402b0d",
-        "size_out": 168743594,
-        "to": 1008
-      }
-    }
-  },
-  "urls": {
-    "URL_HOST": "https://igta-online.my-fastdl.com/ONLINERP/prod/files",
-    "URL_UPDATE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/update/${version}/update_${version}.json",
-    "URL_NEWS": "news.json",
-    "URL_HELP": "help.json",
-    "URL_ONLINE_API": "https://api.onlinerp.com/v1/servers",
-    "URL_DONATE_API": "https://api.gta-mobile.ru/oldAPI/donate_api.php",
-    "URL_SITE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/runtime",
-    "URL_VK": "https://vk.com/online_samp",
-    "URL_YOUTUBE": "https://www.youtube.com/channel/UCCzB4ySWiZfRvApMU2CTfEA",
-    "URL_INSTAGRAM": "https://www.instagram.com/online_samp",
-    "URL_SUPPORT": "https://vk.me/android_client",
-    "URL_TELEGRAM": "https://t.me/onlinerp_channel",
-    "URL_SHOP": "https://gta-mobile.ru/donate"
-  },
-  "msgs": [],
-  "_admin": {
-    "maintenance": {
-      "enabled": false,
-      "title": "السيرفر تحت الصيانة",
-      "text": "نعتذر، صيانة حالياً",
-      "button": "تم"
-    }
+ "config_version": 1,
+ "apk": {
+  "version": 1008,
+  "str": "4.17.84-v1008",
+  "path": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1008/HavanaRp.apk",
+  "auto_update": true,
+  "manual_update": true,
+  "manual_update_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1008/HavanaRp.apk",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1008/HavanaRp.apk",
+  "patches": {
+   "1005": {
+    "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/09c7ccb362f55b07ad3f10da96fa2fc3a3e318d0/patch/HavanaRp-1005-1008.patch",
+    "size": 1097331,
+    "sha256": "042b1fa6939a1dc2f70987d06a1638059331068b908df0e69d28e45bd7c2979b",
+    "sha256_base": "04727f4e9e95ff86e9f23fe626c3e6efc216b67f62fa41baa4f55b418e602d7f",
+    "size_base": 168635354,
+    "sha256_out": "20c8f67dd5ac83c449a3319b3f9ebc9b2868cd52a58bf14fda76250d3e402b0d",
+    "size_out": 168743594,
+    "to": 1008
+   },
+   "1003": {
+    "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/09c7ccb362f55b07ad3f10da96fa2fc3a3e318d0/patch/HavanaRp-1003-1008.patch",
+    "size": 1097299,
+    "sha256": "cefcc59dd2e20f5b528173e9b58d06fdca42bbc71b92c43a863c4e11f0c9d002",
+    "sha256_base": "fdd9bf15edd773de98c5d4563ae9dc6e599a6760d7e91a41bf7c9a9a6aa1a4a9",
+    "size_base": 168635362,
+    "sha256_out": "20c8f67dd5ac83c449a3319b3f9ebc9b2868cd52a58bf14fda76250d3e402b0d",
+    "size_out": 168743594,
+    "to": 1008
+   },
+   "997": {
+    "url": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/09c7ccb362f55b07ad3f10da96fa2fc3a3e318d0/patch/HavanaRp-997-1008.patch",
+    "size": 2086909,
+    "sha256": "6f68fcc039950418bda883646265673f9c72aa79b36ed38a669d3557fcb78be6",
+    "sha256_base": "36dbcbe1903334532e80d9d01deb0aaa228c5e716ba8ae6506a13ea7fc0c4c1c",
+    "size_base": 168618989,
+    "sha256_out": "20c8f67dd5ac83c449a3319b3f9ebc9b2868cd52a58bf14fda76250d3e402b0d",
+    "size_out": 168743594,
+    "to": 1008
+   }
   }
+ },
+ "urls": {
+  "URL_HOST": "https://igta-online.my-fastdl.com/ONLINERP/prod/files",
+  "URL_UPDATE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/update/${version}/update_${version}.json",
+  "URL_NEWS": "news.json",
+  "URL_HELP": "help.json",
+  "URL_ONLINE_API": "https://api.onlinerp.com/v1/servers",
+  "URL_DONATE_API": "https://api.gta-mobile.ru/oldAPI/donate_api.php",
+  "URL_SITE": "https://raw.githubusercontent.com/manustest534h-dev/havanarp-cdn/main/api/runtime",
+  "URL_VK": "https://vk.com/online_samp",
+  "URL_YOUTUBE": "https://www.youtube.com/channel/UCCzB4ySWiZfRvApMU2CTfEA",
+  "URL_INSTAGRAM": "https://www.instagram.com/online_samp",
+  "URL_SUPPORT": "https://vk.me/android_client",
+  "URL_TELEGRAM": "https://t.me/onlinerp_channel",
+  "URL_SHOP": "https://gta-mobile.ru/donate"
+ },
+ "msgs": [],
+ "_admin": {
+  "maintenance": {
+   "enabled": false,
+   "title": "السيرفر تحت الصيانة",
+   "text": "نعتذر، صيانة حالياً",
+   "button": "تم"
+  }
+ }
 }
