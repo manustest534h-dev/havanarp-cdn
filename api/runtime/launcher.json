@@ -1,12 +1,12 @@
 {
-  "version": "4.17.80-v997",
-  "versionCode": 997,
-  "tag": "v997",
-  "name": "HavanaRP 4.17.80",
-  "published_at": "2026-11-14T17:28:30Z",
-  "size": 168618989,
-  "sha256": "36dbcbe1903334532e80d9d01deb0aaa228c5e716ba8ae6506a13ea7fc0c4c1c",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v997/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v997",
-  "notes": "تحديث HavanaRP 4.17.80\n- شات جديد أنعم وأسرع\n- سهم رجوع وسهم تقدم لآخر 10 رسائل بعثتها\n- كل الإيموجي بتظهر صح عندك وعند الكل\n- وانت بتكتب بتشوف آخر رسائل الشات تحت خانة الكتابة\n- كل تحديثات 4.17.79 كما هي\n\nSHA-256: 36dbcbe1903334532e80d9d01deb0aaa228c5e716ba8ae6506a13ea7fc0c4c1c"
+  "version": "4.17.82-v1003",
+  "versionCode": 1003,
+  "tag": "v1003",
+  "name": "HavanaRP 4.17.82",
+  "published_at": "2026-11-15T16:16:37Z",
+  "size": 168635362,
+  "sha256": "fdd9bf15edd773de98c5d4563ae9dc6e599a6760d7e91a41bf7c9a9a6aa1a4a9",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1003/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1003",
+  "notes": "تحديث HavanaRP 4.17.82\n- جديد: «التنبيهات» في قائمة الدائرة، كل اللي صار على حسابك (سجن، تحذير، طرد، باند، ميوت، الفصيل، الفلوس) بمكان واحد مع نقطة حمرا للجديد\n- جديد: زر «مقابلة» بلوحة قائد الفصيل، إعلان مقابلة لكل اللاعبين مع زر «مكان المقابلة» يوديك بالجي بي اس\n- كل تحديثات 4.17.80 كما هي\n\nSHA-256: fdd9bf15edd773de98c5d4563ae9dc6e599a6760d7e91a41bf7c9a9a6aa1a4a9"
 }
