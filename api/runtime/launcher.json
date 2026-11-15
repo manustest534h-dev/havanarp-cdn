@@ -1,12 +1,12 @@
 {
-  "version": "4.17.82-v1003",
-  "versionCode": 1003,
-  "tag": "v1003",
-  "name": "HavanaRP 4.17.82",
-  "published_at": "2026-11-15T16:16:37Z",
-  "size": 168635362,
-  "sha256": "fdd9bf15edd773de98c5d4563ae9dc6e599a6760d7e91a41bf7c9a9a6aa1a4a9",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1003/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1003",
-  "notes": "تحديث HavanaRP 4.17.82\n- جديد: «التنبيهات» في قائمة الدائرة، كل اللي صار على حسابك (سجن، تحذير، طرد، باند، ميوت، الفصيل، الفلوس) بمكان واحد مع نقطة حمرا للجديد\n- جديد: زر «مقابلة» بلوحة قائد الفصيل، إعلان مقابلة لكل اللاعبين مع زر «مكان المقابلة» يوديك بالجي بي اس\n- كل تحديثات 4.17.80 كما هي\n\nSHA-256: fdd9bf15edd773de98c5d4563ae9dc6e599a6760d7e91a41bf7c9a9a6aa1a4a9"
+  "version": "4.17.83-v1005",
+  "versionCode": 1005,
+  "tag": "v1005",
+  "name": "HavanaRP 4.17.83",
+  "published_at": "2026-11-15T17:41:20Z",
+  "size": 168635354,
+  "sha256": "04727f4e9e95ff86e9f23fe626c3e6efc216b67f62fa41baa4f55b418e602d7f",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1005/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1005",
+  "notes": "تحديث HavanaRP 4.17.83\n- تحسين: فتح وسكّر «التنبيهات» صار ناعم وبدون تقطيع، اللوحة بتنحسب مرة وحدة والحركة صارت على كرت الشاشة\n- كل تحديثات 4.17.82 كما هي\n\nSHA-256: 04727f4e9e95ff86e9f23fe626c3e6efc216b67f62fa41baa4f55b418e602d7f"
 }
