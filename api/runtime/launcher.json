@@ -1,12 +1,12 @@
 {
-  "version": "4.17.83-v1005",
-  "versionCode": 1005,
-  "tag": "v1005",
-  "name": "HavanaRP 4.17.83",
-  "published_at": "2026-11-15T17:41:20Z",
-  "size": 168635354,
-  "sha256": "04727f4e9e95ff86e9f23fe626c3e6efc216b67f62fa41baa4f55b418e602d7f",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1005/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1005",
-  "notes": "تحديث HavanaRP 4.17.83\n- تحسين: فتح وسكّر «التنبيهات» صار ناعم وبدون تقطيع، اللوحة بتنحسب مرة وحدة والحركة صارت على كرت الشاشة\n- كل تحديثات 4.17.82 كما هي\n\nSHA-256: 04727f4e9e95ff86e9f23fe626c3e6efc216b67f62fa41baa4f55b418e602d7f"
+  "version": "4.17.84-v1008",
+  "versionCode": 1008,
+  "tag": "v1008",
+  "name": "HavanaRP 4.17.84",
+  "published_at": "2026-11-15T20:58:25Z",
+  "size": 168743594,
+  "sha256": "20c8f67dd5ac83c449a3319b3f9ebc9b2868cd52a58bf14fda76250d3e402b0d",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1008/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1008",
+  "notes": "تحديث HavanaRP 4.17.84\n- جديد: «الورشة» صارت للاعبين: لوحة السيارة ونص السيارة\n- إصلاح: اللوحة صارت بمكان اللوحة الحقيقي بكل سيارة (قدام وورا)، مسطّحة ومش فوق الشبك أو الصدام\n- جديد: زر «مقابلة» صار بلوحة قيادة الجيش والإسعاف (نفس إعلان الشرطة والعصابات)\n- كل تحديثات 4.17.83 كما هي\n\nSHA-256: 20c8f67dd5ac83c449a3319b3f9ebc9b2868cd52a58bf14fda76250d3e402b0d"
 }
