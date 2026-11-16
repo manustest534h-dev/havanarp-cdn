@@ -1,12 +1,12 @@
 {
-  "version": "4.17.85-v1010",
-  "versionCode": 1010,
-  "tag": "v1010",
-  "name": "HavanaRP 4.17.85",
-  "published_at": "2026-11-15T21:45:33Z",
-  "size": 167577312,
-  "sha256": "57cb18dd3542bad9d816885b50ee7b70a49eab236fcd38fe7e6a36f7ff9223b3",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1010/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1010",
-  "notes": "تحديث HavanaRP 4.17.85\n- انتهت فعالية الهالوين: انشالت الجزيرة والمهمات وملك اليقطين وزينة المدينة وثيم الهالوين من اللعبة واللانشر\n- أيقونة التطبيق رجعت الأيقونة الخضراء الأصلية\n- سيارات الهالوين والملابس التنكرية وHK416 ونقاطك كلها بقيت إلك\n- كل تحديثات 4.17.84 كما هي\n\nSHA-256: 57cb18dd3542bad9d816885b50ee7b70a49eab236fcd38fe7e6a36f7ff9223b3"
+  "version": "4.17.86-v1011",
+  "versionCode": 1011,
+  "tag": "v1011",
+  "name": "HavanaRP 4.17.86",
+  "published_at": "2026-11-16T04:34:05Z",
+  "size": 167663883,
+  "sha256": "b7e98adbc44332088c4921dbeedce5de1a256ede343719f038f46d20a085c909",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1011/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1011",
+  "notes": "تحديث HavanaRP 4.17.86\n- التحية العسكرية: زر جديد بقائمة التفاعل للشرطة والجيش وهم على الدوام بلبس الفصيل\n- وضعية جديدة لما تمسك الجوال وتكتب\n- الجمال صارت تمشي وتركض بحركة حقيقية\n- الورشة: الكتابة صارت على بودي السيارة نفسه، تقدر تختار الجهة (يمين، يسار، الجهتين)، اللوحة بتبين على السيارة، والكاميرا أنعم\n- كل تحديثات 4.17.85 كما هي\n\nSHA-256: b7e98adbc44332088c4921dbeedce5de1a256ede343719f038f46d20a085c909"
 }
