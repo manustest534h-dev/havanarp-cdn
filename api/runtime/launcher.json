@@ -1,12 +1,12 @@
 {
-  "version": "4.17.87-v1012",
-  "versionCode": 1012,
-  "tag": "v1012",
-  "name": "HavanaRP 4.17.87",
-  "published_at": "2026-11-17T05:40:04Z",
-  "size": 170015200,
-  "sha256": "5cddf7399437961caf4e8fb0646192f038803ddf3fe0e80b576b0dcfac4bcf44",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1012/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1012",
-  "notes": "تحديث HavanaRP 4.17.87\n- متجر الاكسسوارات الجديد بروديو: 387 قطعة، تجربة قبل الشراء، تركيب تلقائي على الشخصية، تعديل المكان باللمس مع زر التدوير\n- مسجل موسيقى السيارة من الورشة، وتقدر تشغل أي رابط يوتيوب\n- منطقة آمنة عند المتجر وأيقونة على الخريطة ومكان بدليل الخريطة\n- إصلاح أزرار التحكم اللي كانت تختفي بعد الرسبون\n- إصلاح أيقونة الكتابة اللي كانت تطلع فوق راسك\n- كل تحديثات 4.17.86 كما هي\n\nSHA-256: 5cddf7399437961caf4e8fb0646192f038803ddf3fe0e80b576b0dcfac4bcf44"
+  "version": "4.17.88-v1013",
+  "versionCode": 1013,
+  "tag": "v1013",
+  "name": "HavanaRP 4.17.88",
+  "published_at": "2026-11-17T08:52:11Z",
+  "size": 170088995,
+  "sha256": "682d7d75613e1d25a081494ed500577a7fbb8df819fa8ea52ebb5fe143c7a307",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1013/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1013",
+  "notes": "إصلاح مشاكل"
 }
