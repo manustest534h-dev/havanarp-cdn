@@ -1,12 +1,12 @@
 {
-  "version": "4.17.86-v1011",
-  "versionCode": 1011,
-  "tag": "v1011",
-  "name": "HavanaRP 4.17.86",
-  "published_at": "2026-11-16T04:34:05Z",
-  "size": 167663883,
-  "sha256": "b7e98adbc44332088c4921dbeedce5de1a256ede343719f038f46d20a085c909",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1011/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1011",
-  "notes": "تحديث HavanaRP 4.17.86\n- التحية العسكرية: زر جديد بقائمة التفاعل للشرطة والجيش وهم على الدوام بلبس الفصيل\n- وضعية جديدة لما تمسك الجوال وتكتب\n- الجمال صارت تمشي وتركض بحركة حقيقية\n- الورشة: الكتابة صارت على بودي السيارة نفسه، تقدر تختار الجهة (يمين، يسار، الجهتين)، اللوحة بتبين على السيارة، والكاميرا أنعم\n- كل تحديثات 4.17.85 كما هي\n\nSHA-256: b7e98adbc44332088c4921dbeedce5de1a256ede343719f038f46d20a085c909"
+  "version": "4.17.87-v1012",
+  "versionCode": 1012,
+  "tag": "v1012",
+  "name": "HavanaRP 4.17.87",
+  "published_at": "2026-11-17T05:40:04Z",
+  "size": 170015200,
+  "sha256": "5cddf7399437961caf4e8fb0646192f038803ddf3fe0e80b576b0dcfac4bcf44",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1012/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1012",
+  "notes": "تحديث HavanaRP 4.17.87\n- متجر الاكسسوارات الجديد بروديو: 387 قطعة، تجربة قبل الشراء، تركيب تلقائي على الشخصية، تعديل المكان باللمس مع زر التدوير\n- مسجل موسيقى السيارة من الورشة، وتقدر تشغل أي رابط يوتيوب\n- منطقة آمنة عند المتجر وأيقونة على الخريطة ومكان بدليل الخريطة\n- إصلاح أزرار التحكم اللي كانت تختفي بعد الرسبون\n- إصلاح أيقونة الكتابة اللي كانت تطلع فوق راسك\n- كل تحديثات 4.17.86 كما هي\n\nSHA-256: 5cddf7399437961caf4e8fb0646192f038803ddf3fe0e80b576b0dcfac4bcf44"
 }
