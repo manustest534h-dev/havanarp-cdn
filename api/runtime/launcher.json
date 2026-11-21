@@ -1,9 +1,9 @@
 {
- "version": "4.18.10-admin",
- "versionCode": 1040,
- "tag": "admin-1040",
- "name": "HavanaRP ADMIN 4.18.10-admin",
- "url": "https://gofile.io/d/YoN4dP6q",
- "release_url": "https://gofile.io/d/YoN4dP6q",
+ "version": "4.18.11-admin",
+ "versionCode": 1041,
+ "tag": "admin-1041",
+ "name": "HavanaRP ADMIN 4.18.11-admin",
+ "url": "https://gofile.io/d/mMCnCsRk",
+ "release_url": "https://gofile.io/d/mMCnCsRk",
  "notes": "ADMIN/TEST build - server 195.18.27.226:2402"
 }
