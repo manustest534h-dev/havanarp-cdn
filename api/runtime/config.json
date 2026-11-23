@@ -1,13 +1,13 @@
 {
  "config_version": 1,
  "apk": {
-  "version": 1047,
-  "str": "4.18.17-admin",
-  "path": "https://gofile.io/d/XXFEE6NF",
+  "version": 1048,
+  "str": "4.18.18-admin",
+  "path": "https://gofile.io/d/W12QPoiX",
   "auto_update": false,
   "manual_update": true,
-  "manual_update_url": "https://gofile.io/d/XXFEE6NF",
-  "url": "https://gofile.io/d/XXFEE6NF",
+  "manual_update_url": "https://gofile.io/d/W12QPoiX",
+  "url": "https://gofile.io/d/W12QPoiX",
   "patches": {}
  },
  "urls": {
