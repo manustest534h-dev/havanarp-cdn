@@ -1,12 +1,12 @@
 {
-  "version": "4.18.06-v1031",
-  "versionCode": 1031,
-  "tag": "v1031",
-  "name": "HavanaRP 4.18.06",
-  "published_at": "2026-11-23T22:35:19Z",
-  "size": 172028133,
-  "sha256": "7ae9ae897cb1a994f82807ac93c527f65587a80429a7de396c6cc8cdcafbe0e4",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1031/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1031",
+  "version": "4.18.07-v1032",
+  "versionCode": 1032,
+  "tag": "v1032",
+  "name": "HavanaRP 4.18.07",
+  "published_at": "2026-11-24T01:24:40Z",
+  "size": 172074253,
+  "sha256": "d1afc0c49c3d2016d132c1b9d0f7b330cf4714c3491b5d56748bf74731b3cd79",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1032/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1032",
   "notes": "إصلاح مشاكل"
 }
