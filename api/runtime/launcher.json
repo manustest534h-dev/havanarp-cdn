@@ -1,12 +1,12 @@
 {
-  "version": "4.18.08-v1033",
-  "versionCode": 1033,
-  "tag": "v1033",
-  "name": "HavanaRP 4.18.08",
-  "published_at": "2026-11-24T13:03:42Z",
-  "size": 172074242,
-  "sha256": "da43a7237c73b6d37aae65f1a3e514faa8ff816fbe430ea90b9dcb9b2d0c6427",
-  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1033/HavanaRp.apk",
-  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1033",
-  "notes": "إصلاح مشاكل"
+  "version": "4.18.09-v1034",
+  "versionCode": 1034,
+  "tag": "v1034",
+  "name": "HavanaRP 4.18.09",
+  "published_at": "2026-11-26T09:16:27Z",
+  "size": 172071205,
+  "sha256": "0c67eda5710e834c7710320ad42724cce35c9fc1622fffb9c2b6e1654b24bd74",
+  "url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/download/v1034/HavanaRp.apk",
+  "release_url": "https://github.com/manustest534h-dev/havanarp-cdn/releases/tag/v1034",
+  "notes": "تحديث: بلدية جديدة + مركز الشرطة من الداخل + سيارات الشرطة الجديدة"
 }
