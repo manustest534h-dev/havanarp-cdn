@@ -1,13 +1,13 @@
 {
  "config_version": 1,
  "apk": {
-  "version": 1056,
-  "str": "4.18.26-admin-mp",
-  "path": "https://gofile.io/d/zIx0mRdA",
+  "version": 1057,
+  "str": "4.18.27-admin-xc",
+  "path": "https://gofile.io/d/dD6bKdIg",
   "auto_update": false,
   "manual_update": true,
-  "manual_update_url": "https://gofile.io/d/zIx0mRdA",
-  "url": "https://gofile.io/d/zIx0mRdA",
+  "manual_update_url": "https://gofile.io/d/dD6bKdIg",
+  "url": "https://gofile.io/d/dD6bKdIg",
   "patches": {}
  },
  "urls": {
