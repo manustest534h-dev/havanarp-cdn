@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Quran Kareem" group-title="قرآن كريم",قرآن كريم - قناة القرآن الكريم (السعودية)
+http://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8
+#EXTINF:-1 tvg-name="Sharjah Quran" group-title="قرآن كريم",قرآن كريم - الشارقة
+http://svs.itworkscdn.net/smcquranlive/quranradiolive/playlist.m3u8
+#EXTINF:-1 tvg-name="Saudi Quran 2" group-title="قرآن كريم",قرآن كريم - البث السعودي 2
+http://m.live.net.sa:1935/live/quran/playlist.m3u8
